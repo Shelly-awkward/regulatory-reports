@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-18 03:19 UTC",
-  "total": 53,
+  "last_updated": "2026-03-18 03:57 UTC",
+  "total": 70,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
       "fullname": "國際證券事務監察委員會組織",
-      "url": "https://www.iosco.org/publications/"
+      "url": "https://www.iosco.org/v2/publications/?subsection=public_reports"
     },
     "IESBA": {
       "name": "IESBA",
@@ -20,10 +20,163 @@
     "IFAC": {
       "name": "IFAC",
       "fullname": "國際會計師聯合會",
-      "url": "https://www.ifac.org/news-resources"
+      "url": "https://www.ifac.org/news-resources?type=publication"
     }
   },
   "reports": [
+    {
+      "id": "8a66b9aa8410",
+      "source": "FSB",
+      "title_en": "Vulnerabilities Assessment",
+      "title_zh": "脆弱性評估報告",
+      "intro": "本報告系統性分析金融體系中的潛在風險點和薄弱環節，識別可能威脅金融穩定的關鍵因素。此評估對監理機構制定預防性監理措施、強化風險管理框架具有重要指導意義。",
+      "url": "https://www.fsb.org/work-of-the-fsb/vulnerabilities-assessment/",
+      "date_raw": ""
+    },
+    {
+      "id": "8d7caf0be151",
+      "source": "FSB",
+      "title_en": "Monitoring Implementation of Reforms",
+      "title_zh": "改革實施監測報告",
+      "intro": "本報告追蹤各國金融監理改革措施的執行進度與成效，評估改革目標的達成情況。透過持續監測機制，確保監理改革能有效落實並達到預期的金融穩定目標。",
+      "url": "https://www.fsb.org/work-of-the-fsb/implementation-monitoring/",
+      "date_raw": ""
+    },
+    {
+      "id": "65a1d9d24989",
+      "source": "FSB",
+      "title_en": "Compendium of Standards",
+      "title_zh": "監理標準彙編",
+      "intro": "本彙編整合國際監理機構制定的各項監理標準與最佳實務準則，提供完整的監理框架參考。此標準化文件有助於各國監理機構建立一致的監理原則，促進國際監理協調。",
+      "url": "https://www.fsb.org/work-of-the-fsb/about-the-compendium-of-standards/",
+      "date_raw": ""
+    },
+    {
+      "id": "aff85eab116d",
+      "source": "FSB",
+      "title_en": "Post-2008 Financial Crisis Reforms",
+      "title_zh": "2008年後金融危機改革報告",
+      "intro": "本報告檢視自2008年金融危機以來實施的各項監理改革措施及其成效評估。這些改革對於強化金融體系韌性、防範系統性風險再次發生具有關鍵作用。",
+      "url": "https://www.fsb.org/work-of-the-fsb/market-and-institutional-resilience/post-2008-financial-crisis-reforms/",
+      "date_raw": ""
+    },
+    {
+      "id": "e8310b5015c9",
+      "source": "FSB",
+      "title_en": "Policy Documents",
+      "title_zh": "政策文件",
+      "intro": "本文件闡述監理機構的政策立場、監理理念及未來政策方向。這些政策指引為金融機構及市場參與者提供明確的監理預期，有助於維護市場秩序。",
+      "url": "https://www.fsb.org/publications/policy-documents/",
+      "date_raw": ""
+    },
+    {
+      "id": "ac806c656cbd",
+      "source": "FSB",
+      "title_en": "Progress Reports",
+      "title_zh": "進度報告",
+      "intro": "本報告定期更新各項監理倡議、政策實施及改革措施的最新進展情況。透過定期進度追蹤，確保監理目標能按時達成並及時調整策略方向。",
+      "url": "https://www.fsb.org/publications/progress-reports/",
+      "date_raw": ""
+    },
+    {
+      "id": "5686732a12f3",
+      "source": "FSB",
+      "title_en": "Evaluation Reports",
+      "title_zh": "評估報告",
+      "intro": "本報告深入評析特定監理政策或措施的實施成效與影響程度。客觀的評估結果為監理機構優化政策設計、改善監理效能提供重要依據。",
+      "url": "https://www.fsb.org/publications/evaluation-reports/",
+      "date_raw": ""
+    },
+    {
+      "id": "32c0b04c1610",
+      "source": "FSB",
+      "title_en": "Reports to the G20",
+      "title_zh": "G20報告",
+      "intro": "本報告向G20領導人呈報全球金融監理發展現況及重要政策建議。作為國際協調機制的重要環節，此報告影響全球金融監理政策的制定方向。",
+      "url": "https://www.fsb.org/publications/g20-reports/",
+      "date_raw": ""
+    },
+    {
+      "id": "fab713d8285c",
+      "source": "FSB",
+      "title_en": "Peer Review Reports",
+      "title_zh": "同儕評議報告",
+      "intro": "本報告透過國際間相互評估機制，檢視各國監理實務與國際標準的符合程度。同儕評議促進監理經驗交流，提升各國監理品質與國際一致性。",
+      "url": "https://www.fsb.org/publications/peer-review-reports/",
+      "date_raw": ""
+    },
+    {
+      "id": "f948f62c0e9e",
+      "source": "FSB",
+      "title_en": "Regional Consultative Group Reports",
+      "title_zh": "區域諮詢小組報告",
+      "intro": "本報告匯集特定區域內監理機構的合作成果與政策協調建議。區域性監理協調有助於因應跨境金融風險，強化區域金融穩定。",
+      "url": "https://www.fsb.org/publications/regional-consultative-group-reports/",
+      "date_raw": ""
+    },
+    {
+      "id": "ae347682be6f",
+      "source": "FSB",
+      "title_en": "All Consultations",
+      "title_zh": "全部諮詢案件",
+      "intro": "此為監理機構發布之所有諮詢案件的彙整目錄，涵蓋歷史至今的完整諮詢紀錄。透過系統性整理所有諮詢案件，有助於市場參與者了解監理政策發展脈絡與趨勢變化。",
+      "url": "https://www.fsb.org/consultations/browse-all-consultations/",
+      "date_raw": ""
+    },
+    {
+      "id": "506ee4bb8938",
+      "source": "FSB",
+      "title_en": "Current Consultations",
+      "title_zh": "現行諮詢案件",
+      "intro": "此為監理機構目前正在進行公眾諮詢的政策提案或規範草案清單。市場參與者可透過此管道了解最新監理動向，並在諮詢期間內提供意見回饋，確保監理政策制定的透明度與參與性。",
+      "url": "https://www.fsb.org/consultations/current-consultations/",
+      "date_raw": ""
+    },
+    {
+      "id": "649397a69dd7",
+      "source": "FSB",
+      "title_en": "Past Consultations",
+      "title_zh": "歷史諮詢案件",
+      "intro": "此為已完成諮詢程序的歷史案件檔案，記錄監理機構過往的政策制定過程。透過檢視歷史諮詢案件，可追蹤監理框架的演進軌跡，並作為未來政策制定的重要參考依據。",
+      "url": "https://www.fsb.org/consultations/past-consultations/",
+      "date_raw": ""
+    },
+    {
+      "id": "62f8b1c4c222",
+      "source": "FSB",
+      "title_en": "Past consultation responses",
+      "title_zh": "歷史諮詢回應意見",
+      "intro": "此為監理機構針對已完成諮詢案件所收到的各方回應意見彙整。公開諮詢回應意見有助於提升監理透明度，並讓市場了解不同利害關係人的觀點與監理機構的政策考量。",
+      "url": "https://www.fsb.org/consultations/responses-to-past-consultations/",
+      "date_raw": ""
+    },
+    {
+      "id": "f73f8bebe3af",
+      "source": "FSB",
+      "title_en": "Speeches and Statements",
+      "title_zh": "演講與聲明",
+      "intro": "此為監理機構高階官員的公開演講內容與官方聲明文件集錄。這些演講與聲明反映監理機構的政策立場與市場觀點，對於預測未來監理方向具有重要的指標意義。",
+      "url": "https://www.fsb.org/press/speeches-and-statements/",
+      "date_raw": ""
+    },
+    {
+      "id": "8aa4cc089eef",
+      "source": "IOSCO",
+      "title_en": "OR/02/2026 View Report",
+      "title_zh": "OR/02/2026 檢視報告",
+      "intro": "此報告針對特定監理議題進行深入檢視與評估，提供監理機關政策制定的重要參考依據。該報告有助於提升監理透明度並確保相關法規的有效執行與合規性。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD814.pdf",
+      "date_raw": "2026-03-17"
+    },
+    {
+      "id": "c6f1d252326c",
+      "source": "IOSCO",
+      "title_en": "FR/13/2025 Joint Note",
+      "title_zh": "FR/13/2025 聯合備忘錄",
+      "intro": "此聯合備忘錄係由多個監理機構共同發布，旨在協調跨境監理合作並統一監理標準。該備忘錄強化了國際監理協調機制，有助於防範系統性風險並促進金融市場穩定。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD801-joint-note.pdf",
+      "date_raw": "2025-10-16"
+    },
     {
       "id": "90dfabad1ee6",
       "source": "FSB",
