@@ -1,6 +1,558 @@
 {
-  "last_updated": "",
-  "total": 0,
-  "sources_meta": {},
-  "reports": []
+  "last_updated": "2026-03-18 03:19 UTC",
+  "total": 53,
+  "sources_meta": {
+    "IOSCO": {
+      "name": "IOSCO",
+      "fullname": "國際證券事務監察委員會組織",
+      "url": "https://www.iosco.org/publications/"
+    },
+    "IESBA": {
+      "name": "IESBA",
+      "fullname": "國際會計師倫理準則委員會",
+      "url": "https://www.ethicsboard.org/publications"
+    },
+    "FSB": {
+      "name": "FSB",
+      "fullname": "金融穩定委員會",
+      "url": "https://www.fsb.org/publications/"
+    },
+    "IFAC": {
+      "name": "IFAC",
+      "fullname": "國際會計師聯合會",
+      "url": "https://www.ifac.org/news-resources"
+    }
+  },
+  "reports": [
+    {
+      "id": "90dfabad1ee6",
+      "source": "FSB",
+      "title_en": "Thematic Peer Review on Public Sector Backstop Funding Mechanisms: Summary Terms of Reference",
+      "title_zh": "公部門後備資金機制主題同儕審查：摘要職權範圍",
+      "intro": "本報告定義了對各國政府建立的金融危機後備資金機制進行同儕審查的範圍與標準。此審查對於確保各國在金融危機時能有效動用公共資源穩定金融體系具有重要意義。",
+      "url": "https://www.fsb.org/2026/02/thematic-peer-review-on-public-sector-backstop-funding-mechanisms-summary-terms-of-reference/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "256671137465",
+      "source": "FSB",
+      "title_en": "Public responses to consultation on Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes",
+      "title_zh": "FSB關鍵屬性中保險業復原與處置規劃要求適用範圍諮詢之公眾回應",
+      "intro": "本報告彙整了業界與相關機構對於哪些保險公司應納入復原與處置規劃要求的意見回饋。這些回應將影響全球保險業監理框架的制定，對保險業危機處理機制具有關鍵影響。",
+      "url": "https://www.fsb.org/2026/02/public-responses-to-consultation-on-scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "7315d1f70102",
+      "source": "FSB",
+      "title_en": "Vulnerabilities in Government Bond-backed Repo Markets",
+      "title_zh": "政府債券擔保附買回市場之脆弱性",
+      "intro": "本報告分析政府債券作為擔保品的附買回交易市場中存在的系統性風險與脆弱環節。研究結果對於維護貨幣市場穩定與防範流動性危機擴散具有重要參考價值。",
+      "url": "https://www.fsb.org/2026/02/vulnerabilities-in-government-bond-backed-repo-markets/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "347a74c76e91",
+      "source": "FSB",
+      "title_en": "FSB Work Programme for 2026",
+      "title_zh": "FSB 2026年工作計畫",
+      "intro": "本文件概述金融穩定委員會2026年的重點工作項目與政策優先順序。此計畫將指引全球金融監理政策方向，對未來金融穩定框架發展具有重要指導意義。",
+      "url": "https://www.fsb.org/2026/02/fsb-work-programme-for-2026/",
+      "date_raw": "2026",
+      "translated": true
+    },
+    {
+      "id": "cba14013b4c4",
+      "source": "FSB",
+      "title_en": "2025 Resolution Report: “From Plans to Practice: Operationalising Resolution”",
+      "title_zh": "2025年處置報告：「從計畫到實踐：處置機制運作化」",
+      "intro": "本報告檢視金融機構處置計畫的實際執行情況與操作挑戰，評估從理論規劃到實務執行的落差。報告對於完善全球金融機構危機處理機制提供重要實務指引。",
+      "url": "https://www.fsb.org/2026/01/2025-resolution-report-from-plans-to-practice-operationalising-resolution/",
+      "date_raw": "2025",
+      "translated": true
+    },
+    {
+      "id": "6a8e453d2135",
+      "source": "FSB",
+      "title_en": "Good Practices for Crisis Management Groups (Revised Version)",
+      "title_zh": "危機管理小組最佳實務指引（修訂版）",
+      "intro": "本指引更新了跨國金融機構危機管理小組的運作標準與最佳實務做法。修訂內容反映近年危機處理經驗，對於提升國際金融危機協調處理能力具有重要意義。",
+      "url": "https://www.fsb.org/2026/01/good-practices-for-crisis-management-groups-revised-version/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "c985f290adba",
+      "source": "FSB",
+      "title_en": "Global Monitoring Report on Nonbank Financial Intermediation 2025",
+      "title_zh": "2025年非銀行金融中介全球監測報告",
+      "intro": "本報告分析全球非銀行金融中介機構的規模、風險特徵與系統重要性發展趋勢。報告對於監管影子銀行體系風險與維護金融穩定具有重要參考價值。",
+      "url": "https://www.fsb.org/2025/12/global-monitoring-report-on-nonbank-financial-intermediation-2025/",
+      "date_raw": "2025",
+      "translated": true
+    },
+    {
+      "id": "d3174444d2d1",
+      "source": "FSB",
+      "title_en": "2025 List of Global Systemically Important Banks (G-SIBs)",
+      "title_zh": "2025年全球系統重要性銀行清單",
+      "intro": "本清單公布2025年被認定為全球系統重要性銀行的金融機構名單。這些銀行將面臨更嚴格的監理要求與資本規範，對全球銀行業監理具有重大影響。",
+      "url": "https://www.fsb.org/2025/11/2025-list-of-global-systemically-important-banks-g-sibs/",
+      "date_raw": "2025",
+      "translated": true
+    },
+    {
+      "id": "268e363aa74f",
+      "source": "FSB",
+      "title_en": "Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes: Consultation report",
+      "title_zh": "FSB關鍵屬性中保險業復原與處置規劃要求適用範圍：諮詢報告",
+      "intro": "本諮詢報告提出保險公司納入復原與處置規劃要求的具體範圍與標準建議。此規範將影響全球保險業的風險管理要求與危機處理機制設計。",
+      "url": "https://www.fsb.org/2025/11/scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes-consultation-report/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "14fec775e05b",
+      "source": "FSB",
+      "title_en": "The FSB reaffirms its decision to use IAIS Holistic Framework assessments instead of an annual identification of global systemically important insurers",
+      "title_zh": "FSB重申決定採用IAIS整體框架評估取代年度全球系統重要性保險公司認定",
+      "intro": "FSB確認將使用國際保險監理官協會的整體框架來評估保險業系統風險，不再年度認定特定的全球系統重要性保險公司。此政策轉變將改變全球保險業監理方式與風險評估機制。",
+      "url": "https://www.fsb.org/2025/11/the-fsb-reaffirms-its-decision-to-use-iais-holistic-framework-assessments-instead-of-an-annual-identification-of-global-systemically-important-insurers/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "5e25793154b9",
+      "source": "IESBA",
+      "title_en": "Don't see your language? Request permission to translate",
+      "title_zh": "找不到您的語言？申請翻譯許可",
+      "intro": "此為國際監理機構提供多語言服務的指引，允許用戶申請將相關準則或文件翻譯成其母語。這項政策有助於提升國際會計準則的全球可及性，確保不同語言背景的專業人士都能準確理解監理要求。",
+      "url": "https://apps.ifac.org/opri/my",
+      "date_raw": "2013-05-15T00:00:00-04:00",
+      "translated": true
+    },
+    {
+      "id": "706abdff9137",
+      "source": "IESBA",
+      "title_en": "공인회계사윤리기준 , 2012 (Korean)",
+      "title_zh": "公認會計師職業道德準則，2012年（韓文版）",
+      "intro": "此為2012年版本的韓文公認會計師職業道德準則，規範會計師在執行業務時應遵循的道德標準與行為準則。該準則對於維護會計專業的公信力至關重要，涵蓋獨立性、誠信、客觀性等核心職業道德要求。",
+      "url": "https://www.ethicsboard.org/publications/gonginhoegyesayunligijun-2012",
+      "date_raw": "2012",
+      "translated": true
+    },
+    {
+      "id": "e4503032aa82",
+      "source": "IESBA",
+      "title_en": "IP PERMISSIONS AND POLICIES",
+      "title_zh": "智慧財產權許可與政策",
+      "intro": "此文件規範國際監理機構相關準則、出版物及其他智慧財產的使用許可政策。內容可能包括版權使用條款、翻譯授權程序、商業使用限制等規定，對於確保準則的正確使用與傳播具有重要意義。",
+      "url": "https://apps.ifac.org/opri/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "b85175502274",
+      "source": "IOSCO",
+      "title_en": "Members Area",
+      "title_zh": "會員專區",
+      "intro": "此專區為IOSCO會員機構提供專屬的資訊交流平台和內部資源。會員可透過此平台取得最新的監理政策、法規更新及專業培訓材料。",
+      "url": "https://www.iosco.org/members_area/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "8a751ebca698",
+      "source": "IOSCO",
+      "title_en": "IOSCO AsiaPacific Hub",
+      "title_zh": "IOSCO亞太中心",
+      "intro": "此中心專門負責協調亞太地區證券監理機構之間的合作與政策協調。透過區域性的監理合作，促進亞太資本市場的穩定發展與投資者保護。",
+      "url": "https://www.iosco.org.my/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "16c275eea5cd",
+      "source": "IOSCO",
+      "title_en": "IFRSDatabase",
+      "title_zh": "國際財務報導準則資料庫",
+      "intro": "此資料庫收錄各國採用IFRS的實施情況、相關法規及監理措施。為監理機構提供財務報導準則的比較分析，促進國際會計準則的一致性應用。",
+      "url": "https://www.iosco.org/ifrs/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "2fcf18541824",
+      "source": "IOSCO",
+      "title_en": "Capacity BuildingOnline Toolkit",
+      "title_zh": "能力建設線上工具包",
+      "intro": "此工具包提供監理機構人員專業能力提升所需的線上培訓資源和實務指引。透過系統性的學習模組，協助各國監理人員提升專業技能與監理效能。",
+      "url": "https://www.iosco.org/members_area/capacity_building_online_toolkit/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "fe4ebea0bc8f",
+      "source": "IOSCO",
+      "title_en": "Presidents Committee",
+      "title_zh": "主席委員會",
+      "intro": "此委員會由IOSCO最高層級的監理機構負責人組成，負責制定組織策略方向。委員會決定重要政策議題，並指導全球證券監理的發展趨勢。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=1",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "70c19716683f",
+      "source": "IOSCO",
+      "title_en": "Growth and Emerging Markets Committee",
+      "title_zh": "成長與新興市場委員會",
+      "intro": "此委員會專注於新興市場與發展中國家的資本市場監理議題。透過經驗分享與技術協助，促進新興市場監理制度的完善與市場發展。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=8",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "639213760cf3",
+      "source": "IOSCO",
+      "title_en": "Africa / Middle-East Regional Committee",
+      "title_zh": "非洲/中東區域委員會",
+      "intro": "此委員會負責協調非洲與中東地區證券監理機構的區域合作事務。針對該地區特有的市場環境與挑戰，發展適合的監理政策與實務做法。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=7",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "bec481787523",
+      "source": "IOSCO",
+      "title_en": "Asia-Pacific Regional Committee",
+      "title_zh": "亞太區域委員會",
+      "intro": "此委員會統籌亞太地區各國證券監理機構之間的政策協調與合作計畫。促進區域內資訊共享、執法合作，並因應亞太市場的獨特發展需求。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=6",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "1e22327ece58",
+      "source": "IOSCO",
+      "title_en": "European Regional Committee",
+      "title_zh": "歐洲區域委員會",
+      "intro": "此委員會負責歐洲地區證券監理機構的區域協調工作與政策發展。配合歐盟金融法規架構，強化跨境監理合作與市場整合。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=4",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "80c115a8627c",
+      "source": "IOSCO",
+      "title_en": "Inter-American Regional Committee",
+      "title_zh": "美洲區域委員會",
+      "intro": "此委員會統籌北美、中美與南美地區證券監理機構的區域合作事務。促進美洲各國監理制度的協調發展，加強區域金融市場的穩定性。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=9",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "6963dfb7bf05",
+      "source": "IOSCO",
+      "title_en": "Affiliate Members Consultative Committee",
+      "title_zh": "附屬會員諮詢委員會",
+      "intro": "此委員會負責協調附屬會員機構的意見與建議，促進全球證券監理機構間的合作交流。該機制有助於提升新興市場監理機構的參與度，強化國際證券監理標準的全球一致性。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=2",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "c7dbc92438ef",
+      "source": "IOSCO",
+      "title_en": "IOSCO Committee on Emerging Risks",
+      "title_zh": "國際證監會組織新興風險委員會",
+      "intro": "專門識別和評估金融市場中的新興風險，包括科技創新、市場結構變化等帶來的挑戰。該委員會的工作對於預防系統性風險、維護全球金融市場穩定具有重要意義。",
+      "url": "https://www.iosco.org/research/?subSection=scrr_members",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "3e393145b7b7",
+      "source": "IOSCO",
+      "title_en": "Chairs of the Committees",
+      "title_zh": "各委員會主席",
+      "intro": "涵蓋各專業委員會主席的組成與職責資訊，負責統籌各委員會的政策制定與執行方向。此架構確保國際證券監理政策的協調性與有效性，促進跨境監理合作。",
+      "url": "https://www.iosco.org/v2/about/?subsection=chairs_committees",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "be044b21f41a",
+      "source": "IOSCO",
+      "title_en": "General Secretariat",
+      "title_zh": "秘書處",
+      "intro": "負責國際證監會組織的日常行政運作、政策協調及會員服務等核心功能。秘書處是組織運作的中樞，確保各項國際證券監理倡議能夠順利推動並落實執行。",
+      "url": "https://www.iosco.org/v2/about/?subsection=gs",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "50afc577718f",
+      "source": "IOSCO",
+      "title_en": "MMoU/EMMoU Stats",
+      "title_zh": "多邊監理合作備忘錄統計資料",
+      "intro": "提供多邊監理合作備忘錄及加強版備忘錄的簽署與執行統計數據。這些統計資料反映了國際證券監理合作的廣度與深度，是衡量跨境執法合作成效的重要指標。",
+      "url": "https://www.iosco.org/members_area/mmou-stats",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "0f57ebbe6b4c",
+      "source": "IOSCO",
+      "title_en": "Administrative Arrangement",
+      "title_zh": "行政協議",
+      "intro": "規範國際證券監理機構間行政合作的框架與程序，涵蓋資訊交換、技術援助等事項。此協議為監理機構提供正式的合作基礎，促進國際證券市場監理的協調統一。",
+      "url": "https://www.iosco.org/v2/about/?subsection=administrative_arrangement",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "e990df98feb1",
+      "source": "IOSCO",
+      "title_en": "Issuer Accounting, Audit and Disclosure (Committee 1)",
+      "title_zh": "發行人會計、審計與揭露委員會（第一委員會）",
+      "intro": "專責制定上市公司財務報告、會計準則及資訊揭露的國際監理標準與最佳實務。該委員會的工作確保投資人能獲得透明、準確的公司資訊，維護資本市場的誠信與效率。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=12",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "f2e5576ef0e3",
+      "source": "IOSCO",
+      "title_en": "Regulation of Secondary Markets (Committee 2)",
+      "title_zh": "次級市場監理委員會（第二委員會）",
+      "intro": "負責制定證券次級市場的交易規則、市場結構及監理框架相關政策。該委員會致力於確保證券交易市場的公平性、透明度與效率，防範市場操縱等不當行為。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=13",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "7b9e81d6ffdd",
+      "source": "IOSCO",
+      "title_en": "Regulation of Market Intermediaries (Committee 3)",
+      "title_zh": "市場中介機構監理委員會（第三委員會）",
+      "intro": "專門制定證券商、投資顧問等金融中介機構的監理標準與行為準則。該委員會的規範確保中介機構具備適當的財務實力與專業能力，保護投資人權益並維護市場秩序。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=14",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "e22d946a88fc",
+      "source": "IOSCO",
+      "title_en": "Committee 4 Information",
+      "title_zh": "第四委員會資訊",
+      "intro": "提供國際證監會組織第四委員會的相關資訊與活動內容，可能涵蓋特定專業領域的監理議題。由於標題資訊有限，具體職能需進一步查閱詳細資料以了解其專業範疇與政策重點。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=15",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "b7c5f46a063f",
+      "source": "IOSCO",
+      "title_en": "Committee 4 Resources",
+      "title_zh": "委員會4：資源委員會",
+      "intro": "該委員會主要負責監理機構的資源配置、預算管理和人力資源規劃等相關事務。此委員會的工作對於確保監理機構具備充足的資源來執行監理職能至關重要。",
+      "url": "https://www.iosco.org/members_area/v2/about/?subsection=display_committee&cmtid=15&subSection1=resources",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "3e0804c3e310",
+      "source": "IOSCO",
+      "title_en": "Investment Management (Committee 5)",
+      "title_zh": "投資管理委員會（委員會5）",
+      "intro": "該委員會專注於投資管理行業的監理政策制定，包括資產管理公司、基金管理和投資顧問等領域的規範。委員會的工作有助於建立統一的投資管理監理標準，保護投資者權益並維護市場穩定。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=16",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "a4770b892554",
+      "source": "IOSCO",
+      "title_en": "Credit Rating Agencies (Committee 6)",
+      "title_zh": "信用評等機構委員會（委員會6）",
+      "intro": "該委員會負責制定信用評等機構的監理框架和標準，確保評等機構的獨立性、透明度和評等品質。委員會的工作對於維護金融市場信心和防範系統性風險具有重要意義。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=17",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "9516a595bc80",
+      "source": "IOSCO",
+      "title_en": "Committee on Derivatives (Committee 7)",
+      "title_zh": "衍生性商品委員會（委員會7）",
+      "intro": "該委員會專責衍生性金融商品市場的監理政策研擬，包括場外衍生品交易、中央清算和風險管理等議題。委員會致力於降低衍生品市場的系統性風險，提升市場透明度和穩定性。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=18",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "17a9143c6565",
+      "source": "IOSCO",
+      "title_en": "Committee on Retail Investors (Committee 8)",
+      "title_zh": "零售投資者委員會（委員會8）",
+      "intro": "該委員會關注一般散戶投資者的保護措施和權益維護，研擬相關的監理政策和最佳實務。委員會的工作重點在於提升零售投資者的金融素養，確保其獲得公平對待和適當保護。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=20",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "98c83f3f6ccb",
+      "source": "IOSCO",
+      "title_en": "Sustainable Finance Task Force",
+      "title_zh": "永續金融工作小組",
+      "intro": "該工作小組致力於推動永續金融政策的發展，包括ESG投資、綠色金融商品和氣候風險管理等領域。工作小組的成果將有助於金融體系更好地支持永續發展目標，應對氣候變遷挑戰。",
+      "url": "https://www.iosco.org/members_area/v2/about/?subsection=stf",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "1e9f4b2c0e89",
+      "source": "IOSCO",
+      "title_en": "Assessment Committee",
+      "title_zh": "評估委員會",
+      "intro": "該委員會負責對監理機構或金融市場進行定期評估和審查工作，檢視監理效能和合規情況。委員會的評估結果為改善監理品質和強化金融穩定提供重要依據。",
+      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=19",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "88c9d2774013",
+      "source": "IOSCO",
+      "title_en": "Monitoring Group",
+      "title_zh": "監督小組",
+      "intro": "該小組負責持續監督和追蹤各項監理政策的執行情況，確保相關措施得到有效落實。監督小組的工作有助於及時發現問題並提出改善建議，維護監理體系的有效運作。",
+      "url": "https://www.iosco.org/v2/about/?subsection=monitoring_group",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "6d85f539bc99",
+      "source": "IOSCO",
+      "title_en": "Monitoring Board",
+      "title_zh": "監督委員會",
+      "intro": "該委員會承擔重要的監督職能，對特定領域或機構進行監督管理工作。委員會通過定期監督和報告機制，確保相關單位遵循既定的監理標準和要求。",
+      "url": "https://www.iosco.org/v2/about/?subsection=monitoring_board",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "1e21df6a3658",
+      "source": "IOSCO",
+      "title_en": "Media Releases",
+      "title_zh": "媒體發布",
+      "intro": "此部分包含監理機構對外發布的新聞稿、聲明和重要公告等媒體資料。這些發布內容有助於提升監理透明度，讓市場參與者和公眾及時了解重要的監理政策和市場發展。",
+      "url": "https://www.iosco.org/v2/media_room/?subsection=media_releases",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "e360fcd261f1",
+      "source": "IOSCO",
+      "title_en": "Public Communications by IOSCO Officials",
+      "title_zh": "IOSCO官員公開溝通",
+      "intro": "此項目涵蓋國際證券管理機構組織（IOSCO）官員對外發表的公開聲明、演講及政策說明等溝通內容。這些溝通有助於市場參與者了解監理機構的政策方向與監管重點，對於維護市場透明度與建立監管預期具有重要意義。",
+      "url": "https://www.iosco.org/v2/media_room/?subsection=speeches",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "a370c315fcfc",
+      "source": "IOSCO",
+      "title_en": "Requests for Logo",
+      "title_zh": "標誌使用申請",
+      "intro": "此項目涉及外部機構申請使用IOSCO官方標誌或商標的相關程序與規定。適當的標誌使用管理有助於保護IOSCO的品牌形象與權威性，同時確保其標誌不被濫用或誤用於不當目的。",
+      "url": "https://www.iosco.org/v2/media_room/?subsection=requests-for-logo",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "552f5b3ec6e0",
+      "source": "IOSCO",
+      "title_en": "Public Reports",
+      "title_zh": "公開報告",
+      "intro": "此類別包含IOSCO發布的各種公開研究報告、政策文件及市場分析等重要文獻。這些報告通常涵蓋證券市場監管的最新發展趨勢、最佳實務案例及政策建議，是國際證券監管領域的重要參考資料。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=public_reports",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "63f0cd686a95",
+      "source": "IOSCO",
+      "title_en": "Collaboration with the FSB",
+      "title_zh": "與金融穩定委員會的合作",
+      "intro": "此項目記錄IOSCO與金融穩定委員會（FSB）在政策制定、監管協調及金融穩定維護方面的合作事項。這種跨國際組織的合作對於應對全球金融風險、建立一致的監管標準具有關鍵作用。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=collaboration-FSB",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "e6965fbf1ddf",
+      "source": "IOSCO",
+      "title_en": "Annual Reports",
+      "title_zh": "年度報告",
+      "intro": "IOSCO每年發布的綜合性報告，總結組織在該年度的主要工作成果、政策發展及未來規劃等內容。年度報告是了解IOSCO整體運作狀況與國際證券監管發展方向的重要文件，具有高度的參考價值。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=annual_reports",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "f8236e72a0d6",
+      "source": "IOSCO",
+      "title_en": "Comment Letters by IOSCO",
+      "title_zh": "IOSCO意見函",
+      "intro": "此類別包含IOSCO針對其他國際組織、政府機構或重要政策提案所提出的正式意見與建議函件。這些意見函反映了國際證券監管機構的專業立場，對於全球金融政策的制定具有重要影響力。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=iosco_comment_letters",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "729bca0da35d",
+      "source": "IOSCO",
+      "title_en": "Public Comment Letters",
+      "title_zh": "公眾意見函",
+      "intro": "此項目涵蓋IOSCO收到來自市場參與者、學術機構及其他利害關係人針對政策提案或諮詢文件所提交的意見回函。公眾意見的收集與分析是民主決策過程的重要環節，有助於提升政策制定的品質與可行性。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=public_comment_letters",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "cae260226ba3",
+      "source": "IOSCO",
+      "title_en": "Information Repositories",
+      "title_zh": "資訊儲存庫",
+      "intro": "此類別提供IOSCO相關文件、資料及歷史資訊的集中存放與檢索服務。完善的資訊儲存庫有助於提升監管資訊的可及性與透明度，支援研究人員、政策制定者及市場參與者的資訊需求。",
+      "url": "https://www.iosco.org/information-repositories/",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "0b4a6cea57bc",
+      "source": "IOSCO",
+      "title_en": "Agreements with other Institutions",
+      "title_zh": "與其他機構的協議",
+      "intro": "此項目記錄IOSCO與其他國際組織、監管機構或相關機構簽署的合作協議或備忘錄等文件。這些協議建立了跨機構合作的法律基礎，有助於促進國際間的監管協調與資訊分享。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=agreements_with_other_institutions",
+      "date_raw": "",
+      "translated": true
+    },
+    {
+      "id": "a0dfa007126b",
+      "source": "IOSCO",
+      "title_en": "FSB, BIS and Other Updates",
+      "title_zh": "FSB、BIS及其他機構動態",
+      "intro": "此類別提供金融穩定委員會（FSB）、國際清算銀行（BIS）及其他重要國際金融機構的最新發展動態與政策更新資訊。掌握這些機構的動向對於了解國際金融監管趨勢與政策協調具有重要參考價值。",
+      "url": "https://www.iosco.org/v2/publications/?subsection=fsb_bis_other_updates",
+      "date_raw": "",
+      "translated": true
+    }
+  ]
 }
