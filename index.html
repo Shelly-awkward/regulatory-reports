@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>監理報告週報</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:    #1a1a2e;
+    --paper:  #f5f0e8;
+    --accent: #c4392a;
+    --gold:   #b8860b;
+    --muted:  #7a7060;
+    --line:   #d4cdc0;
+    --white:  #fdfaf5;
+    --green:  #2d6a4f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Serif TC', serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 24px 40px 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    border-bottom: 4px solid var(--accent);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.04em; }
+  header p  { font-size: 0.73rem; color: #9fa8b0; margin-top: 4px; font-family: 'DM Mono', monospace; }
+  .header-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+  .last-updated { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: #8fa0b0; }
+
+  /* ── Layout ── */
+  .layout { display: flex; min-height: calc(100vh - 76px); }
+
+  /* ── Sidebar ── */
+  aside {
+    width: 260px;
+    flex-shrink: 0;
+    background: var(--white);
+    border-right: 1px solid var(--line);
+    padding: 24px 18px;
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 76px);
+    overflow-y: auto;
+  }
+  .sidebar-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .filter-section { margin-bottom: 24px; }
+
+  .source-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 7px 10px;
+    background: transparent;
+    border: 1px solid var(--line);
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 5px;
+    transition: all 0.15s;
+    text-align: left;
+  }
+  .source-btn.active {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .source-btn .dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+  .source-btn .cnt {
+    margin-left: auto;
+    font-size: 0.68rem;
+    opacity: 0.6;
+  }
+
+  /* Date range */
+  .date-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+  .date-row input[type="date"] {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--ink);
+    outline: none;
+    min-width: 0;
+  }
+  .date-row input:focus { border-color: var(--gold); }
+  .date-sep { font-size: 0.72rem; color: var(--muted); }
+
+  /* Search */
+  input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 0.82rem;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  input[type="text"]:focus { border-color: var(--gold); }
+
+  /* Custom sources */
+  .custom-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    margin-bottom: 5px;
+    font-size: 0.75rem;
+    font-family: 'DM Mono', monospace;
+  }
+  .custom-item span { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .custom-item button {
+    background: none; border: none; cursor: pointer;
+    color: var(--accent); font-size: 1rem; line-height: 1; padding: 0 2px;
+  }
+  .add-custom-row { display: flex; gap: 5px; margin-top: 8px; }
+  .add-custom-row input { flex: 1; font-size: 0.75rem; }
+  .btn-mini {
+    padding: 6px 10px;
+    background: var(--ink); color: var(--paper);
+    border: none; cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .btn-mini:hover { background: var(--accent); }
+
+  /* ── Main content ── */
+  main {
+    flex: 1;
+    padding: 28px 36px 60px;
+    min-width: 0;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .result-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .toolbar-right { margin-left: auto; display: flex; gap: 8px; }
+  .btn {
+    font-family: 'DM Mono', monospace; font-size: 0.75rem;
+    letter-spacing: 0.05em; padding: 8px 16px;
+    cursor: pointer; border: none; transition: all 0.15s; text-transform: uppercase;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #a02f22; }
+  .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .btn-outline:hover { background: var(--line); }
+
+  /* ── Table ── */
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: var(--white); }
+  thead tr { border-bottom: 3px solid var(--ink); }
+  th {
+    background: var(--ink); color: var(--paper);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 10px 14px; text-align: left; font-weight: 500;
+    white-space: nowrap;
+  }
+  td {
+    padding: 13px 14px; border-bottom: 1px solid var(--line);
+    vertical-align: top; font-size: 0.85rem; line-height: 1.65;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f8f3ea; }
+  td.col-src   { width: 80px; }
+  td.col-en    { width: 28%; }
+  td.col-zh    { width: 20%; font-weight: 600; color: var(--ink); }
+  td.col-intro { width: 42%; color: #444; }
+  td.col-date  { width: 90px; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
+
+  .src-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace; font-size: 0.62rem;
+    background: var(--ink); color: var(--paper);
+    padding: 2px 6px; letter-spacing: 0.06em;
+  }
+  .src-badge.IOSCO { background: #1a3a5c; }
+  .src-badge.IESBA { background: #2d4a1e; }
+  .src-badge.FSB   { background: #3a1a2e; }
+  .src-badge.IFAC  { background: #3a2a1a; }
+  .src-badge.CUSTOM { background: #555; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .empty-state {
+    text-align: center; padding: 60px 20px;
+    color: var(--muted); font-size: 0.9rem;
+    border: 1px dashed var(--line); background: var(--white);
+  }
+  .empty-state .icon { font-size: 2.5rem; display: block; margin-bottom: 12px; }
+
+  .loading {
+    text-align: center; padding: 60px;
+    font-family: 'DM Mono', monospace; font-size: 0.8rem; color: var(--muted);
+  }
+
+  /* Modal for adding custom source */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5); z-index: 200;
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--white);
+    border-top: 4px solid var(--gold);
+    padding: 28px 32px;
+    width: 460px; max-width: 90vw;
+  }
+  .modal h3 { font-size: 1rem; margin-bottom: 18px; }
+  .modal label { display: block; font-size: 0.75rem; color: var(--muted); margin-bottom: 5px; font-family: 'DM Mono', monospace; }
+  .modal input { width: 100%; margin-bottom: 14px; }
+  .modal-btns { display: flex; gap: 8px; justify-content: flex-end; margin-top: 6px; }
+  .btn-cancel { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+  .btn-cancel:hover { background: var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>📋 監理報告週報</h1>
+    <p>IOSCO · IESBA · FSB · IFAC — 每週自動更新 · 中英對照</p>
+  </div>
+  <div class="header-right">
+    <span class="last-updated" id="lastUpdated">載入中…</span>
+    <button class="btn btn-primary" onclick="triggerAction()">▶ 立即重跑</button>
+    <button class="btn btn-outline" onclick="exportHTML()">↓ 匯出</button>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside>
+    <!-- 關鍵字搜尋 -->
+    <div class="filter-section">
+      <div class="sidebar-title">關鍵字搜尋</div>
+      <input type="text" id="searchInput" placeholder="輸入標題關鍵字…" oninput="applyFilters()">
+    </div>
+
+    <!-- 來源篩選 -->
+    <div class="filter-section">
+      <div class="sidebar-title">來源</div>
+      <div id="sourceFilters"></div>
+    </div>
+
+    <!-- 日期範圍 -->
+    <div class="filter-section">
+      <div class="sidebar-title">日期範圍</div>
+      <div class="date-row">
+        <input type="date" id="dateFrom" onchange="applyFilters()">
+        <span class="date-sep">—</span>
+        <input type="date" id="dateTo" onchange="applyFilters()">
+      </div>
+    </div>
+
+    <!-- 自訂網站 -->
+    <div class="filter-section">
+      <div class="sidebar-title">自訂搜尋網站</div>
+      <div id="customList"></div>
+      <div class="add-custom-row">
+        <input type="text" id="newSourceInput" placeholder="貼上網址…" style="font-size:0.72rem">
+        <button class="btn-mini" onclick="openAddModal()">＋ 新增</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main>
+    <div class="toolbar">
+      <span class="result-count" id="resultCount">載入中…</span>
+      <div class="toolbar-right">
+        <button class="btn btn-outline" onclick="clearFilters()">清除篩選</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="loading" id="loadingState">⏳ 資料載入中…</div>
+      <table id="reportTable" style="display:none">
+        <thead>
+          <tr>
+            <th class="col-src">來源</th>
+            <th class="col-en">英文標題</th>
+            <th class="col-zh">中文標題</th>
+            <th class="col-intro">簡介</th>
+            <th class="col-date">發布日期</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <div class="empty-state" id="emptyState" style="display:none">
+        <span class="icon">📭</span>
+        目前沒有符合條件的報告
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Add custom source modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h3>新增自訂搜尋網站</h3>
+    <label>機構名稱（簡稱）</label>
+    <input type="text" id="modalName" placeholder="例：SEC">
+    <label>出版品頁面網址</label>
+    <input type="text" id="modalUrl" placeholder="例：https://www.sec.gov/litigation/litreleases">
+    <label>機構全名（選填）</label>
+    <input type="text" id="modalFullname" placeholder="例：美國證券交易委員會">
+    <div class="modal-btns">
+      <button class="btn btn-cancel" onclick="closeModal()">取消</button>
+      <button class="btn btn-primary" onclick="confirmAddSource()">確認新增</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── State ──
+let allReports   = [];
+let sourcesMeta  = {};
+let activeSource = "ALL";
+
+// ── Load data ──
+async function loadData() {
+  try {
+    const resp = await fetch(`data/reports.json?t=${Date.now()}`);
+    if (!resp.ok) throw new Error("無法讀取資料");
+    const data = await resp.json();
+
+    allReports  = data.reports  || [];
+    sourcesMeta = data.sources_meta || {};
+
+    const lu = data.last_updated || "";
+    document.getElementById("lastUpdated").textContent =
+      lu ? `上次更新：${lu}` : "尚未執行";
+
+    buildSourceFilters();
+    applyFilters();
+
+    document.getElementById("loadingState").style.display = "none";
+    document.getElementById("reportTable").style.display  = "";
+
+  } catch(e) {
+    document.getElementById("loadingState").textContent = "⚠️ 資料讀取失敗，請確認 data/reports.json 是否存在";
+  }
+}
+
+// ── Source filter buttons ──
+function buildSourceFilters() {
+  const container = document.getElementById("sourceFilters");
+  container.innerHTML = "";
+
+  // ALL
+  const counts = {};
+  for (const r of allReports) counts[r.source] = (counts[r.source]||0) + 1;
+
+  const allBtn = document.createElement("button");
+  allBtn.className = "source-btn active";
+  allBtn.id = "srcbtn-ALL";
+  allBtn.innerHTML = `<span class="dot" style="background:#888"></span> 全部 <span class="cnt">${allReports.length}</span>`;
+  allBtn.onclick = () => setSource("ALL");
+  container.appendChild(allBtn);
+
+  // per source
+  const srcOrder = Object.keys(sourcesMeta);
+  // also add any sources not in meta
+  for (const r of allReports) {
+    if (!srcOrder.includes(r.source)) srcOrder.push(r.source);
+  }
+  const seen = new Set();
+  for (const src of srcOrder) {
+    if (seen.has(src)) continue;
+    seen.add(src);
+    const meta = sourcesMeta[src] || { name: src, fullname: src };
+    const btn  = document.createElement("button");
+    btn.className = "source-btn";
+    btn.id = `srcbtn-${src}`;
+    btn.innerHTML = `<span class="dot"></span> ${meta.name} <span class="cnt">${counts[src]||0}</span>`;
+    btn.onclick = () => setSource(src);
+    container.appendChild(btn);
+  }
+}
+
+function setSource(src) {
+  activeSource = src;
+  document.querySelectorAll(".source-btn").forEach(b => b.classList.remove("active"));
+  const btn = document.getElementById(`srcbtn-${src}`);
+  if (btn) btn.classList.add("active");
+  applyFilters();
+}
+
+// ── Filters ──
+function applyFilters() {
+  const keyword  = document.getElementById("searchInput").value.trim().toLowerCase();
+  const dateFrom = document.getElementById("dateFrom").value;
+  const dateTo   = document.getElementById("dateTo").value;
+
+  let filtered = allReports;
+
+  if (activeSource !== "ALL") {
+    filtered = filtered.filter(r => r.source === activeSource);
+  }
+  if (keyword) {
+    filtered = filtered.filter(r =>
+      (r.title_en||"").toLowerCase().includes(keyword) ||
+      (r.title_zh||"").toLowerCase().includes(keyword) ||
+      (r.intro||"").toLowerCase().includes(keyword)
+    );
+  }
+  if (dateFrom) {
+    filtered = filtered.filter(r => !r.date_raw || r.date_raw >= dateFrom.slice(0,4));
+  }
+  if (dateTo) {
+    filtered = filtered.filter(r => !r.date_raw || r.date_raw <= dateTo.slice(0,4));
+  }
+
+  renderTable(filtered);
+  document.getElementById("resultCount").textContent =
+    `顯示 ${filtered.length} 則（共 ${allReports.length} 則）`;
+}
+
+function clearFilters() {
+  document.getElementById("searchInput").value = "";
+  document.getElementById("dateFrom").value    = "";
+  document.getElementById("dateTo").value      = "";
+  setSource("ALL");
+}
+
+// ── Render table ──
+function renderTable(reports) {
+  const tbody = document.getElementById("tableBody");
+  const empty = document.getElementById("emptyState");
+
+  if (reports.length === 0) {
+    tbody.innerHTML = "";
+    empty.style.display = "";
+    return;
+  }
+  empty.style.display = "none";
+
+  tbody.innerHTML = reports.map(r => {
+    const src   = escHtml(r.source || "");
+    const en    = r.url
+      ? `<a href="${escHtml(r.url)}" target="_blank">${escHtml(r.title_en||"")}</a>`
+      : escHtml(r.title_en||"");
+    const zh    = escHtml(r.title_zh || "");
+    const intro = escHtml(r.intro    || "");
+    const date  = escHtml(r.date_raw || "");
+    const srcClass = ["IOSCO","IESBA","FSB","IFAC"].includes(src) ? src : "CUSTOM";
+    return `<tr>
+      <td class="col-src"><span class="src-badge ${srcClass}">${src}</span></td>
+      <td class="col-en">${en}</td>
+      <td class="col-zh">${zh}</td>
+      <td class="col-intro">${intro}</td>
+      <td class="col-date">${date}</td>
+    </tr>`;
+  }).join("");
+}
+
+// ── Custom sources (stored in localStorage) ──
+function loadCustomSources() {
+  try {
+    return JSON.parse(localStorage.getItem("customSources") || "[]");
+  } catch { return []; }
+}
+function saveCustomSources(list) {
+  localStorage.setItem("customSources", JSON.stringify(list));
+}
+function renderCustomList() {
+  const list = loadCustomSources();
+  const container = document.getElementById("customList");
+  if (list.length === 0) {
+    container.innerHTML = `<div style="font-size:0.75rem;color:var(--muted);padding:4px 0">尚未新增自訂網站</div>`;
+    return;
+  }
+  container.innerHTML = list.map((s, i) => `
+    <div class="custom-item">
+      <span title="${escHtml(s.url)}">${escHtml(s.name)}</span>
+      <button onclick="removeCustomSource(${i})" title="移除">✕</button>
+    </div>`).join("");
+}
+function removeCustomSource(idx) {
+  const list = loadCustomSources();
+  list.splice(idx, 1);
+  saveCustomSources(list);
+  renderCustomList();
+}
+
+// ── Modal ──
+function openAddModal() {
+  const url = document.getElementById("newSourceInput").value.trim();
+  if (url) document.getElementById("modalUrl").value = url;
+  document.getElementById("modalOverlay").classList.add("open");
+}
+function closeModal() {
+  document.getElementById("modalOverlay").classList.remove("open");
+  document.getElementById("modalName").value     = "";
+  document.getElementById("modalUrl").value      = "";
+  document.getElementById("modalFullname").value = "";
+  document.getElementById("newSourceInput").value = "";
+}
+function confirmAddSource() {
+  const name     = document.getElementById("modalName").value.trim();
+  const url      = document.getElementById("modalUrl").value.trim();
+  const fullname = document.getElementById("modalFullname").value.trim();
+  if (!name || !url) { alert("機構名稱和網址為必填"); return; }
+  if (!url.startsWith("http")) { alert("請輸入完整網址（含 https://）"); return; }
+
+  const list = loadCustomSources();
+  list.push({ id: "CUSTOM_" + Date.now(), name, fullname: fullname || name, url, base_url: new URL(url).origin });
+  saveCustomSources(list);
+  renderCustomList();
+  closeModal();
+
+  // 提示使用者需要觸發重跑
+  alert(`✅ 已新增「${name}」\n\n下次週報執行時會自動包含此來源。\n若要立即抓取，請按「立即重跑」（需要 GitHub 設定）。`);
+}
+
+// ── Trigger GitHub Actions ──
+function triggerAction() {
+  alert(
+    "手動觸發步驟：\n\n" +
+    "1. 前往你的 GitHub repository\n" +
+    "2. 點選上方選單「Actions」\n" +
+    "3. 左側點選「每週監理報告自動抓取」\n" +
+    "4. 右側點選「Run workflow」→「Run workflow」\n\n" +
+    "約 2～3 分鐘後重新整理此頁面即可看到最新結果。"
+  );
+}
+
+// ── Export ──
+function exportHTML() {
+  const visibleRows = document.getElementById("tableBody").innerHTML;
+  const date = new Date().toISOString().slice(0,10);
+  const html = `<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8">
+<title>監理報告週報 ${date}</title>
+<style>
+body{font-family:"Noto Serif TC","Microsoft JhengHei",serif;background:#f5f0e8;color:#1a1a2e;padding:32px;max-width:1200px;margin:0 auto}
+h1{font-size:1.4rem;margin-bottom:4px}.sub{color:#888;font-size:0.8rem;margin-bottom:28px;font-family:monospace}
+table{width:100%;border-collapse:collapse;background:#fdfaf5;border:1px solid #d4cdc0}
+th{background:#1a1a2e;color:#f5f0e8;font-family:monospace;font-size:0.68rem;letter-spacing:.08em;text-transform:uppercase;padding:9px 13px;text-align:left}
+td{padding:12px 13px;border-bottom:1px solid #d4cdc0;vertical-align:top;font-size:0.85rem;line-height:1.6}
+tr:last-child td{border-bottom:none} a{color:#c4392a;text-decoration:none}
+.src-badge{display:inline-block;font-family:monospace;font-size:0.62rem;background:#1a1a2e;color:#fff;padding:2px 6px}
+.ft{text-align:right;font-family:monospace;font-size:0.7rem;color:#aaa;margin-top:20px}
+</style></head><body>
+<h1>📋 監理報告週報</h1>
+<p class="sub">匯出時間：${new Date().toLocaleString("zh-TW")} ｜ 來源：IOSCO · IESBA · FSB · IFAC</p>
+<table>
+<thead><tr><th>來源</th><th>英文標題</th><th>中文標題</th><th>簡介</th><th>日期</th></tr></thead>
+<tbody>${visibleRows}</tbody>
+</table>
+<div class="ft">由監理報告週報系統自動產生</div>
+</body></html>`;
+
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
+  a.download = `監理週報_${date}.html`;
+  a.click();
+}
+
+function escHtml(s) {
+  return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+// ── Init ──
+loadData();
+renderCustomList();
+</script>
+</body>
+</html>
