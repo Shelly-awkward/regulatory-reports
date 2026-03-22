@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-18 03:57 UTC",
-  "total": 70,
+  "last_updated": "2026-03-22 12:59 UTC",
+  "total": 71,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "0e5613302fa1",
+      "source": "IOSCO",
+      "title_en": "CR/01/2026 View Report",
+      "title_zh": "CR/01/2026 檢視報告",
+      "intro": "此報告為國際監理機構針對2026年度發布的首份綜合檢視報告，涵蓋各項監理措施的執行成效與市場發展現況。該報告對於了解當前監理環境變化及未來政策方向具有重要參考價值，有助於金融機構及市場參與者掌握最新監理趨勢。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD815.pdf",
+      "date_raw": "2026-03-19"
+    },
     {
       "id": "8a66b9aa8410",
       "source": "FSB",
