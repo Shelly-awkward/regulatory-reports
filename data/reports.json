@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-03-24 00:41 UTC",
-  "total": 71,
+  "last_updated": "2026-03-29 13:03 UTC",
+  "total": 73,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,24 @@
     }
   },
   "reports": [
+    {
+      "id": "d3daeaadeb96",
+      "source": "FSB",
+      "title_en": "Promoting Global Financial Stability: 2025 FSB Annual Report",
+      "title_zh": "促進全球金融穩定：2025年金融穩定委員會年度報告",
+      "intro": "本報告檢視2025年全球金融體系的穩定性狀況，分析主要風險因素並評估各國監理政策的實施成效。該報告對於協調國際金融監理合作、強化系統性風險防範機制具有重要指導意義，有助於維護全球金融市場的穩定運作。",
+      "url": "https://www.fsb.org/2026/03/promoting-global-financial-stability-2025-fsb-annual-report/",
+      "date_raw": "2026-03-24"
+    },
+    {
+      "id": "5d75c5e52a7d",
+      "source": "IOSCO",
+      "title_en": "FR/01/2026 View Report",
+      "title_zh": "FR/01/2026 檢視報告",
+      "intro": "此報告為國際監理機構針對特定監理議題或市場發展所進行的綜合性檢視與評估。該報告對於了解當前監理環境變化及未來政策方向具有重要參考價值，有助於金融機構及相關業者掌握最新監理趨勢。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD816.pdf",
+      "date_raw": "2026-03-24"
+    },
     {
       "id": "0e5613302fa1",
       "source": "IOSCO",
