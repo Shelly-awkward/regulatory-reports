@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-12 13:08 UTC",
-  "total": 73,
+  "last_updated": "2026-04-19 13:09 UTC",
+  "total": 75,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,24 @@
     }
   },
   "reports": [
+    {
+      "id": "2d4bbc99563a",
+      "source": "FSB",
+      "title_en": "FSB Chair’s letter to G20 Finance Ministers and Central Bank Governors: April 2026",
+      "title_zh": "金融穩定委員會主席致G20財政部長及央行總裁函：2026年4月",
+      "intro": "此函件向G20領袖報告全球金融穩定狀況，並提出當前金融體系面臨的主要風險與挑戰。該報告對於協調各國監理政策、維護國際金融穩定具有重要指導意義。",
+      "url": "https://www.fsb.org/2026/04/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-april-2026/",
+      "date_raw": "2026-04-13"
+    },
+    {
+      "id": "ca7a0bff10e3",
+      "source": "IOSCO",
+      "title_en": "OR/03/2026 View Report",
+      "title_zh": "OR/03/2026 檢視報告",
+      "intro": "此報告為監理機構針對特定監管議題或機構進行的定期檢視評估，提供監理發現與建議改善措施。該報告對於了解當前監理環境變化及確保監理標準有效實施具有重要參考價值。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD817.pdf",
+      "date_raw": "2026-04-16"
+    },
     {
       "id": "d3daeaadeb96",
       "source": "FSB",
