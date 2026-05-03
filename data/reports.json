@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-26 13:14 UTC",
-  "total": 75,
+  "last_updated": "2026-05-03 13:18 UTC",
+  "total": 76,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "8fb881075153",
+      "source": "FSB",
+      "title_en": "Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes: Final Report",
+      "title_zh": "FSB關鍵屬性中適用復原與處置計畫要求之保險業者範圍：最終報告",
+      "intro": "本報告明確界定哪些保險業者需要遵循FSB關鍵屬性框架下的復原與處置計畫要求，包括系統重要性保險業者及其他具風險影響力的機構。此規範對於建立完整的保險業危機處理機制至關重要，確保金融穩定並降低系統性風險傳染效應。",
+      "url": "https://www.fsb.org/2026/04/scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes-final-report/",
+      "date_raw": "2026-04-29"
+    },
     {
       "id": "2d4bbc99563a",
       "source": "FSB",
