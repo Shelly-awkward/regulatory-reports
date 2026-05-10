@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-03 13:18 UTC",
-  "total": 76,
+  "last_updated": "2026-05-10 13:25 UTC",
+  "total": 79,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,33 @@
     }
   },
   "reports": [
+    {
+      "id": "fbc9a460d2eb",
+      "source": "FSB",
+      "title_en": "Report on Vulnerabilities in Private Credit",
+      "title_zh": "私人信貸脆弱性報告",
+      "intro": "本報告分析私人信貸市場中存在的系統性風險和結構性脆弱點，包括流動性不足、估值不透明及槓桿率過高等問題。此報告對監理機構具有重要意義，有助於建立更完善的私募信貸監管框架，防範潛在的金融穩定風險向整體金融體系蔓延。",
+      "url": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/",
+      "date_raw": "2026-05-06"
+    },
+    {
+      "id": "8a3d1f525efc",
+      "source": "IOSCO",
+      "title_en": "OR/05/2026 View Report",
+      "title_zh": "OR/05/2026 檢視報告",
+      "intro": "此報告針對特定監理事項進行深度檢視與評估，提供監理機構對相關議題的詳細分析。該報告對於瞭解監理機構的檢查結果與後續監理措施具有重要參考價值。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
+      "date_raw": "2026-06-30"
+    },
+    {
+      "id": "97232cce7fe6",
+      "source": "IOSCO",
+      "title_en": "OR/05/2026 Cover note",
+      "title_zh": "OR/05/2026 封面說明",
+      "intro": "此文件為相關報告的封面說明，提供報告概要與重點摘述。封面說明有助於快速掌握報告核心內容，是監理文件體系中的重要導讀資料。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819-cover-note.pdf",
+      "date_raw": "2026-06-30"
+    },
     {
       "id": "8fb881075153",
       "source": "FSB",
