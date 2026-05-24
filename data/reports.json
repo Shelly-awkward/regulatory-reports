@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-17 13:27 UTC",
-  "total": 79,
+  "last_updated": "2026-05-24 13:42 UTC",
+  "total": 80,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "e92ec5cd32c3",
+      "source": "IOSCO",
+      "title_en": "CR/02/2026 View Report",
+      "title_zh": "CR/02/2026 檢視報告",
+      "intro": "此報告為國際監理機構針對特定監管議題或機構進行的詳細檢視與評估報告。該報告對於了解當前監理環境變化、識別潛在風險領域，以及指導未來監理政策制定具有重要參考價值。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD821.pdf",
+      "date_raw": "2026-08-21"
+    },
     {
       "id": "fbc9a460d2eb",
       "source": "FSB",
