@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-24 13:42 UTC",
-  "total": 80,
+  "last_updated": "2026-05-31 13:51 UTC",
+  "total": 81,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "5a0994c727f4",
+      "source": "IOSCO",
+      "title_en": "FR/02/2026 View Report",
+      "title_zh": "FR/02/2026 檢視報告",
+      "intro": "此報告為監理機構針對特定金融議題進行的專業評估與分析文件。該報告對於了解當前監理政策方向與金融市場風險管控具有重要的參考價值。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD823.pdf",
+      "date_raw": "2026-06-26"
+    },
     {
       "id": "e92ec5cd32c3",
       "source": "IOSCO",
