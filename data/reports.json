@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-05-31 13:51 UTC",
-  "total": 81,
+  "last_updated": "2026-06-07 14:00 UTC",
+  "total": 82,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "7f4e3587ad3d",
+      "source": "IOSCO",
+      "title_en": "FR/03/2026 View Report",
+      "title_zh": "FR/03/2026 檢視報告",
+      "intro": "此報告為國際監理機構針對特定金融領域或機構進行的深度檢視與評估分析。該報告對於強化監理框架、識別潛在風險並提升金融體系穩定性具有重要指導意義。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD824.pdf",
+      "date_raw": "2026-06-01"
+    },
     {
       "id": "5a0994c727f4",
       "source": "IOSCO",
