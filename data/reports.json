@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-07 14:00 UTC",
-  "total": 82,
+  "last_updated": "2026-06-14 14:10 UTC",
+  "total": 84,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,24 @@
     }
   },
   "reports": [
+    {
+      "id": "d2832e76962b",
+      "source": "FSB",
+      "title_en": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation report",
+      "title_zh": "人工智慧負責任採用之健全實務：諮詢報告",
+      "intro": "本報告針對金融機構如何負責任地導入人工智慧技術提出具體指引，涵蓋風險管控、演算法透明度、資料治理等關鍵面向。此報告對於建立AI監理框架具有重要意義，有助於確保金融業在運用AI技術時能兼顧創新效益與風險控制。",
+      "url": "https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-consultation-report/",
+      "date_raw": "2026-06-10"
+    },
+    {
+      "id": "b8633ca23144",
+      "source": "IOSCO",
+      "title_en": "FR/04/2026 View Report",
+      "title_zh": "FR/04/2026 檢視報告",
+      "intro": "此報告針對金融機構的風險管理框架與合規性進行全面檢視，評估當前監理制度的有效性。該報告對於強化金融體系穩定性具有重要意義，有助於監理機關制定更完善的風險控制措施。",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD825.pdf",
+      "date_raw": "2026-06-08"
+    },
     {
       "id": "7f4e3587ad3d",
       "source": "IOSCO",
