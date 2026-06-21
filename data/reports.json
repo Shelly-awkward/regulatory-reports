@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-06-14 14:10 UTC",
-  "total": 84,
+  "last_updated": "2026-06-21 14:18 UTC",
+  "total": 85,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "226e3d77ff9c",
+      "source": "IOSCO",
+      "title_en": "OR/08/2026 View Report",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD826.pdf",
+      "date_raw": "2026-06-18"
+    },
     {
       "id": "d2832e76962b",
       "source": "FSB",
