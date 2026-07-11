@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-05 13:46 UTC",
-  "total": 85,
+  "last_updated": "2026-07-11 02:41 UTC",
+  "total": 86,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -24,6 +24,15 @@
     }
   },
   "reports": [
+    {
+      "id": "27c293e9705b",
+      "source": "IOSCO",
+      "title_en": "FR/05/2026 View Report",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD827.pdf",
+      "date_raw": "2026-07-09"
+    },
     {
       "id": "226e3d77ff9c",
       "source": "IOSCO",
