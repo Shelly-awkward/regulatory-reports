@@ -21,6 +21,11 @@
       "name": "IFAC",
       "fullname": "國際會計師聯合會",
       "url": "https://www.ifac.org/news-resources?type=publication"
+    },
+    "PCAOB": {
+      "name": "PCAOB",
+      "fullname": "美國公開發行公司會計監督委員會",
+      "url": "https://pcaobus.org/resources/staff-publications"
     }
   },
   "reports": [
