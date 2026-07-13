@@ -50,6 +50,14 @@ DEFAULT_SOURCES = [
         "base_url": "https://www.ifac.org",
         "strategy": "generic",
     },
+    {
+        "id":       "PCAOB",
+        "name":     "PCAOB",
+        "fullname": "美國公開發行公司會計監督委員會",
+        "url":      "https://pcaobus.org/resources/staff-publications",
+        "base_url": "https://pcaobus.org",
+        "strategy": "generic",
+    },
 ]
 
 HEADERS = {

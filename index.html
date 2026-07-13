@@ -223,6 +223,7 @@
   .src-badge.IESBA { background: #2d4a1e; }
   .src-badge.FSB   { background: #3a1a2e; }
   .src-badge.IFAC  { background: #3a2a1a; }
+  .src-badge.PCAOB { background: #1a4444; }
   .src-badge.CUSTOM { background: #555; }
 
   a { color: var(--accent); text-decoration: none; }
@@ -266,7 +267,7 @@
 <header>
   <div>
     <h1>📋 監理報告週報</h1>
-    <p>IOSCO · IESBA · FSB · IFAC — 每週自動更新 · 中英對照</p>
+    <p>IOSCO · IESBA · FSB · IFAC · PCAOB — 每週自動更新 · 中英對照</p>
   </div>
   <div class="header-right">
     <span class="last-updated" id="lastUpdated">載入中…</span>
@@ -492,7 +493,7 @@ function renderTable(reports) {
     const zh    = escHtml(r.title_zh || "");
     const intro = escHtml(r.intro    || "");
     const date  = escHtml(r.date_raw || "");
-    const srcClass = ["IOSCO","IESBA","FSB","IFAC"].includes(src) ? src : "CUSTOM";
+    const srcClass = ["IOSCO","IESBA","FSB","IFAC","PCAOB"].includes(src) ? src : "CUSTOM";
     return `<tr>
       <td class="col-src"><span class="src-badge ${srcClass}">${src}</span></td>
       <td class="col-en">${en}</td>
@@ -592,7 +593,7 @@ tr:last-child td{border-bottom:none} a{color:#c4392a;text-decoration:none}
 .ft{text-align:right;font-family:monospace;font-size:0.7rem;color:#aaa;margin-top:20px}
 </style></head><body>
 <h1>📋 監理報告週報</h1>
-<p class="sub">匯出時間：${new Date().toLocaleString("zh-TW")} ｜ 來源：IOSCO · IESBA · FSB · IFAC</p>
+<p class="sub">匯出時間：${new Date().toLocaleString("zh-TW")} ｜ 來源：IOSCO · IESBA · FSB · IFAC · PCAOB</p>
 <table>
 <thead><tr><th>來源</th><th>英文標題</th><th>中文標題</th><th>簡介</th><th>日期</th></tr></thead>
 <tbody>${visibleRows}</tbody>
