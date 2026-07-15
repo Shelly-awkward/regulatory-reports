@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-07-13 02:17 UTC",
-  "total": 86,
+  "last_updated": "2026-07-15 04:50 UTC",
+  "total": 117,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -29,6 +29,285 @@
     }
   },
   "reports": [
+    {
+      "id": "b66a994bb128",
+      "source": "PCAOB",
+      "title_en": "Data Points: Financial Restatements and Auditor Turnover",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/staff-publications/data-points/data-points--financial-restatements-and-auditor-turnover",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "f46c40a02bab",
+      "source": "PCAOB",
+      "title_en": "Broker-Dealer Audit Focus: Review Engagements Regarding Exemption Reports",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/staff-publications/audit-focus/broker-dealer-audit-focus--review-engagements-regarding-exemption-reports",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "58b8f85a677e",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update on 2024 Inspection Activities",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2024-inspection-activities-spotlight.pdf?sfvrsn=86794c04_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "b3b89bb868de",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Observations From the Target Team’s 2023 Inspections",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2023-inspections-spotlight.pdf?sfvrsn=acf72513_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "8d5a76ee19c7",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Bank Financial Reporting Audits",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/banking-spotlight.pdf?sfvrsn=c3f496ab_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "9d1433f58ba9",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update on 2023 Inspection Activities",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2023-inspection-activities-spotlight.pdf?sfvrsn=2afb0f25_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "f2f2d69b18e6",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative Artificial Intelligence in Audits and Financial Reporting",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/documents/generative-ai-spotlight.pdf",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "af7aef6e90da",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin: Opportunity To Comment on Proposal To Enhance How Auditors Address Certain Assessed Risks of Material Misstatement",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin--opportunity-to-comment-on-proposal-to-enhance-how-auditors-address-certain-assessed-risks-of-material-misstatement",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "dbf987b6a369",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Inspection Observations Related to Auditor Use of Data and Reports",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/data-and-reports-spotlight.pdf?sfvrsn=4b2cb315_2",
+      "date_raw": "2025"
+    },
+    {
+      "id": "958a2f53fad9",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Observations From the Target Team’s 2022 Inspections",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2022-inspections-spotlight.pdf?sfvrsn=7917915b_4",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "6b597b8068aa",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Inspection Observations Related to Engagement Quality Reviews",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/eqr-spotlight.pdf?sfvrsn=95a345e6_4",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "1b62a0663d6c",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin - Opportunity to Comment on Proposed Updates to PCAOB Standards Addressing the Use of Data Analytics by Auditors",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/bulletin-opportunity-to-comment-on-proposed-updates-to-pcaob-standards-addressing-the-use-of-data-analytics-by-auditors",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "8142a539beb1",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2022 Inspection Observations",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/spotlight-staff-preview-2022-inspection-observations.pdf?sfvrsn=1b116d49_4",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "773f3012b534",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin - Opportunity to Comment on PCAOB Proposal on Noncompliance With Laws and Regulations",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-opportunity-to-comment-on-proposed-standard-addressing-an-auditor-s-responsibility-related-company-noncompliance-with-laws-regulations",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "82e129f2a9ef",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin - Opportunity to Comment on Proposed Standard Addressing Core Auditing Principles and Responsibilities",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/opportunity-to-comment-proposed-standard-addressing-core-auditing-principles-and-responsibilities",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "486a3ed8eb0b",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Priorities for 2023 Inspections",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/priorities-spotlight.pdf?sfvrsn=5c104095_4",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "d23191a3b6ac",
+      "source": "PCAOB",
+      "title_en": "Investor Advisory - Exercise Caution with Independent Verification/Proof of Reserve Reports",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory-exercise-caution-with-third-party-verification-proof-of-reserve-reports",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "375f060e0b18",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2021 Inspection Observations",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2021-inspection-observations-spotlight.pdf?sfvrsn=d2590627_4",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "2eda2c0a8bd2",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Observations From the Target Team’s 2021 Inspections",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-spotlight.pdf?sfvrsn=b6a83e28_4",
+      "date_raw": "2021"
+    },
+    {
+      "id": "79d08adf3fef",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Overview for Planned 2022 Inspections",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2022-inspections-overview-spotlight.pdf?sfvrsn=8d3e48ef_4",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "65d86e4cb03c",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2020 Inspection Observations",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2020-inspection-observations-spotlight.pdf?sfvrsn=10819041_4",
+      "date_raw": "2020"
+    },
+    {
+      "id": "bba2037c8462",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Outlook for 2021 Inspections",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-outlook-2021-inspections-spotlight.pdf?sfvrsn=6b415087_6",
+      "date_raw": "2020"
+    },
+    {
+      "id": "845c31c80bed",
+      "source": "PCAOB",
+      "title_en": "Spotlight: The PCAOB’s Use of Economic Analysis and Stakeholder Input in Standard Setting",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/pcaob-use-economic-analysis-stakeholder-spotlight.pdf?sfvrsn=9cb7e4d0_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "3efd3c7f5f5c",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2019 Inspection Observations",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2019-inspection-observations-spotlight.pdf?sfvrsn=57617c98_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "5acf2589c48b",
+      "source": "PCAOB",
+      "title_en": "Guide to Reading the PCAOB's New Inspection Report",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-report-guide.pdf?sfvrsn=bc066f32_0",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "9920fd8db6b2",
+      "source": "PCAOB",
+      "title_en": "Staff Preview of 2018 Inspection Observations",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2018-inspection-observations.pdf?sfvrsn=b5f8cb09_0",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "729290611826",
+      "source": "PCAOB",
+      "title_en": "Inspections Outlook for 2019",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-outlook-for-2019.pdf?sfvrsn=538b8bb7_2",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "af6ed5a9665a",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2017/4: Preview of Observations from 2016 Inspections of Auditors of Issuers (November 2017)",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-4-issuer-results.pdf?sfvrsn=c216d8a7_0",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "dda90278e66a",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2017/1: Preview of Observations from 2016 Inspections of Auditors of Brokers and Dealers (June 2017)",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-1-broker-dealer-results.pdf?sfvrsn=294b7e1f_0",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "25104eb0d99f",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2016/2: Preview of Observations from 2015 Inspections of Auditors of Brokers and Dealers (April 2016)",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-2-auditors-broker-dealers.pdf?sfvrsn=2a9d6251_0",
+      "date_raw": "2017-11"
+    },
+    {
+      "id": "814fcdfcd1ca",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2016/1: Preview of Observations from 2015 Inspections of Auditors of Issuers (April 2016)",
+      "title_zh": "",
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-1-auditors-issuers.pdf?sfvrsn=c86199e7_0",
+      "date_raw": "2017-11"
+    },
     {
       "id": "27c293e9705b",
       "source": "IOSCO",
