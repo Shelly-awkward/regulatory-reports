@@ -446,23 +446,26 @@ def scrape_pcaob_news(news_url: str, base_url: str) -> list[dict]:
     raw = fetch(news_url)
     soup = BeautifulSoup(raw, "lxml")
 
-    # ── 一次性診斷（驗證後移除）──
+    # ── 一次性診斷（驗證後移除）：探測資料是否內嵌於 HTML 的 JSON ──
     if os.environ.get("DEBUG_PCAOB"):
-        _t = soup.find("title")
-        print(f"  [DBG] html len={len(raw)} title={_t.get_text(strip=True)[:80] if _t else '?'}")
-        all_a = soup.find_all("a", href=True)
-        newsish = [a for a in all_a if re.search(r"news-release|/detail/|/news-events/", a.get("href",""), re.I)]
-        has_year = bool(re.search(r"20\d\d", raw))
-        print(f"  [DBG] 全部 <a>={len(all_a)}；news-ish <a>={len(newsish)}")
-        print(f"  [DBG] html 含 'news-release' 字串: {'news-release' in raw.lower()}；含年份樣式: {has_year}")
-        for a in newsish[:8]:
-            t = clean_title(a.get_text(' ', strip=True))
-            node, ctx = a, ""
-            for _ in range(3):
-                if node.parent is None: break
-                node = node.parent; ctx = node.get_text(' ', strip=True)
-                if normalize_date(ctx.replace(t,' ')): break
-            print(f"  [DBG] href={a['href'][:70]} | text={t[:45]!r} | date={normalize_date(ctx.replace(t,' '))!r}")
+        low = raw.lower()
+        for marker in ["__next_data__", "__nuxt__", "application/ld+json",
+                       "application/json", "/detail/", "news-releases/",
+                       "/api/", "graphql", "window.__"]:
+            print(f"  [DBG] 含 {marker!r}: {marker in low}")
+        # <script> 內是否藏新聞資料（含日期＋標題樣式）
+        scripts = soup.find_all("script")
+        big = [s for s in scripts if s.string and len(s.string) > 500]
+        print(f"  [DBG] <script>={len(scripts)}；>500字元的 script={len(big)}")
+        for s in big:
+            txt = s.string
+            if "news" in txt.lower() or "release" in txt.lower():
+                idx = txt.lower().find("release")
+                print(f"  [DBG] script 片段: ...{txt[max(0,idx-80):idx+180]!r}...")
+                break
+        # 實際新聞發布詳細連結（第二段路徑）
+        detail = re.findall(r'href=[\'\"](/news-events/news-releases/[^\'\"]+)[\'\"]', raw, re.I)
+        print(f"  [DBG] news-releases/ 詳細連結數={len(detail)}；樣本={detail[:5]}")
 
     for tag in soup.select("nav, footer, header, script, style"):
         tag.decompose()
