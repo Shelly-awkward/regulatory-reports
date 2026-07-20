@@ -57,6 +57,7 @@ DEFAULT_SOURCES = [
         "fullname": "國際會計師道德準則委員會",
         "url":      "https://www.ethicsboard.org/publications",
         "base_url": "https://www.ethicsboard.org",
+        "pub_path": "/publications/",
         "strategy": "ifac_platform",
     },
     {
@@ -65,14 +66,16 @@ DEFAULT_SOURCES = [
         "fullname": "國際審計與確信準則委員會",
         "url":      "https://www.iaasb.org/publications",
         "base_url": "https://www.iaasb.org",
+        "pub_path": "/publications/",
         "strategy": "ifac_platform",
     },
     {
         "id":       "IFAC",
         "name":     "IFAC",
         "fullname": "國際會計師聯合會",
-        "url":      "https://www.ifac.org/news-resources?type=publication",
+        "url":      "https://www.ifac.org/knowledge-gateway",
         "base_url": "https://www.ifac.org",
+        "pub_path": "/knowledge-gateway/",
         "strategy": "ifac_platform",
     },
     {
@@ -368,39 +371,42 @@ def scrape_iosco(src: dict) -> list[dict]:
 
 
 def scrape_ifac_platform(src: dict) -> list[dict]:
-    """IESBA / IAASB / IFAC（同平台）：主內容區的出版品列表"""
+    """IESBA / IAASB / IFAC（IFAC Drupal 平台）：以 URL 樣式（如 /publications/）辨識
+    出版品連結，掃整頁而非僅 main，較能承受不同版型。動態 JS 載入的清單抓不到（已知限制）。"""
     soup = BeautifulSoup(fetch(src["url"]), "lxml")
-    for tag in soup.select("nav, footer, header, .menu, .sidebar, script, style, .cookie-banner"):
+    for tag in soup.select("nav, footer, header, script, style, .cookie-banner"):
         tag.decompose()
-    main = soup.select_one("main") or soup
 
+    site_host = urlparse(src["base_url"]).netloc.replace("www.", "")
+    pub_path  = src.get("pub_path", "/publications/")
     reports, seen = [], set()
-    for sel in ["article a[href]", "h2 a[href]", "h3 a[href]", "h4 a[href]",
-                ".views-row a[href]", ".teaser a[href]", ".card a[href]", "td a[href]"]:
-        for a in main.select(sel):
-            href  = urljoin(src["base_url"], a.get("href", "").strip())
-            title = clean_title(a.get_text(" ", strip=True))
-            if not title or href in seen:
-                continue
-            # 只收本站或姊妹站 ifac.org 的內容頁
-            host = urlparse(href).netloc
-            if host and not (host.endswith(urlparse(src["base_url"]).netloc.replace("www.", ""))
-                             or urlparse(src["base_url"]).netloc.replace("www.", "") in host):
-                continue
-            seen.add(href)
-            container = a
-            ctx_text  = ""
-            for _ in range(3):
-                if container.parent is None:
-                    break
-                container = container.parent
-                ctx_text = container.get_text(" ", strip=True)
-                if normalize_date(ctx_text):
-                    break
-            reports.append({
-                "source": src["id"], "title_en": title, "url": href,
-                "date": normalize_date(ctx_text), "summary_en": "",
-            })
+
+    for a in soup.find_all("a", href=True):
+        href = urljoin(src["base_url"], a["href"].strip())
+        p    = urlparse(href)
+        if site_host not in p.netloc:          # 僅本站內容頁
+            continue
+        if pub_path not in p.path:             # 必須是出版品路徑
+            continue
+        if p.path.rstrip("/").endswith(pub_path.rstrip("/")):  # 排除清單頁本身
+            continue
+        title = clean_title(a.get_text(" ", strip=True))
+        if not title or href in seen:
+            continue
+        seen.add(href)
+        # 日期：往上找最多 3 層取含日期的容器文字
+        ctx, node = "", a
+        for _ in range(3):
+            if node.parent is None:
+                break
+            node = node.parent
+            ctx = node.get_text(" ", strip=True)
+            if normalize_date(ctx):
+                break
+        reports.append({
+            "source": src["id"], "title_en": title, "url": href,
+            "date": normalize_date(ctx), "summary_en": "",
+        })
     return reports
 
 
@@ -543,9 +549,13 @@ def translate_batch(reports: list[dict], client: anthropic.Anthropic) -> None:
             resp = client.messages.create(
                 model="claude-sonnet-5",
                 max_tokens=3000,
+                thinking={"type": "disabled"},   # 純翻譯不需思考；Sonnet 5 預設會開 adaptive thinking
                 messages=[{"role": "user", "content": prompt}],
             )
-            raw = resp.content[0].text.strip()
+            # Sonnet 5 回應可能含 thinking block，需明確取 text block（不能假設 content[0]）
+            raw = "".join(
+                b.text for b in resp.content if getattr(b, "type", None) == "text"
+            ).strip()
             start, end = raw.find("["), raw.rfind("]")
             items = json.loads(raw[start:end + 1])
             for item in items:
