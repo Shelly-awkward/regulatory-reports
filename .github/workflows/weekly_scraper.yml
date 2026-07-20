@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 12 * * 0'
   workflow_dispatch:
+  push:
+    branches:
+      - claude/regulatory-reports-redesign-21aogs  # 暫時：分支端到端測試用，合併前移除
 
 jobs:
   scrape:
