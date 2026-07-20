@@ -103,6 +103,7 @@ CUSTOM_SOURCES_PATH = Path(__file__).parent.parent / "data" / "custom_sources.js
 
 MAX_PER_SOURCE = 40
 KNOWN_SOURCES  = [s["id"] for s in DEFAULT_SOURCES]
+IFAC_FAMILY    = {"IESBA", "IAASB", "IFAC"}   # 同屬 IFAC Drupal 平台，JS 動態渲染
 
 # ─────────────────────────────────────────
 #  驗證閘門：過濾導覽連結、按鈕文字、目錄頁
@@ -158,6 +159,22 @@ IOSCO_CODE_PATTERN = re.compile(
 )
 
 
+def is_mostly_nonlatin(title: str) -> bool:
+    """標題是否以非拉丁文字為主（俄文／中日韓／阿拉伯文等翻譯版準則），
+    這類多是英文準則的外語翻譯版，非主要出版品。英文標題中的花引號、重音符不受影響。"""
+    latin = nonlatin = 0
+    for ch in title:
+        o = ord(ch)
+        if (0x41 <= o <= 0x5A) or (0x61 <= o <= 0x7A) or (0xC0 <= o <= 0x24F):
+            latin += 1
+        elif ((0x0400 <= o <= 0x04FF) or (0x4E00 <= o <= 0x9FFF) or   # 西里爾、CJK
+              (0xAC00 <= o <= 0xD7AF) or (0x0600 <= o <= 0x06FF) or   # 諺文、阿拉伯
+              (0x0370 <= o <= 0x03FF) or (0x0590 <= o <= 0x05FF) or   # 希臘、希伯來
+              (0x3040 <= o <= 0x30FF) or (0x0E00 <= o <= 0x0E7F)):    # 日文假名、泰文
+            nonlatin += 1
+    return nonlatin > latin
+
+
 def clean_title(title: str) -> str:
     """去掉標題裡混入的按鈕字樣與多餘空白"""
     t = re.sub(r"\s+", " ", title or "").strip()
@@ -179,6 +196,8 @@ def is_valid_report(title: str, url: str) -> bool:
     t_lower = t.lower()
 
     if len(t) < 15:
+        return False
+    if is_mostly_nonlatin(t):          # 翻譯版準則（俄文／中日韓等）非主要出版品
         return False
     # 標題整個就是按鈕字樣（clean 完剩編號如 "FR/05/2026" 也算沒標題）
     if t_lower in BUTTON_TEXTS:
@@ -403,9 +422,14 @@ def scrape_ifac_platform(src: dict) -> list[dict]:
             ctx = node.get_text(" ", strip=True)
             if normalize_date(ctx):
                 break
+        date = normalize_date(ctx)
+        # 這些站多為 JS 動態渲染，靜態 HTML 僅剩導覽標籤（無日期）；
+        # 有日期者才是真實出版品／文章，藉此濾掉分類導覽雜訊
+        if not date:
+            continue
         reports.append({
             "source": src["id"], "title_en": title, "url": href,
-            "date": normalize_date(ctx), "summary_en": "",
+            "date": date, "summary_en": "",
         })
     return reports
 
@@ -612,6 +636,9 @@ def revalidate_existing(reports: list[dict]) -> list[dict]:
             m = re.search(r"\b(20\d{2})\b", title)
             if m and date[:4] != m.group(1):
                 date = m.group(1)
+        # IFAC 平台站（JS 渲染）：僅保留有日期者，濾掉靜態 HTML 殘留的導覽標籤
+        if r.get("source") in IFAC_FAMILY and not date:
+            continue
         kept.append({
             "id":         make_id(r.get("source", ""), url),
             "source":     r.get("source", ""),

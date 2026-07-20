@@ -2,7 +2,7 @@
   "schema_version": 2,
   "last_updated": "2026-07-20 08:41 UTC",
   "last_batch": "2026-07-20",
-  "total": 111,
+  "total": 102,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -114,16 +114,16 @@
       "first_seen": "2026-07-20"
     },
     {
+      "id": "db2013b3ede7",
       "source": "IFAC",
       "title_en": "Global Event Series: IFAC Connect LATAM 2026 Highlights",
+      "title_zh": "全球系列活動：IFAC Connect LATAM 2026重點回顧",
+      "summary_en": "From May 20 to May 21, 2026, IFAC, in collaboration with member PAO Federación Argentina de Consejos Profesionales de Ciencias Económicas (FACPCE), and La Asociación Internamericana de Contabilidad (AIC), hosted IFAC Connect LATAM 2026, part of IFAC’s ongoing Connect series.",
+      "summary_checked": true,
+      "intro": "IFAC於2026年5月20日至21日，與會員組織阿根廷經濟科學專業委員會聯合會（FACPCE）及美洲會計師協會（AIC）合作，共同舉辦「IFAC Connect LATAM 2026」，此為IFAC持續辦理之Connect系列活動之一。",
       "url": "https://www.ifac.org/knowledge-gateway/discussion/global-event-series-ifac-connect-latam-2026-highlights",
       "date": "2026-07-07",
-      "summary_en": "From May 20 to May 21, 2026, IFAC, in collaboration with member PAO Federación Argentina de Consejos Profesionales de Ciencias Económicas (FACPCE), and La Asociación Internamericana de Contabilidad (AIC), hosted IFAC Connect LATAM 2026, part of IFAC’s ongoing Connect series.",
-      "id": "db2013b3ede7",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "全球系列活動：IFAC Connect LATAM 2026重點回顧",
-      "intro": "IFAC於2026年5月20日至21日，與會員組織阿根廷經濟科學專業委員會聯合會（FACPCE）及美洲會計師協會（AIC）合作，共同舉辦「IFAC Connect LATAM 2026」，此為IFAC持續辦理之Connect系列活動之一。"
+      "first_seen": "2026-07-20"
     },
     {
       "id": "16c6d9c64a09",
@@ -678,18 +678,6 @@
       "first_seen": "2026-07-19"
     },
     {
-      "source": "IAASB",
-      "title_en": "МЕЖДУНАРОДНЫЙ СТАНДАРТ АУДИТА 315 (ПЕРЕСМОТРЕННЫЙ 2019 г.) \" ВЫЯВЛЕНИЕ И ОЦЕНКА РИСКОВ СУЩЕСТВЕННОГО ИСКАЖЕНИЯ\" (Russian)",
-      "url": "https://www.iaasb.org/publications/mezhdunarodnyy-standart-audita-315-peresmotrennyy-2019-g-vyyavlenie-i-ocenka-riskov-suschestvennogo",
-      "date": "2019",
-      "summary_en": "Looking to reproduce the standards for your members? Want to include IFAC's publications in your training materials or university course? Learn how we can help.",
-      "id": "2dfa70f34843",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "國際審計準則第315號（2019年修訂版）：辨認並評估重大不實表達之風險（俄文版）",
-      "intro": "希望為貴會員複製本準則？欲將IFAC出版品納入訓練教材或大學課程？瞭解我們如何提供協助。"
-    },
-    {
       "id": "05a88e778fa9",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update and Preview of 2019 Inspection Observations",
@@ -1060,102 +1048,6 @@
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/remediation-spotlight.pdf?sfvrsn=2ae461df_3",
       "date": "",
       "first_seen": "2026-07-20"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Accountancy Policy",
-      "url": "https://www.ifac.org/knowledge-gateway/accountancy-policy",
-      "date": "",
-      "summary_en": "Updates on advancing the agenda of the global accountancy profession.",
-      "id": "567426ab3767",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "會計政策",
-      "intro": "有關推動全球會計專業議程之最新進展。"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "International Standards",
-      "url": "https://www.ifac.org/knowledge-gateway/international-standards",
-      "date": "",
-      "summary_en": "Resources, news and implementation guidance for audit, education, ethics, financial reporting and the public sector.",
-      "id": "a92c8c3c43b7",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "國際準則",
-      "intro": "提供審計、教育、職業道德、財務報導及公部門相關資源、新聞與實施指引。"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Small- and Medium-sized Practices (SMPs)",
-      "url": "https://www.ifac.org/knowledge-gateway/small-and-medium-sized-practices-smps",
-      "date": "",
-      "summary_en": "Thought leadership, guidance, and insights on SMP transformation and management.",
-      "id": "b1b1eb9c91b6",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "中小型會計師事務所（SMPs）",
-      "intro": "有關中小型事務所轉型與經營管理之思維領導、指引與洞察。"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Public Trust in Tax Accountancy Policy",
-      "url": "https://www.ifac.org/knowledge-gateway/discussion/public-trust-tax",
-      "date": "",
-      "summary_en": "Since 2017, IFAC and ACCA have gathered data across the G20 and beyond on the attitudes and opinions of the general public towards their tax systems, and the actors involved in them. Trust is a key component in tax morale, and understanding how taxpayers perceive the existing systems, and who is best trusted to help improve those perceptions, will be fundamental to building enhanced trust and, with it, engagement.",
-      "id": "17206cab41c2",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "租稅會計之公眾信任政策",
-      "intro": "自2017年起，IFAC與ACCA針對G20及其他國家蒐集一般大眾對其租稅制度及相關參與者之態度與意見資料。信任是稅務士氣的關鍵要素，理解納稅義務人對現行制度的看法，以及何者最值得信賴以協助改善此等看法，將是建立更高信任度及參與度的根本。"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Islamic Finance and Sustainability Accountancy Policy",
-      "url": "https://www.ifac.org/knowledge-gateway/discussion/islamic-finance-and-sustainability",
-      "date": "",
-      "summary_en": "Working in partnership with our member organizations and other stakeholders, the accountancy profession continues to enhance its impact on the UN Sustainability Development Goals (SDGs). IFAC’s strategy and priorities directly contributes to several SDGs, with reference to illustrative actions from our IMPACT approach.",
-      "id": "30370b86015f",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "伊斯蘭金融與永續發展會計政策",
-      "intro": "會計師專業持續與會員組織及其他利害關係人合作，強化其對聯合國永續發展目標（SDGs）之影響力。IFAC之策略與優先事項透過其IMPACT方法之示例行動，直接貢獻於數項SDGs。"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Call to Action for Sustainability Reporting and Assurance Audit & Assurance",
-      "url": "https://www.ifac.org/knowledge-gateway/discussion/call-action-sustainability-reporting-and-assurance",
-      "date": "",
-      "summary_en": "",
-      "id": "4bfeb61b9649",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "永續報告與確信之行動呼籲—查核與確信",
-      "intro": ""
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Exploring the IESBA Code Education",
-      "url": "https://www.ifac.org/knowledge-gateway/discussion/exploring-iesba-code",
-      "date": "",
-      "summary_en": "The Exploring the IESBA Code series, developed by IFAC in collaboration with the International Ethics Standards Board for Accountants (IESBA), is intended to promote awareness, adoption and implementation of the International Code of Ethics for Professional Accountants (including International Independence Standards). The twelve-installment publication series was launched in 2019 and highlights important topics i",
-      "id": "8241e42ba0d5",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "探索IESBA準則—教育",
-      "intro": "「探索IESBA準則」系列由IFAC與國際會計師倫理準則理事會（IESBA）合作制定，旨在推廣對《國際專業會計師倫理準則守則》（含國際獨立性準則）之認識、採用與實施。此系列出版品共十二輯，於2019年推出，聚焦於重要議題。"
-    },
-    {
-      "source": "IFAC",
-      "title_en": "Sustainability Standards International Standards",
-      "url": "https://www.ifac.org/knowledge-gateway/discussion/sustainability-standards",
-      "date": "",
-      "summary_en": "A growing, global demand for sustainability—in society, in public and private organizations, and on our planet—has fueled demand for enhancing corporate reporting. For investors and sustainability-minded stakeholders to assess a company’s future performance, they need a clear and comprehensive picture of its ability to create sustainable value over time—not just a snapshot of its finances.",
-      "id": "3f7fd8965df5",
-      "first_seen": "2026-07-20",
-      "summary_checked": true,
-      "title_zh": "永續發展準則—國際準則",
-      "intro": "社會、公私部門組織及地球對永續發展日益增長的全球需求，帶動企業報告強化之需求。投資人與重視永續發展之利害關係人若欲評估企業未來績效，需要清楚且全面地了解其長期創造永續價值之能力，而非僅止於財務數據的片段呈現。"
     },
     {
       "id": "0349d6197d26",
