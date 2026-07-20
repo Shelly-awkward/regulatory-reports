@@ -2,6 +2,8 @@
 
 自動抓取 IOSCO、FSB、IFIAR、IESBA、IAASB、IFAC、PCAOB 最新出版品，每週日晚上 8 點（台灣時間）自動執行，產出中英對照報告清單（卡片／表格兩種檢視可切換）。
 
+> PCAOB 除幕僚出版品（Spotlight、檢查報告）外，另含**新聞發布**（news releases，執法、法規、人事等），內容更頻繁密集。
+
 ## 運作方式（v3）
 
 - **抓取**：每個機構有專屬解析策略——FSB 與 IFIAR 優先讀 RSS；IOSCO 從出版品列表逐列取真實標題與編號；IESBA／IAASB／IFAC 共用同平台解析；PCAOB 鎖定 staff publications 主列表。

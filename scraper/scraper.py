@@ -83,6 +83,7 @@ DEFAULT_SOURCES = [
         "name":     "PCAOB",
         "fullname": "美國公開發行公司會計監督委員會",
         "url":      "https://pcaobus.org/resources/staff-publications",
+        "news_url":  "https://pcaobus.org/news-events/news-releases",
         "base_url": "https://pcaobus.org",
         "strategy": "pcaob",
     },
@@ -190,8 +191,11 @@ def clean_title(title: str) -> str:
     return t
 
 
-def is_valid_report(title: str, url: str) -> bool:
-    """新舊資料共用的驗證閘門：True 才算真正的出版品"""
+def is_valid_report(title: str, url: str, trusted: bool = False) -> bool:
+    """新舊資料共用的驗證閘門：True 才算真正的出版品。
+    trusted=True 用於策展型來源（新聞發布、RSS 等）：仍套用所有負向過濾
+    （長度、非拉丁、按鈕字樣、導覽關鍵字、URL 黑名單），但略過「必須是報告樣式」
+    的關鍵字要求——因新聞標題如「PCAOB Sanctions …」「PCAOB Names …」常不含報告關鍵字。"""
     t = clean_title(title)
     t_lower = t.lower()
 
@@ -214,6 +218,8 @@ def is_valid_report(title: str, url: str) -> bool:
     if "fsb.org" in u_lower:
         return bool(re.search(r"fsb\.org/20\d{2}/\d{2}/", u_lower))
 
+    if trusted:            # 策展型來源：已通過所有負向過濾即認定為有效
+        return True
     if any(k in t_lower for k in REPORT_KEYWORDS):
         return True
     if IOSCO_CODE_PATTERN.search(t):
@@ -434,14 +440,60 @@ def scrape_ifac_platform(src: dict) -> list[dict]:
     return reports
 
 
-def scrape_pcaob(src: dict) -> list[dict]:
-    """PCAOB staff publications：日期從列表項取，取不到用標題年份，再不行留空"""
-    soup = BeautifulSoup(fetch(src["url"]), "lxml")
+def scrape_pcaob_news(news_url: str, base_url: str) -> list[dict]:
+    """PCAOB 新聞發布（news releases）：策展型列表。往上找容器內日期，
+    要求有日期（新聞必有日期，同時藉此濾掉導覽雜訊）；標記 trusted 略過報告關鍵字要求。"""
+    soup = BeautifulSoup(fetch(news_url), "lxml")
     for tag in soup.select("nav, footer, header, script, style"):
         tag.decompose()
     main = soup.select_one("main") or soup
 
     reports, seen = [], set()
+    for a in main.find_all("a", href=True):
+        href  = urljoin(base_url, a["href"].strip())
+        title = clean_title(a.get_text(" ", strip=True))
+        if not title or href in seen or len(title) < 15:
+            continue
+        if "pcaobus.org" not in urlparse(href).netloc and "pcaobus.org" not in href:
+            continue
+        seen.add(href)
+        # 日期：往上找最多 3 層，取第一個含日期的容器（新聞列表日期常在鄰近元素）
+        date, node = "", a
+        for _ in range(3):
+            if node.parent is None:
+                break
+            node = node.parent
+            d = normalize_date(node.get_text(" ", strip=True).replace(title, " "))
+            if d:
+                date = d
+                break
+        if not date:            # 新聞必有日期；無日期者為導覽雜訊，剔除
+            continue
+        reports.append({
+            "source": "PCAOB", "title_en": title, "url": href,
+            "date": date, "summary_en": "", "trusted": True,
+        })
+    return reports
+
+
+def scrape_pcaob(src: dict) -> list[dict]:
+    """PCAOB：新聞發布（news releases）＋幕僚出版品（staff publications）。
+    新聞排前面，避免被每來源上限截斷；兩者同掛 source=PCAOB。"""
+    news = []
+    if src.get("news_url"):
+        try:
+            news = scrape_pcaob_news(src["news_url"], src["base_url"])
+            print(f"  PCAOB 新聞發布：{len(news)} 則")
+        except Exception as e:
+            print(f"  ⚠️  PCAOB 新聞發布抓取失敗：{e}")
+
+    # ── 幕僚出版品：維持原有日期解析（緊鄰容器＋標題年份備援），不動 ──
+    soup = BeautifulSoup(fetch(src["url"]), "lxml")
+    for tag in soup.select("nav, footer, header, script, style"):
+        tag.decompose()
+    main = soup.select_one("main") or soup
+
+    staff, seen = [], {r["url"] for r in news}
     for a in main.find_all("a", href=True):
         href  = urljoin(src["base_url"], a["href"].strip())
         title = clean_title(a.get_text(" ", strip=True))
@@ -458,11 +510,11 @@ def scrape_pcaob(src: dict) -> list[dict]:
             m = re.search(r"\b(20\d{2})\b", title)
             date = m.group(1) if m else ""
 
-        reports.append({
+        staff.append({
             "source": "PCAOB", "title_en": title, "url": href,
             "date": date, "summary_en": "",
         })
-    return reports
+    return news + staff
 
 
 def scrape_custom(src: dict) -> list[dict]:
@@ -512,7 +564,8 @@ def fetch_source(src: dict) -> list[dict]:
         print(f"  ⚠️  抓取失敗：{e}")
         return []
 
-    valid = [r for r in candidates if is_valid_report(r["title_en"], r["url"])]
+    valid = [r for r in candidates
+             if is_valid_report(r["title_en"], r["url"], r.get("trusted", False))]
     print(f"  → 原始 {len(candidates)} 則，通過驗證 {len(valid)} 則")
     for r in valid:
         r["id"] = make_id(r["source"], r["url"])
@@ -626,13 +679,15 @@ def revalidate_existing(reports: list[dict]) -> list[dict]:
     """舊資料重新過驗證閘門＋日期正規化（含 v1 schema 遷移）"""
     kept = []
     for r in reports:
-        title = clean_title(r.get("title_en", ""))
-        url   = r.get("url", "")
-        if not is_valid_report(title, url):
+        title   = clean_title(r.get("title_en", ""))
+        url     = r.get("url", "")
+        trusted = bool(r.get("trusted"))
+        if not is_valid_report(title, url, trusted):
             continue
         date = normalize_date(r.get("date") or r.get("date_raw") or "")
-        # PCAOB 舊資料日期污染：與標題年份矛盾時改用標題年份
-        if r.get("source") == "PCAOB":
+        # PCAOB 幕僚出版品舊資料日期污染：與標題年份矛盾時改用標題年份。
+        # 新聞發布（trusted）有真實日期，不可被標題內的年份覆蓋。
+        if r.get("source") == "PCAOB" and not trusted:
             m = re.search(r"\b(20\d{2})\b", title)
             if m and date[:4] != m.group(1):
                 date = m.group(1)
@@ -646,6 +701,7 @@ def revalidate_existing(reports: list[dict]) -> list[dict]:
             "title_zh":   r.get("title_zh", ""),
             "summary_en": r.get("summary_en", ""),
             "summary_checked": bool(r.get("summary_checked")),
+            "trusted":    trusted,
             "intro":      r.get("intro", ""),
             "url":        url,
             "date":       date,
