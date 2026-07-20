@@ -443,7 +443,27 @@ def scrape_ifac_platform(src: dict) -> list[dict]:
 def scrape_pcaob_news(news_url: str, base_url: str) -> list[dict]:
     """PCAOB 新聞發布（news releases）：策展型列表。往上找容器內日期，
     要求有日期（新聞必有日期，同時藉此濾掉導覽雜訊）；標記 trusted 略過報告關鍵字要求。"""
-    soup = BeautifulSoup(fetch(news_url), "lxml")
+    raw = fetch(news_url)
+    soup = BeautifulSoup(raw, "lxml")
+
+    # ── 一次性診斷（驗證後移除）──
+    if os.environ.get("DEBUG_PCAOB"):
+        _t = soup.find("title")
+        print(f"  [DBG] html len={len(raw)} title={_t.get_text(strip=True)[:80] if _t else '?'}")
+        all_a = soup.find_all("a", href=True)
+        newsish = [a for a in all_a if re.search(r"news-release|/detail/|/news-events/", a.get("href",""), re.I)]
+        has_year = bool(re.search(r"20\d\d", raw))
+        print(f"  [DBG] 全部 <a>={len(all_a)}；news-ish <a>={len(newsish)}")
+        print(f"  [DBG] html 含 'news-release' 字串: {'news-release' in raw.lower()}；含年份樣式: {has_year}")
+        for a in newsish[:8]:
+            t = clean_title(a.get_text(' ', strip=True))
+            node, ctx = a, ""
+            for _ in range(3):
+                if node.parent is None: break
+                node = node.parent; ctx = node.get_text(' ', strip=True)
+                if normalize_date(ctx.replace(t,' ')): break
+            print(f"  [DBG] href={a['href'][:70]} | text={t[:45]!r} | date={normalize_date(ctx.replace(t,' '))!r}")
+
     for tag in soup.select("nav, footer, header, script, style"):
         tag.decompose()
     main = soup.select_one("main") or soup
