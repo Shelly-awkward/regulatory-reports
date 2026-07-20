@@ -1,21 +1,33 @@
 {
+  "schema_version": 2,
   "last_updated": "2026-07-19 13:23 UTC",
-  "total": 117,
+  "last_batch": "",
+  "total": 47,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
-      "fullname": "國際證券事務監察委員會組織",
+      "fullname": "國際證券管理機構組織",
       "url": "https://www.iosco.org/v2/publications/?subsection=public_reports"
-    },
-    "IESBA": {
-      "name": "IESBA",
-      "fullname": "國際會計師倫理準則委員會",
-      "url": "https://www.ethicsboard.org/publications"
     },
     "FSB": {
       "name": "FSB",
       "fullname": "金融穩定委員會",
       "url": "https://www.fsb.org/publications/"
+    },
+    "IFIAR": {
+      "name": "IFIAR",
+      "fullname": "國際獨立審計監理機關論壇",
+      "url": "https://www.ifiar.org/publications/"
+    },
+    "IESBA": {
+      "name": "IESBA",
+      "fullname": "國際會計師道德準則委員會",
+      "url": "https://www.ethicsboard.org/publications"
+    },
+    "IAASB": {
+      "name": "IAASB",
+      "fullname": "國際審計與確信準則委員會",
+      "url": "https://www.iaasb.org/publications"
     },
     "IFAC": {
       "name": "IFAC",
@@ -30,1110 +42,568 @@
   },
   "reports": [
     {
-      "id": "b66a994bb128",
-      "source": "PCAOB",
-      "title_en": "Data Points: Financial Restatements and Auditor Turnover",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/staff-publications/data-points/data-points--financial-restatements-and-auditor-turnover",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "f46c40a02bab",
-      "source": "PCAOB",
-      "title_en": "Broker-Dealer Audit Focus: Review Engagements Regarding Exemption Reports",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/staff-publications/audit-focus/broker-dealer-audit-focus--review-engagements-regarding-exemption-reports",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "58b8f85a677e",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update on 2024 Inspection Activities",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2024-inspection-activities-spotlight.pdf?sfvrsn=86794c04_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "b3b89bb868de",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Observations From the Target Team’s 2023 Inspections",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2023-inspections-spotlight.pdf?sfvrsn=acf72513_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "8d5a76ee19c7",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Bank Financial Reporting Audits",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/banking-spotlight.pdf?sfvrsn=c3f496ab_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "9d1433f58ba9",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update on 2023 Inspection Activities",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2023-inspection-activities-spotlight.pdf?sfvrsn=2afb0f25_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "f2f2d69b18e6",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative Artificial Intelligence in Audits and Financial Reporting",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/documents/generative-ai-spotlight.pdf",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "af7aef6e90da",
-      "source": "PCAOB",
-      "title_en": "Investor Bulletin: Opportunity To Comment on Proposal To Enhance How Auditors Address Certain Assessed Risks of Material Misstatement",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin--opportunity-to-comment-on-proposal-to-enhance-how-auditors-address-certain-assessed-risks-of-material-misstatement",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "dbf987b6a369",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Inspection Observations Related to Auditor Use of Data and Reports",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/data-and-reports-spotlight.pdf?sfvrsn=4b2cb315_2",
-      "date_raw": "2025"
-    },
-    {
-      "id": "958a2f53fad9",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Observations From the Target Team’s 2022 Inspections",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2022-inspections-spotlight.pdf?sfvrsn=7917915b_4",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "6b597b8068aa",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Inspection Observations Related to Engagement Quality Reviews",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/eqr-spotlight.pdf?sfvrsn=95a345e6_4",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "1b62a0663d6c",
-      "source": "PCAOB",
-      "title_en": "Investor Bulletin - Opportunity to Comment on Proposed Updates to PCAOB Standards Addressing the Use of Data Analytics by Auditors",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/bulletin-opportunity-to-comment-on-proposed-updates-to-pcaob-standards-addressing-the-use-of-data-analytics-by-auditors",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "8142a539beb1",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update and Preview of 2022 Inspection Observations",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/spotlight-staff-preview-2022-inspection-observations.pdf?sfvrsn=1b116d49_4",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "773f3012b534",
-      "source": "PCAOB",
-      "title_en": "Investor Bulletin - Opportunity to Comment on PCAOB Proposal on Noncompliance With Laws and Regulations",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-opportunity-to-comment-on-proposed-standard-addressing-an-auditor-s-responsibility-related-company-noncompliance-with-laws-regulations",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "82e129f2a9ef",
-      "source": "PCAOB",
-      "title_en": "Investor Bulletin - Opportunity to Comment on Proposed Standard Addressing Core Auditing Principles and Responsibilities",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/opportunity-to-comment-proposed-standard-addressing-core-auditing-principles-and-responsibilities",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "486a3ed8eb0b",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Priorities for 2023 Inspections",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/priorities-spotlight.pdf?sfvrsn=5c104095_4",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "d23191a3b6ac",
-      "source": "PCAOB",
-      "title_en": "Investor Advisory - Exercise Caution with Independent Verification/Proof of Reserve Reports",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory-exercise-caution-with-third-party-verification-proof-of-reserve-reports",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "375f060e0b18",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update and Preview of 2021 Inspection Observations",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2021-inspection-observations-spotlight.pdf?sfvrsn=d2590627_4",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "2eda2c0a8bd2",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Observations From the Target Team’s 2021 Inspections",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-spotlight.pdf?sfvrsn=b6a83e28_4",
-      "date_raw": "2021"
-    },
-    {
-      "id": "79d08adf3fef",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Overview for Planned 2022 Inspections",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2022-inspections-overview-spotlight.pdf?sfvrsn=8d3e48ef_4",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "65d86e4cb03c",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update and Preview of 2020 Inspection Observations",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2020-inspection-observations-spotlight.pdf?sfvrsn=10819041_4",
-      "date_raw": "2020"
-    },
-    {
-      "id": "bba2037c8462",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Outlook for 2021 Inspections",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-outlook-2021-inspections-spotlight.pdf?sfvrsn=6b415087_6",
-      "date_raw": "2020"
-    },
-    {
-      "id": "845c31c80bed",
-      "source": "PCAOB",
-      "title_en": "Spotlight: The PCAOB’s Use of Economic Analysis and Stakeholder Input in Standard Setting",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/pcaob-use-economic-analysis-stakeholder-spotlight.pdf?sfvrsn=9cb7e4d0_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "3efd3c7f5f5c",
-      "source": "PCAOB",
-      "title_en": "Spotlight: Staff Update and Preview of 2019 Inspection Observations",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2019-inspection-observations-spotlight.pdf?sfvrsn=57617c98_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "5acf2589c48b",
-      "source": "PCAOB",
-      "title_en": "Guide to Reading the PCAOB's New Inspection Report",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-report-guide.pdf?sfvrsn=bc066f32_0",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "9920fd8db6b2",
-      "source": "PCAOB",
-      "title_en": "Staff Preview of 2018 Inspection Observations",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2018-inspection-observations.pdf?sfvrsn=b5f8cb09_0",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "729290611826",
-      "source": "PCAOB",
-      "title_en": "Inspections Outlook for 2019",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-outlook-for-2019.pdf?sfvrsn=538b8bb7_2",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "af6ed5a9665a",
-      "source": "PCAOB",
-      "title_en": "Staff Inspection Brief, Vol. 2017/4: Preview of Observations from 2016 Inspections of Auditors of Issuers (November 2017)",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-4-issuer-results.pdf?sfvrsn=c216d8a7_0",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "dda90278e66a",
-      "source": "PCAOB",
-      "title_en": "Staff Inspection Brief, Vol. 2017/1: Preview of Observations from 2016 Inspections of Auditors of Brokers and Dealers (June 2017)",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-1-broker-dealer-results.pdf?sfvrsn=294b7e1f_0",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "25104eb0d99f",
-      "source": "PCAOB",
-      "title_en": "Staff Inspection Brief, Vol. 2016/2: Preview of Observations from 2015 Inspections of Auditors of Brokers and Dealers (April 2016)",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-2-auditors-broker-dealers.pdf?sfvrsn=2a9d6251_0",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "814fcdfcd1ca",
-      "source": "PCAOB",
-      "title_en": "Staff Inspection Brief, Vol. 2016/1: Preview of Observations from 2015 Inspections of Auditors of Issuers (April 2016)",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-1-auditors-issuers.pdf?sfvrsn=c86199e7_0",
-      "date_raw": "2017-11"
-    },
-    {
-      "id": "27c293e9705b",
-      "source": "IOSCO",
-      "title_en": "FR/05/2026 View Report",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD827.pdf",
-      "date_raw": "2026-07-09"
-    },
-    {
-      "id": "226e3d77ff9c",
-      "source": "IOSCO",
-      "title_en": "OR/08/2026 View Report",
-      "title_zh": "",
-      "intro": "",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD826.pdf",
-      "date_raw": "2026-06-18"
-    },
-    {
-      "id": "d2832e76962b",
+      "id": "9a305e6c3c1d",
       "source": "FSB",
       "title_en": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation report",
       "title_zh": "人工智慧負責任採用之健全實務：諮詢報告",
-      "intro": "本報告針對金融機構如何負責任地導入人工智慧技術提出具體指引，涵蓋風險管控、演算法透明度、資料治理等關鍵面向。此報告對於建立AI監理框架具有重要意義，有助於確保金融業在運用AI技術時能兼顧創新效益與風險控制。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-consultation-report/",
-      "date_raw": "2026-06-10"
+      "date": "2026-06-10",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "b8633ca23144",
-      "source": "IOSCO",
-      "title_en": "FR/04/2026 View Report",
-      "title_zh": "FR/04/2026 檢視報告",
-      "intro": "此報告針對金融機構的風險管理框架與合規性進行全面檢視，評估當前監理制度的有效性。該報告對於強化金融體系穩定性具有重要意義，有助於監理機關制定更完善的風險控制措施。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD825.pdf",
-      "date_raw": "2026-06-08"
-    },
-    {
-      "id": "7f4e3587ad3d",
-      "source": "IOSCO",
-      "title_en": "FR/03/2026 View Report",
-      "title_zh": "FR/03/2026 檢視報告",
-      "intro": "此報告為國際監理機構針對特定金融領域或機構進行的深度檢視與評估分析。該報告對於強化監理框架、識別潛在風險並提升金融體系穩定性具有重要指導意義。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD824.pdf",
-      "date_raw": "2026-06-01"
-    },
-    {
-      "id": "5a0994c727f4",
-      "source": "IOSCO",
-      "title_en": "FR/02/2026 View Report",
-      "title_zh": "FR/02/2026 檢視報告",
-      "intro": "此報告為監理機構針對特定金融議題進行的專業評估與分析文件。該報告對於了解當前監理政策方向與金融市場風險管控具有重要的參考價值。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD823.pdf",
-      "date_raw": "2026-06-26"
-    },
-    {
-      "id": "e92ec5cd32c3",
-      "source": "IOSCO",
-      "title_en": "CR/02/2026 View Report",
-      "title_zh": "CR/02/2026 檢視報告",
-      "intro": "此報告為國際監理機構針對特定監管議題或機構進行的詳細檢視與評估報告。該報告對於了解當前監理環境變化、識別潛在風險領域，以及指導未來監理政策制定具有重要參考價值。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD821.pdf",
-      "date_raw": "2026-08-21"
-    },
-    {
-      "id": "fbc9a460d2eb",
+      "id": "1fbc8db5ae18",
       "source": "FSB",
       "title_en": "Report on Vulnerabilities in Private Credit",
       "title_zh": "私人信貸脆弱性報告",
-      "intro": "本報告分析私人信貸市場中存在的系統性風險和結構性脆弱點，包括流動性不足、估值不透明及槓桿率過高等問題。此報告對監理機構具有重要意義，有助於建立更完善的私募信貸監管框架，防範潛在的金融穩定風險向整體金融體系蔓延。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/",
-      "date_raw": "2026-05-06"
+      "date": "2026-05-06",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "8a3d1f525efc",
-      "source": "IOSCO",
-      "title_en": "OR/05/2026 View Report",
-      "title_zh": "OR/05/2026 檢視報告",
-      "intro": "此報告針對特定監理事項進行深度檢視與評估，提供監理機構對相關議題的詳細分析。該報告對於瞭解監理機構的檢查結果與後續監理措施具有重要參考價值。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819.pdf",
-      "date_raw": "2026-06-30"
-    },
-    {
-      "id": "97232cce7fe6",
-      "source": "IOSCO",
-      "title_en": "OR/05/2026 Cover note",
-      "title_zh": "OR/05/2026 封面說明",
-      "intro": "此文件為相關報告的封面說明，提供報告概要與重點摘述。封面說明有助於快速掌握報告核心內容，是監理文件體系中的重要導讀資料。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD819-cover-note.pdf",
-      "date_raw": "2026-06-30"
-    },
-    {
-      "id": "8fb881075153",
+      "id": "a9c11158831c",
       "source": "FSB",
       "title_en": "Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes: Final Report",
       "title_zh": "FSB關鍵屬性中適用復原與處置計畫要求之保險業者範圍：最終報告",
-      "intro": "本報告明確界定哪些保險業者需要遵循FSB關鍵屬性框架下的復原與處置計畫要求，包括系統重要性保險業者及其他具風險影響力的機構。此規範對於建立完整的保險業危機處理機制至關重要，確保金融穩定並降低系統性風險傳染效應。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/04/scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes-final-report/",
-      "date_raw": "2026-04-29"
+      "date": "2026-04-29",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "2d4bbc99563a",
+      "id": "5d15f20cf948",
       "source": "FSB",
       "title_en": "FSB Chair’s letter to G20 Finance Ministers and Central Bank Governors: April 2026",
       "title_zh": "金融穩定委員會主席致G20財政部長及央行總裁函：2026年4月",
-      "intro": "此函件向G20領袖報告全球金融穩定狀況，並提出當前金融體系面臨的主要風險與挑戰。該報告對於協調各國監理政策、維護國際金融穩定具有重要指導意義。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/04/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-april-2026/",
-      "date_raw": "2026-04-13"
+      "date": "2026-04-13",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "ca7a0bff10e3",
-      "source": "IOSCO",
-      "title_en": "OR/03/2026 View Report",
-      "title_zh": "OR/03/2026 檢視報告",
-      "intro": "此報告為監理機構針對特定監管議題或機構進行的定期檢視評估，提供監理發現與建議改善措施。該報告對於了解當前監理環境變化及確保監理標準有效實施具有重要參考價值。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD817.pdf",
-      "date_raw": "2026-04-16"
-    },
-    {
-      "id": "d3daeaadeb96",
+      "id": "c0366bfc85e9",
       "source": "FSB",
       "title_en": "Promoting Global Financial Stability: 2025 FSB Annual Report",
       "title_zh": "促進全球金融穩定：2025年金融穩定委員會年度報告",
-      "intro": "本報告檢視2025年全球金融體系的穩定性狀況，分析主要風險因素並評估各國監理政策的實施成效。該報告對於協調國際金融監理合作、強化系統性風險防範機制具有重要指導意義，有助於維護全球金融市場的穩定運作。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/03/promoting-global-financial-stability-2025-fsb-annual-report/",
-      "date_raw": "2026-03-24"
+      "date": "2026-03-24",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "5d75c5e52a7d",
-      "source": "IOSCO",
-      "title_en": "FR/01/2026 View Report",
-      "title_zh": "FR/01/2026 檢視報告",
-      "intro": "此報告為國際監理機構針對特定監理議題或市場發展所進行的綜合性檢視與評估。該報告對於了解當前監理環境變化及未來政策方向具有重要參考價值，有助於金融機構及相關業者掌握最新監理趨勢。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD816.pdf",
-      "date_raw": "2026-03-24"
-    },
-    {
-      "id": "0e5613302fa1",
-      "source": "IOSCO",
-      "title_en": "CR/01/2026 View Report",
-      "title_zh": "CR/01/2026 檢視報告",
-      "intro": "此報告為國際監理機構針對2026年度發布的首份綜合檢視報告，涵蓋各項監理措施的執行成效與市場發展現況。該報告對於了解當前監理環境變化及未來政策方向具有重要參考價值，有助於金融機構及市場參與者掌握最新監理趨勢。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD815.pdf",
-      "date_raw": "2026-03-19"
-    },
-    {
-      "id": "8a66b9aa8410",
-      "source": "FSB",
-      "title_en": "Vulnerabilities Assessment",
-      "title_zh": "脆弱性評估報告",
-      "intro": "本報告系統性分析金融體系中的潛在風險點和薄弱環節，識別可能威脅金融穩定的關鍵因素。此評估對監理機構制定預防性監理措施、強化風險管理框架具有重要指導意義。",
-      "url": "https://www.fsb.org/work-of-the-fsb/vulnerabilities-assessment/",
-      "date_raw": ""
-    },
-    {
-      "id": "8d7caf0be151",
-      "source": "FSB",
-      "title_en": "Monitoring Implementation of Reforms",
-      "title_zh": "改革實施監測報告",
-      "intro": "本報告追蹤各國金融監理改革措施的執行進度與成效，評估改革目標的達成情況。透過持續監測機制，確保監理改革能有效落實並達到預期的金融穩定目標。",
-      "url": "https://www.fsb.org/work-of-the-fsb/implementation-monitoring/",
-      "date_raw": ""
-    },
-    {
-      "id": "65a1d9d24989",
-      "source": "FSB",
-      "title_en": "Compendium of Standards",
-      "title_zh": "監理標準彙編",
-      "intro": "本彙編整合國際監理機構制定的各項監理標準與最佳實務準則，提供完整的監理框架參考。此標準化文件有助於各國監理機構建立一致的監理原則，促進國際監理協調。",
-      "url": "https://www.fsb.org/work-of-the-fsb/about-the-compendium-of-standards/",
-      "date_raw": ""
-    },
-    {
-      "id": "aff85eab116d",
-      "source": "FSB",
-      "title_en": "Post-2008 Financial Crisis Reforms",
-      "title_zh": "2008年後金融危機改革報告",
-      "intro": "本報告檢視自2008年金融危機以來實施的各項監理改革措施及其成效評估。這些改革對於強化金融體系韌性、防範系統性風險再次發生具有關鍵作用。",
-      "url": "https://www.fsb.org/work-of-the-fsb/market-and-institutional-resilience/post-2008-financial-crisis-reforms/",
-      "date_raw": ""
-    },
-    {
-      "id": "e8310b5015c9",
-      "source": "FSB",
-      "title_en": "Policy Documents",
-      "title_zh": "政策文件",
-      "intro": "本文件闡述監理機構的政策立場、監理理念及未來政策方向。這些政策指引為金融機構及市場參與者提供明確的監理預期，有助於維護市場秩序。",
-      "url": "https://www.fsb.org/publications/policy-documents/",
-      "date_raw": ""
-    },
-    {
-      "id": "ac806c656cbd",
-      "source": "FSB",
-      "title_en": "Progress Reports",
-      "title_zh": "進度報告",
-      "intro": "本報告定期更新各項監理倡議、政策實施及改革措施的最新進展情況。透過定期進度追蹤，確保監理目標能按時達成並及時調整策略方向。",
-      "url": "https://www.fsb.org/publications/progress-reports/",
-      "date_raw": ""
-    },
-    {
-      "id": "5686732a12f3",
-      "source": "FSB",
-      "title_en": "Evaluation Reports",
-      "title_zh": "評估報告",
-      "intro": "本報告深入評析特定監理政策或措施的實施成效與影響程度。客觀的評估結果為監理機構優化政策設計、改善監理效能提供重要依據。",
-      "url": "https://www.fsb.org/publications/evaluation-reports/",
-      "date_raw": ""
-    },
-    {
-      "id": "32c0b04c1610",
-      "source": "FSB",
-      "title_en": "Reports to the G20",
-      "title_zh": "G20報告",
-      "intro": "本報告向G20領導人呈報全球金融監理發展現況及重要政策建議。作為國際協調機制的重要環節，此報告影響全球金融監理政策的制定方向。",
-      "url": "https://www.fsb.org/publications/g20-reports/",
-      "date_raw": ""
-    },
-    {
-      "id": "fab713d8285c",
-      "source": "FSB",
-      "title_en": "Peer Review Reports",
-      "title_zh": "同儕評議報告",
-      "intro": "本報告透過國際間相互評估機制，檢視各國監理實務與國際標準的符合程度。同儕評議促進監理經驗交流，提升各國監理品質與國際一致性。",
-      "url": "https://www.fsb.org/publications/peer-review-reports/",
-      "date_raw": ""
-    },
-    {
-      "id": "f948f62c0e9e",
-      "source": "FSB",
-      "title_en": "Regional Consultative Group Reports",
-      "title_zh": "區域諮詢小組報告",
-      "intro": "本報告匯集特定區域內監理機構的合作成果與政策協調建議。區域性監理協調有助於因應跨境金融風險，強化區域金融穩定。",
-      "url": "https://www.fsb.org/publications/regional-consultative-group-reports/",
-      "date_raw": ""
-    },
-    {
-      "id": "ae347682be6f",
-      "source": "FSB",
-      "title_en": "All Consultations",
-      "title_zh": "全部諮詢案件",
-      "intro": "此為監理機構發布之所有諮詢案件的彙整目錄，涵蓋歷史至今的完整諮詢紀錄。透過系統性整理所有諮詢案件，有助於市場參與者了解監理政策發展脈絡與趨勢變化。",
-      "url": "https://www.fsb.org/consultations/browse-all-consultations/",
-      "date_raw": ""
-    },
-    {
-      "id": "506ee4bb8938",
-      "source": "FSB",
-      "title_en": "Current Consultations",
-      "title_zh": "現行諮詢案件",
-      "intro": "此為監理機構目前正在進行公眾諮詢的政策提案或規範草案清單。市場參與者可透過此管道了解最新監理動向，並在諮詢期間內提供意見回饋，確保監理政策制定的透明度與參與性。",
-      "url": "https://www.fsb.org/consultations/current-consultations/",
-      "date_raw": ""
-    },
-    {
-      "id": "649397a69dd7",
-      "source": "FSB",
-      "title_en": "Past Consultations",
-      "title_zh": "歷史諮詢案件",
-      "intro": "此為已完成諮詢程序的歷史案件檔案，記錄監理機構過往的政策制定過程。透過檢視歷史諮詢案件，可追蹤監理框架的演進軌跡，並作為未來政策制定的重要參考依據。",
-      "url": "https://www.fsb.org/consultations/past-consultations/",
-      "date_raw": ""
-    },
-    {
-      "id": "62f8b1c4c222",
-      "source": "FSB",
-      "title_en": "Past consultation responses",
-      "title_zh": "歷史諮詢回應意見",
-      "intro": "此為監理機構針對已完成諮詢案件所收到的各方回應意見彙整。公開諮詢回應意見有助於提升監理透明度，並讓市場了解不同利害關係人的觀點與監理機構的政策考量。",
-      "url": "https://www.fsb.org/consultations/responses-to-past-consultations/",
-      "date_raw": ""
-    },
-    {
-      "id": "f73f8bebe3af",
-      "source": "FSB",
-      "title_en": "Speeches and Statements",
-      "title_zh": "演講與聲明",
-      "intro": "此為監理機構高階官員的公開演講內容與官方聲明文件集錄。這些演講與聲明反映監理機構的政策立場與市場觀點，對於預測未來監理方向具有重要的指標意義。",
-      "url": "https://www.fsb.org/press/speeches-and-statements/",
-      "date_raw": ""
-    },
-    {
-      "id": "8aa4cc089eef",
-      "source": "IOSCO",
-      "title_en": "OR/02/2026 View Report",
-      "title_zh": "OR/02/2026 檢視報告",
-      "intro": "此報告針對特定監理議題進行深入檢視與評估，提供監理機關政策制定的重要參考依據。該報告有助於提升監理透明度並確保相關法規的有效執行與合規性。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD814.pdf",
-      "date_raw": "2026-03-17"
-    },
-    {
-      "id": "c6f1d252326c",
-      "source": "IOSCO",
-      "title_en": "FR/13/2025 Joint Note",
-      "title_zh": "FR/13/2025 聯合備忘錄",
-      "intro": "此聯合備忘錄係由多個監理機構共同發布，旨在協調跨境監理合作並統一監理標準。該備忘錄強化了國際監理協調機制，有助於防範系統性風險並促進金融市場穩定。",
-      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD801-joint-note.pdf",
-      "date_raw": "2025-10-16"
-    },
-    {
-      "id": "90dfabad1ee6",
-      "source": "FSB",
-      "title_en": "Thematic Peer Review on Public Sector Backstop Funding Mechanisms: Summary Terms of Reference",
-      "title_zh": "公部門後備資金機制主題同儕審查：摘要職權範圍",
-      "intro": "本報告定義了對各國政府建立的金融危機後備資金機制進行同儕審查的範圍與標準。此審查對於確保各國在金融危機時能有效動用公共資源穩定金融體系具有重要意義。",
-      "url": "https://www.fsb.org/2026/02/thematic-peer-review-on-public-sector-backstop-funding-mechanisms-summary-terms-of-reference/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "256671137465",
-      "source": "FSB",
-      "title_en": "Public responses to consultation on Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes",
-      "title_zh": "FSB關鍵屬性中保險業復原與處置規劃要求適用範圍諮詢之公眾回應",
-      "intro": "本報告彙整了業界與相關機構對於哪些保險公司應納入復原與處置規劃要求的意見回饋。這些回應將影響全球保險業監理框架的制定，對保險業危機處理機制具有關鍵影響。",
-      "url": "https://www.fsb.org/2026/02/public-responses-to-consultation-on-scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "7315d1f70102",
-      "source": "FSB",
-      "title_en": "Vulnerabilities in Government Bond-backed Repo Markets",
-      "title_zh": "政府債券擔保附買回市場之脆弱性",
-      "intro": "本報告分析政府債券作為擔保品的附買回交易市場中存在的系統性風險與脆弱環節。研究結果對於維護貨幣市場穩定與防範流動性危機擴散具有重要參考價值。",
-      "url": "https://www.fsb.org/2026/02/vulnerabilities-in-government-bond-backed-repo-markets/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "347a74c76e91",
+      "id": "05d7848831d4",
       "source": "FSB",
       "title_en": "FSB Work Programme for 2026",
       "title_zh": "FSB 2026年工作計畫",
-      "intro": "本文件概述金融穩定委員會2026年的重點工作項目與政策優先順序。此計畫將指引全球金融監理政策方向，對未來金融穩定框架發展具有重要指導意義。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/02/fsb-work-programme-for-2026/",
-      "date_raw": "2026",
-      "translated": true
+      "date": "2026",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "cba14013b4c4",
+      "id": "5683e3b1e724",
+      "source": "IOSCO",
+      "title_en": "FR/13/2025 Joint Note",
+      "title_zh": "FR/13/2025 聯合備忘錄",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD801-joint-note.pdf",
+      "date": "2025-10-16",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "d6f7f4794257",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Inspection Observations Related to Auditor Use of Data and Reports",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/data-and-reports-spotlight.pdf?sfvrsn=4b2cb315_2",
+      "date": "2025",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "83d0fd51305e",
       "source": "FSB",
       "title_en": "2025 Resolution Report: “From Plans to Practice: Operationalising Resolution”",
       "title_zh": "2025年處置報告：「從計畫到實踐：處置機制運作化」",
-      "intro": "本報告檢視金融機構處置計畫的實際執行情況與操作挑戰，評估從理論規劃到實務執行的落差。報告對於完善全球金融機構危機處理機制提供重要實務指引。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/01/2025-resolution-report-from-plans-to-practice-operationalising-resolution/",
-      "date_raw": "2025",
-      "translated": true
+      "date": "2025",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "6a8e453d2135",
-      "source": "FSB",
-      "title_en": "Good Practices for Crisis Management Groups (Revised Version)",
-      "title_zh": "危機管理小組最佳實務指引（修訂版）",
-      "intro": "本指引更新了跨國金融機構危機管理小組的運作標準與最佳實務做法。修訂內容反映近年危機處理經驗，對於提升國際金融危機協調處理能力具有重要意義。",
-      "url": "https://www.fsb.org/2026/01/good-practices-for-crisis-management-groups-revised-version/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "c985f290adba",
+      "id": "bafb6cd9c75a",
       "source": "FSB",
       "title_en": "Global Monitoring Report on Nonbank Financial Intermediation 2025",
       "title_zh": "2025年非銀行金融中介全球監測報告",
-      "intro": "本報告分析全球非銀行金融中介機構的規模、風險特徵與系統重要性發展趋勢。報告對於監管影子銀行體系風險與維護金融穩定具有重要參考價值。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2025/12/global-monitoring-report-on-nonbank-financial-intermediation-2025/",
-      "date_raw": "2025",
-      "translated": true
+      "date": "2025",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "d3174444d2d1",
+      "id": "4dfabcc30253",
       "source": "FSB",
       "title_en": "2025 List of Global Systemically Important Banks (G-SIBs)",
       "title_zh": "2025年全球系統重要性銀行清單",
-      "intro": "本清單公布2025年被認定為全球系統重要性銀行的金融機構名單。這些銀行將面臨更嚴格的監理要求與資本規範，對全球銀行業監理具有重大影響。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2025/11/2025-list-of-global-systemically-important-banks-g-sibs/",
-      "date_raw": "2025",
-      "translated": true
+      "date": "2025",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "268e363aa74f",
+      "id": "5cf61668f313",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update on 2024 Inspection Activities",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2024-inspection-activities-spotlight.pdf?sfvrsn=86794c04_2",
+      "date": "2024",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "9f55a785da81",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Observations From the Target Team’s 2023 Inspections",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2023-inspections-spotlight.pdf?sfvrsn=acf72513_2",
+      "date": "2023",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "2f8f3c5634ec",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update on 2023 Inspection Activities",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2023-inspection-activities-spotlight.pdf?sfvrsn=2afb0f25_2",
+      "date": "2023",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "703ab3d3c215",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Priorities for 2023 Inspections",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/priorities-spotlight.pdf?sfvrsn=5c104095_4",
+      "date": "2023",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "4e1fae91f7d7",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Observations From the Target Team’s 2022 Inspections",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2022-inspections-spotlight.pdf?sfvrsn=7917915b_4",
+      "date": "2022",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "142943a4e94d",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2022 Inspection Observations",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/spotlight-staff-preview-2022-inspection-observations.pdf?sfvrsn=1b116d49_4",
+      "date": "2022",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "2de22a005cc8",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Overview for Planned 2022 Inspections",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2022-inspections-overview-spotlight.pdf?sfvrsn=8d3e48ef_4",
+      "date": "2022",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "172fcdea7cd3",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2021 Inspection Observations",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2021-inspection-observations-spotlight.pdf?sfvrsn=d2590627_4",
+      "date": "2021",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "3f1ef6134786",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Observations From the Target Team’s 2021 Inspections",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-spotlight.pdf?sfvrsn=b6a83e28_4",
+      "date": "2021",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "3a3ef880c0d8",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Outlook for 2021 Inspections",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-outlook-2021-inspections-spotlight.pdf?sfvrsn=6b415087_6",
+      "date": "2021",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "f40d0cfd6876",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2020 Inspection Observations",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2020-inspection-observations-spotlight.pdf?sfvrsn=10819041_4",
+      "date": "2020",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "05a88e778fa9",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update and Preview of 2019 Inspection Observations",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2019-inspection-observations-spotlight.pdf?sfvrsn=57617c98_2",
+      "date": "2019",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "ba14109e2b6d",
+      "source": "PCAOB",
+      "title_en": "Inspections Outlook for 2019",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-outlook-for-2019.pdf?sfvrsn=538b8bb7_2",
+      "date": "2019",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "91e33c293e4f",
+      "source": "PCAOB",
+      "title_en": "Staff Preview of 2018 Inspection Observations",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2018-inspection-observations.pdf?sfvrsn=b5f8cb09_0",
+      "date": "2018",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "b6895a32e91f",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2017/4: Preview of Observations from 2016 Inspections of Auditors of Issuers (November 2017)",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-4-issuer-results.pdf?sfvrsn=c216d8a7_0",
+      "date": "2017",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "db5ff5b68fd4",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2017/1: Preview of Observations from 2016 Inspections of Auditors of Brokers and Dealers (June 2017)",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-1-broker-dealer-results.pdf?sfvrsn=294b7e1f_0",
+      "date": "2017",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "adb58ba46fc7",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2016/2: Preview of Observations from 2015 Inspections of Auditors of Brokers and Dealers (April 2016)",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-2-auditors-broker-dealers.pdf?sfvrsn=2a9d6251_0",
+      "date": "2016",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "8469357f61ba",
+      "source": "PCAOB",
+      "title_en": "Staff Inspection Brief, Vol. 2016/1: Preview of Observations from 2015 Inspections of Auditors of Issuers (April 2016)",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-1-auditors-issuers.pdf?sfvrsn=c86199e7_0",
+      "date": "2016",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "0349d6197d26",
+      "source": "PCAOB",
+      "title_en": "Data Points: Financial Restatements and Auditor Turnover",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/staff-publications/data-points/data-points--financial-restatements-and-auditor-turnover",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "f0b0c5bdfaa4",
+      "source": "PCAOB",
+      "title_en": "Broker-Dealer Audit Focus: Review Engagements Regarding Exemption Reports",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/staff-publications/audit-focus/broker-dealer-audit-focus--review-engagements-regarding-exemption-reports",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "0f4cf6796881",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Bank Financial Reporting Audits",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/banking-spotlight.pdf?sfvrsn=c3f496ab_2",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "f99e894bf416",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Staff Update on Outreach Activities Related to the Integration of Generative Artificial Intelligence in Audits and Financial Reporting",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/documents/generative-ai-spotlight.pdf",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "69f05a0c13a6",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin: Opportunity To Comment on Proposal To Enhance How Auditors Address Certain Assessed Risks of Material Misstatement",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin--opportunity-to-comment-on-proposal-to-enhance-how-auditors-address-certain-assessed-risks-of-material-misstatement",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "6034d641407b",
+      "source": "PCAOB",
+      "title_en": "Spotlight: Inspection Observations Related to Engagement Quality Reviews",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/eqr-spotlight.pdf?sfvrsn=95a345e6_4",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "0a74ba5812f1",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin - Opportunity to Comment on Proposed Updates to PCAOB Standards Addressing the Use of Data Analytics by Auditors",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/bulletin-opportunity-to-comment-on-proposed-updates-to-pcaob-standards-addressing-the-use-of-data-analytics-by-auditors",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "5a78c6324f2c",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin - Opportunity to Comment on PCAOB Proposal on Noncompliance With Laws and Regulations",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-opportunity-to-comment-on-proposed-standard-addressing-an-auditor-s-responsibility-related-company-noncompliance-with-laws-regulations",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "91b3b1f1ab85",
+      "source": "PCAOB",
+      "title_en": "Investor Bulletin - Opportunity to Comment on Proposed Standard Addressing Core Auditing Principles and Responsibilities",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/opportunity-to-comment-proposed-standard-addressing-core-auditing-principles-and-responsibilities",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "c95ad3538693",
+      "source": "PCAOB",
+      "title_en": "Investor Advisory - Exercise Caution with Independent Verification/Proof of Reserve Reports",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory-exercise-caution-with-third-party-verification-proof-of-reserve-reports",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "de9664e1a804",
+      "source": "PCAOB",
+      "title_en": "Spotlight: The PCAOB’s Use of Economic Analysis and Stakeholder Input in Standard Setting",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/pcaob-use-economic-analysis-stakeholder-spotlight.pdf?sfvrsn=9cb7e4d0_2",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "17dadf6a3986",
+      "source": "PCAOB",
+      "title_en": "Guide to Reading the PCAOB's New Inspection Report",
+      "title_zh": "",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-report-guide.pdf?sfvrsn=bc066f32_0",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "a4169aafc5ac",
+      "source": "FSB",
+      "title_en": "Thematic Peer Review on Public Sector Backstop Funding Mechanisms: Summary Terms of Reference",
+      "title_zh": "公部門後備資金機制主題同儕審查：摘要職權範圍",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://www.fsb.org/2026/02/thematic-peer-review-on-public-sector-backstop-funding-mechanisms-summary-terms-of-reference/",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "8e9e6f9d57d9",
+      "source": "FSB",
+      "title_en": "Public responses to consultation on Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes",
+      "title_zh": "FSB關鍵屬性中保險業復原與處置規劃要求適用範圍諮詢之公眾回應",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://www.fsb.org/2026/02/public-responses-to-consultation-on-scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes/",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "df2e42d2eef7",
+      "source": "FSB",
+      "title_en": "Vulnerabilities in Government Bond-backed Repo Markets",
+      "title_zh": "政府債券擔保附買回市場之脆弱性",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://www.fsb.org/2026/02/vulnerabilities-in-government-bond-backed-repo-markets/",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "7a90a2c5dba4",
+      "source": "FSB",
+      "title_en": "Good Practices for Crisis Management Groups (Revised Version)",
+      "title_zh": "危機管理小組最佳實務指引（修訂版）",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
+      "url": "https://www.fsb.org/2026/01/good-practices-for-crisis-management-groups-revised-version/",
+      "date": "",
+      "first_seen": "2026-07-19"
+    },
+    {
+      "id": "a6dd1783231e",
       "source": "FSB",
       "title_en": "Scope of Insurers Subject to the Recovery and Resolution Planning Requirements in the FSB Key Attributes: Consultation report",
       "title_zh": "FSB關鍵屬性中保險業復原與處置規劃要求適用範圍：諮詢報告",
-      "intro": "本諮詢報告提出保險公司納入復原與處置規劃要求的具體範圍與標準建議。此規範將影響全球保險業的風險管理要求與危機處理機制設計。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2025/11/scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes-consultation-report/",
-      "date_raw": "",
-      "translated": true
+      "date": "",
+      "first_seen": "2026-07-19"
     },
     {
-      "id": "14fec775e05b",
+      "id": "df8b98243d31",
       "source": "FSB",
       "title_en": "The FSB reaffirms its decision to use IAIS Holistic Framework assessments instead of an annual identification of global systemically important insurers",
       "title_zh": "FSB重申決定採用IAIS整體框架評估取代年度全球系統重要性保險公司認定",
-      "intro": "FSB確認將使用國際保險監理官協會的整體框架來評估保險業系統風險，不再年度認定特定的全球系統重要性保險公司。此政策轉變將改變全球保險業監理方式與風險評估機制。",
+      "summary_en": "",
+      "summary_checked": false,
+      "intro": "",
       "url": "https://www.fsb.org/2025/11/the-fsb-reaffirms-its-decision-to-use-iais-holistic-framework-assessments-instead-of-an-annual-identification-of-global-systemically-important-insurers/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "5e25793154b9",
-      "source": "IESBA",
-      "title_en": "Don't see your language? Request permission to translate",
-      "title_zh": "找不到您的語言？申請翻譯許可",
-      "intro": "此為國際監理機構提供多語言服務的指引，允許用戶申請將相關準則或文件翻譯成其母語。這項政策有助於提升國際會計準則的全球可及性，確保不同語言背景的專業人士都能準確理解監理要求。",
-      "url": "https://apps.ifac.org/opri/my",
-      "date_raw": "2013-05-15T00:00:00-04:00",
-      "translated": true
-    },
-    {
-      "id": "706abdff9137",
-      "source": "IESBA",
-      "title_en": "공인회계사윤리기준 , 2012 (Korean)",
-      "title_zh": "公認會計師職業道德準則，2012年（韓文版）",
-      "intro": "此為2012年版本的韓文公認會計師職業道德準則，規範會計師在執行業務時應遵循的道德標準與行為準則。該準則對於維護會計專業的公信力至關重要，涵蓋獨立性、誠信、客觀性等核心職業道德要求。",
-      "url": "https://www.ethicsboard.org/publications/gonginhoegyesayunligijun-2012",
-      "date_raw": "2012",
-      "translated": true
-    },
-    {
-      "id": "e4503032aa82",
-      "source": "IESBA",
-      "title_en": "IP PERMISSIONS AND POLICIES",
-      "title_zh": "智慧財產權許可與政策",
-      "intro": "此文件規範國際監理機構相關準則、出版物及其他智慧財產的使用許可政策。內容可能包括版權使用條款、翻譯授權程序、商業使用限制等規定，對於確保準則的正確使用與傳播具有重要意義。",
-      "url": "https://apps.ifac.org/opri/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "b85175502274",
-      "source": "IOSCO",
-      "title_en": "Members Area",
-      "title_zh": "會員專區",
-      "intro": "此專區為IOSCO會員機構提供專屬的資訊交流平台和內部資源。會員可透過此平台取得最新的監理政策、法規更新及專業培訓材料。",
-      "url": "https://www.iosco.org/members_area/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "8a751ebca698",
-      "source": "IOSCO",
-      "title_en": "IOSCO AsiaPacific Hub",
-      "title_zh": "IOSCO亞太中心",
-      "intro": "此中心專門負責協調亞太地區證券監理機構之間的合作與政策協調。透過區域性的監理合作，促進亞太資本市場的穩定發展與投資者保護。",
-      "url": "https://www.iosco.org.my/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "16c275eea5cd",
-      "source": "IOSCO",
-      "title_en": "IFRSDatabase",
-      "title_zh": "國際財務報導準則資料庫",
-      "intro": "此資料庫收錄各國採用IFRS的實施情況、相關法規及監理措施。為監理機構提供財務報導準則的比較分析，促進國際會計準則的一致性應用。",
-      "url": "https://www.iosco.org/ifrs/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "2fcf18541824",
-      "source": "IOSCO",
-      "title_en": "Capacity BuildingOnline Toolkit",
-      "title_zh": "能力建設線上工具包",
-      "intro": "此工具包提供監理機構人員專業能力提升所需的線上培訓資源和實務指引。透過系統性的學習模組，協助各國監理人員提升專業技能與監理效能。",
-      "url": "https://www.iosco.org/members_area/capacity_building_online_toolkit/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "fe4ebea0bc8f",
-      "source": "IOSCO",
-      "title_en": "Presidents Committee",
-      "title_zh": "主席委員會",
-      "intro": "此委員會由IOSCO最高層級的監理機構負責人組成，負責制定組織策略方向。委員會決定重要政策議題，並指導全球證券監理的發展趨勢。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=1",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "70c19716683f",
-      "source": "IOSCO",
-      "title_en": "Growth and Emerging Markets Committee",
-      "title_zh": "成長與新興市場委員會",
-      "intro": "此委員會專注於新興市場與發展中國家的資本市場監理議題。透過經驗分享與技術協助，促進新興市場監理制度的完善與市場發展。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=8",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "639213760cf3",
-      "source": "IOSCO",
-      "title_en": "Africa / Middle-East Regional Committee",
-      "title_zh": "非洲/中東區域委員會",
-      "intro": "此委員會負責協調非洲與中東地區證券監理機構的區域合作事務。針對該地區特有的市場環境與挑戰，發展適合的監理政策與實務做法。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=7",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "bec481787523",
-      "source": "IOSCO",
-      "title_en": "Asia-Pacific Regional Committee",
-      "title_zh": "亞太區域委員會",
-      "intro": "此委員會統籌亞太地區各國證券監理機構之間的政策協調與合作計畫。促進區域內資訊共享、執法合作，並因應亞太市場的獨特發展需求。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=6",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "1e22327ece58",
-      "source": "IOSCO",
-      "title_en": "European Regional Committee",
-      "title_zh": "歐洲區域委員會",
-      "intro": "此委員會負責歐洲地區證券監理機構的區域協調工作與政策發展。配合歐盟金融法規架構，強化跨境監理合作與市場整合。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=4",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "80c115a8627c",
-      "source": "IOSCO",
-      "title_en": "Inter-American Regional Committee",
-      "title_zh": "美洲區域委員會",
-      "intro": "此委員會統籌北美、中美與南美地區證券監理機構的區域合作事務。促進美洲各國監理制度的協調發展，加強區域金融市場的穩定性。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=9",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "6963dfb7bf05",
-      "source": "IOSCO",
-      "title_en": "Affiliate Members Consultative Committee",
-      "title_zh": "附屬會員諮詢委員會",
-      "intro": "此委員會負責協調附屬會員機構的意見與建議，促進全球證券監理機構間的合作交流。該機制有助於提升新興市場監理機構的參與度，強化國際證券監理標準的全球一致性。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=2",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "c7dbc92438ef",
-      "source": "IOSCO",
-      "title_en": "IOSCO Committee on Emerging Risks",
-      "title_zh": "國際證監會組織新興風險委員會",
-      "intro": "專門識別和評估金融市場中的新興風險，包括科技創新、市場結構變化等帶來的挑戰。該委員會的工作對於預防系統性風險、維護全球金融市場穩定具有重要意義。",
-      "url": "https://www.iosco.org/research/?subSection=scrr_members",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "3e393145b7b7",
-      "source": "IOSCO",
-      "title_en": "Chairs of the Committees",
-      "title_zh": "各委員會主席",
-      "intro": "涵蓋各專業委員會主席的組成與職責資訊，負責統籌各委員會的政策制定與執行方向。此架構確保國際證券監理政策的協調性與有效性，促進跨境監理合作。",
-      "url": "https://www.iosco.org/v2/about/?subsection=chairs_committees",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "be044b21f41a",
-      "source": "IOSCO",
-      "title_en": "General Secretariat",
-      "title_zh": "秘書處",
-      "intro": "負責國際證監會組織的日常行政運作、政策協調及會員服務等核心功能。秘書處是組織運作的中樞，確保各項國際證券監理倡議能夠順利推動並落實執行。",
-      "url": "https://www.iosco.org/v2/about/?subsection=gs",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "50afc577718f",
-      "source": "IOSCO",
-      "title_en": "MMoU/EMMoU Stats",
-      "title_zh": "多邊監理合作備忘錄統計資料",
-      "intro": "提供多邊監理合作備忘錄及加強版備忘錄的簽署與執行統計數據。這些統計資料反映了國際證券監理合作的廣度與深度，是衡量跨境執法合作成效的重要指標。",
-      "url": "https://www.iosco.org/members_area/mmou-stats",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "0f57ebbe6b4c",
-      "source": "IOSCO",
-      "title_en": "Administrative Arrangement",
-      "title_zh": "行政協議",
-      "intro": "規範國際證券監理機構間行政合作的框架與程序，涵蓋資訊交換、技術援助等事項。此協議為監理機構提供正式的合作基礎，促進國際證券市場監理的協調統一。",
-      "url": "https://www.iosco.org/v2/about/?subsection=administrative_arrangement",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "e990df98feb1",
-      "source": "IOSCO",
-      "title_en": "Issuer Accounting, Audit and Disclosure (Committee 1)",
-      "title_zh": "發行人會計、審計與揭露委員會（第一委員會）",
-      "intro": "專責制定上市公司財務報告、會計準則及資訊揭露的國際監理標準與最佳實務。該委員會的工作確保投資人能獲得透明、準確的公司資訊，維護資本市場的誠信與效率。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=12",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "f2e5576ef0e3",
-      "source": "IOSCO",
-      "title_en": "Regulation of Secondary Markets (Committee 2)",
-      "title_zh": "次級市場監理委員會（第二委員會）",
-      "intro": "負責制定證券次級市場的交易規則、市場結構及監理框架相關政策。該委員會致力於確保證券交易市場的公平性、透明度與效率，防範市場操縱等不當行為。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=13",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "7b9e81d6ffdd",
-      "source": "IOSCO",
-      "title_en": "Regulation of Market Intermediaries (Committee 3)",
-      "title_zh": "市場中介機構監理委員會（第三委員會）",
-      "intro": "專門制定證券商、投資顧問等金融中介機構的監理標準與行為準則。該委員會的規範確保中介機構具備適當的財務實力與專業能力，保護投資人權益並維護市場秩序。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=14",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "e22d946a88fc",
-      "source": "IOSCO",
-      "title_en": "Committee 4 Information",
-      "title_zh": "第四委員會資訊",
-      "intro": "提供國際證監會組織第四委員會的相關資訊與活動內容，可能涵蓋特定專業領域的監理議題。由於標題資訊有限，具體職能需進一步查閱詳細資料以了解其專業範疇與政策重點。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=15",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "b7c5f46a063f",
-      "source": "IOSCO",
-      "title_en": "Committee 4 Resources",
-      "title_zh": "委員會4：資源委員會",
-      "intro": "該委員會主要負責監理機構的資源配置、預算管理和人力資源規劃等相關事務。此委員會的工作對於確保監理機構具備充足的資源來執行監理職能至關重要。",
-      "url": "https://www.iosco.org/members_area/v2/about/?subsection=display_committee&cmtid=15&subSection1=resources",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "3e0804c3e310",
-      "source": "IOSCO",
-      "title_en": "Investment Management (Committee 5)",
-      "title_zh": "投資管理委員會（委員會5）",
-      "intro": "該委員會專注於投資管理行業的監理政策制定，包括資產管理公司、基金管理和投資顧問等領域的規範。委員會的工作有助於建立統一的投資管理監理標準，保護投資者權益並維護市場穩定。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=16",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "a4770b892554",
-      "source": "IOSCO",
-      "title_en": "Credit Rating Agencies (Committee 6)",
-      "title_zh": "信用評等機構委員會（委員會6）",
-      "intro": "該委員會負責制定信用評等機構的監理框架和標準，確保評等機構的獨立性、透明度和評等品質。委員會的工作對於維護金融市場信心和防範系統性風險具有重要意義。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=17",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "9516a595bc80",
-      "source": "IOSCO",
-      "title_en": "Committee on Derivatives (Committee 7)",
-      "title_zh": "衍生性商品委員會（委員會7）",
-      "intro": "該委員會專責衍生性金融商品市場的監理政策研擬，包括場外衍生品交易、中央清算和風險管理等議題。委員會致力於降低衍生品市場的系統性風險，提升市場透明度和穩定性。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=18",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "17a9143c6565",
-      "source": "IOSCO",
-      "title_en": "Committee on Retail Investors (Committee 8)",
-      "title_zh": "零售投資者委員會（委員會8）",
-      "intro": "該委員會關注一般散戶投資者的保護措施和權益維護，研擬相關的監理政策和最佳實務。委員會的工作重點在於提升零售投資者的金融素養，確保其獲得公平對待和適當保護。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=20",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "98c83f3f6ccb",
-      "source": "IOSCO",
-      "title_en": "Sustainable Finance Task Force",
-      "title_zh": "永續金融工作小組",
-      "intro": "該工作小組致力於推動永續金融政策的發展，包括ESG投資、綠色金融商品和氣候風險管理等領域。工作小組的成果將有助於金融體系更好地支持永續發展目標，應對氣候變遷挑戰。",
-      "url": "https://www.iosco.org/members_area/v2/about/?subsection=stf",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "1e9f4b2c0e89",
-      "source": "IOSCO",
-      "title_en": "Assessment Committee",
-      "title_zh": "評估委員會",
-      "intro": "該委員會負責對監理機構或金融市場進行定期評估和審查工作，檢視監理效能和合規情況。委員會的評估結果為改善監理品質和強化金融穩定提供重要依據。",
-      "url": "https://www.iosco.org/v2/about/?subsection=display_committee&cmtid=19",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "88c9d2774013",
-      "source": "IOSCO",
-      "title_en": "Monitoring Group",
-      "title_zh": "監督小組",
-      "intro": "該小組負責持續監督和追蹤各項監理政策的執行情況，確保相關措施得到有效落實。監督小組的工作有助於及時發現問題並提出改善建議，維護監理體系的有效運作。",
-      "url": "https://www.iosco.org/v2/about/?subsection=monitoring_group",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "6d85f539bc99",
-      "source": "IOSCO",
-      "title_en": "Monitoring Board",
-      "title_zh": "監督委員會",
-      "intro": "該委員會承擔重要的監督職能，對特定領域或機構進行監督管理工作。委員會通過定期監督和報告機制，確保相關單位遵循既定的監理標準和要求。",
-      "url": "https://www.iosco.org/v2/about/?subsection=monitoring_board",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "1e21df6a3658",
-      "source": "IOSCO",
-      "title_en": "Media Releases",
-      "title_zh": "媒體發布",
-      "intro": "此部分包含監理機構對外發布的新聞稿、聲明和重要公告等媒體資料。這些發布內容有助於提升監理透明度，讓市場參與者和公眾及時了解重要的監理政策和市場發展。",
-      "url": "https://www.iosco.org/v2/media_room/?subsection=media_releases",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "e360fcd261f1",
-      "source": "IOSCO",
-      "title_en": "Public Communications by IOSCO Officials",
-      "title_zh": "IOSCO官員公開溝通",
-      "intro": "此項目涵蓋國際證券管理機構組織（IOSCO）官員對外發表的公開聲明、演講及政策說明等溝通內容。這些溝通有助於市場參與者了解監理機構的政策方向與監管重點，對於維護市場透明度與建立監管預期具有重要意義。",
-      "url": "https://www.iosco.org/v2/media_room/?subsection=speeches",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "a370c315fcfc",
-      "source": "IOSCO",
-      "title_en": "Requests for Logo",
-      "title_zh": "標誌使用申請",
-      "intro": "此項目涉及外部機構申請使用IOSCO官方標誌或商標的相關程序與規定。適當的標誌使用管理有助於保護IOSCO的品牌形象與權威性，同時確保其標誌不被濫用或誤用於不當目的。",
-      "url": "https://www.iosco.org/v2/media_room/?subsection=requests-for-logo",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "552f5b3ec6e0",
-      "source": "IOSCO",
-      "title_en": "Public Reports",
-      "title_zh": "公開報告",
-      "intro": "此類別包含IOSCO發布的各種公開研究報告、政策文件及市場分析等重要文獻。這些報告通常涵蓋證券市場監管的最新發展趨勢、最佳實務案例及政策建議，是國際證券監管領域的重要參考資料。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=public_reports",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "63f0cd686a95",
-      "source": "IOSCO",
-      "title_en": "Collaboration with the FSB",
-      "title_zh": "與金融穩定委員會的合作",
-      "intro": "此項目記錄IOSCO與金融穩定委員會（FSB）在政策制定、監管協調及金融穩定維護方面的合作事項。這種跨國際組織的合作對於應對全球金融風險、建立一致的監管標準具有關鍵作用。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=collaboration-FSB",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "e6965fbf1ddf",
-      "source": "IOSCO",
-      "title_en": "Annual Reports",
-      "title_zh": "年度報告",
-      "intro": "IOSCO每年發布的綜合性報告，總結組織在該年度的主要工作成果、政策發展及未來規劃等內容。年度報告是了解IOSCO整體運作狀況與國際證券監管發展方向的重要文件，具有高度的參考價值。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=annual_reports",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "f8236e72a0d6",
-      "source": "IOSCO",
-      "title_en": "Comment Letters by IOSCO",
-      "title_zh": "IOSCO意見函",
-      "intro": "此類別包含IOSCO針對其他國際組織、政府機構或重要政策提案所提出的正式意見與建議函件。這些意見函反映了國際證券監管機構的專業立場，對於全球金融政策的制定具有重要影響力。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=iosco_comment_letters",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "729bca0da35d",
-      "source": "IOSCO",
-      "title_en": "Public Comment Letters",
-      "title_zh": "公眾意見函",
-      "intro": "此項目涵蓋IOSCO收到來自市場參與者、學術機構及其他利害關係人針對政策提案或諮詢文件所提交的意見回函。公眾意見的收集與分析是民主決策過程的重要環節，有助於提升政策制定的品質與可行性。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=public_comment_letters",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "cae260226ba3",
-      "source": "IOSCO",
-      "title_en": "Information Repositories",
-      "title_zh": "資訊儲存庫",
-      "intro": "此類別提供IOSCO相關文件、資料及歷史資訊的集中存放與檢索服務。完善的資訊儲存庫有助於提升監管資訊的可及性與透明度，支援研究人員、政策制定者及市場參與者的資訊需求。",
-      "url": "https://www.iosco.org/information-repositories/",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "0b4a6cea57bc",
-      "source": "IOSCO",
-      "title_en": "Agreements with other Institutions",
-      "title_zh": "與其他機構的協議",
-      "intro": "此項目記錄IOSCO與其他國際組織、監管機構或相關機構簽署的合作協議或備忘錄等文件。這些協議建立了跨機構合作的法律基礎，有助於促進國際間的監管協調與資訊分享。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=agreements_with_other_institutions",
-      "date_raw": "",
-      "translated": true
-    },
-    {
-      "id": "a0dfa007126b",
-      "source": "IOSCO",
-      "title_en": "FSB, BIS and Other Updates",
-      "title_zh": "FSB、BIS及其他機構動態",
-      "intro": "此類別提供金融穩定委員會（FSB）、國際清算銀行（BIS）及其他重要國際金融機構的最新發展動態與政策更新資訊。掌握這些機構的動向對於了解國際金融監管趨勢與政策協調具有重要參考價值。",
-      "url": "https://www.iosco.org/v2/publications/?subsection=fsb_bis_other_updates",
-      "date_raw": "",
-      "translated": true
+      "date": "",
+      "first_seen": "2026-07-19"
     }
   ]
 }
