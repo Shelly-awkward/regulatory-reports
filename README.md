@@ -6,7 +6,7 @@
 
 ## 運作方式（v3）
 
-- **抓取**：每個機構有專屬解析策略——FSB 與 IFIAR 優先讀 RSS；IOSCO 從出版品列表逐列取真實標題與編號；IESBA／IAASB／IFAC 共用同平台解析；PCAOB 鎖定 staff publications 主列表。
+- **抓取**：每個機構有專屬解析策略——FSB 與 IFIAR 優先讀 RSS；IOSCO 從出版品列表逐列取真實標題與編號；IESBA／IAASB／IFAC 共用同平台解析；PCAOB 抓 staff publications 主列表，並用 headless 瀏覽器（Playwright）渲染 JS 動態的**新聞發布**頁後擷取。
 - **驗證**：所有抓到的連結都經過驗證閘門，過濾網站導覽連結、按鈕文字（View Report 等）與分類目錄頁，只留真正的出版品。既有資料每次執行也會重新驗證。
 - **摘要**：進到每篇報告的詳細頁抓取真實摘要（og:description 或首段），再交給 Claude「翻譯」——抓不到摘要就留空，不會憑標題想像內容。
 - **翻譯快取**：已翻譯過的項目不重翻，節省 API 費用。
