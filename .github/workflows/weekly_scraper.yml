@@ -26,10 +26,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r scraper/requirements.txt
 
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
       - name: Run scraper
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          DEBUG_PCAOB: "1"   # 暫時：診斷新聞發布頁結構，驗證後移除
         run: python scraper/scraper.py
 
       - name: Commit and push results

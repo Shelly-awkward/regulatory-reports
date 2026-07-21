@@ -240,7 +240,7 @@ MONTH_MAP = {
 
 _D_FULL   = re.compile(r"\b(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*,?\s+(20\d{2})\b", re.I)
 _D_MDY    = re.compile(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2}),\s+(20\d{2})\b", re.I)
-_D_ISO    = re.compile(r"\b(20\d{2})[/\-](\d{1,2})[/\-](\d{1,2})\b")
+_D_ISO    = re.compile(r"\b(20\d{2})[/\-](\d{1,2})[/\-](\d{1,2})(?!\d)")  # 容忍 ISO 時間後綴（…T10:00:00Z）
 _D_MY     = re.compile(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(20\d{2})\b", re.I)
 _D_YEAR   = re.compile(r"\b(20\d{2})\b")
 
@@ -292,6 +292,33 @@ def fetch(url: str, timeout: int = 25) -> str:
     if not resp.encoding or resp.encoding.lower() == "iso-8859-1":
         resp.encoding = resp.apparent_encoding or "utf-8"
     return resp.text
+
+
+def render_html(url: str, wait_selector: str = None, timeout: int = 30000) -> str:
+    """用 headless chromium 渲染 JS 動態頁面後回傳 DOM。
+    適用於靜態 HTML 拿不到內容的站（PCAOB 新聞發布、IFAC 平台站）。
+    playwright 不可用或渲染失敗時回傳空字串，呼叫端據此優雅退場。"""
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        print(f"  ⚠️  playwright 未安裝：{e}")
+        return ""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page(user_agent=HEADERS["User-Agent"])
+            page.goto(url, wait_until="networkidle", timeout=timeout)
+            if wait_selector:
+                try:
+                    page.wait_for_selector(wait_selector, timeout=8000)
+                except Exception:
+                    pass  # 選擇器沒等到也回傳目前 DOM，讓解析端盡力而為
+            html = page.content()
+            browser.close()
+            return html
+    except Exception as e:
+        print(f"  ⚠️  渲染失敗（{url}）：{e}")
+        return ""
 
 
 # ─────────────────────────────────────────
@@ -441,46 +468,28 @@ def scrape_ifac_platform(src: dict) -> list[dict]:
 
 
 def scrape_pcaob_news(news_url: str, base_url: str) -> list[dict]:
-    """PCAOB 新聞發布（news releases）：策展型列表。往上找容器內日期，
-    要求有日期（新聞必有日期，同時藉此濾掉導覽雜訊）；標記 trusted 略過報告關鍵字要求。"""
-    raw = fetch(news_url)
-    soup = BeautifulSoup(raw, "lxml")
-
-    # ── 一次性診斷（驗證後移除）：探測資料是否內嵌於 HTML 的 JSON ──
-    if os.environ.get("DEBUG_PCAOB"):
-        low = raw.lower()
-        for marker in ["__next_data__", "__nuxt__", "application/ld+json",
-                       "application/json", "/detail/", "news-releases/",
-                       "/api/", "graphql", "window.__"]:
-            print(f"  [DBG] 含 {marker!r}: {marker in low}")
-        # <script> 內是否藏新聞資料（含日期＋標題樣式）
-        scripts = soup.find_all("script")
-        big = [s for s in scripts if s.string and len(s.string) > 500]
-        print(f"  [DBG] <script>={len(scripts)}；>500字元的 script={len(big)}")
-        for s in big:
-            txt = s.string
-            if "news" in txt.lower() or "release" in txt.lower():
-                idx = txt.lower().find("release")
-                print(f"  [DBG] script 片段: ...{txt[max(0,idx-80):idx+180]!r}...")
-                break
-        # 實際新聞發布詳細連結（第二段路徑）
-        detail = re.findall(r'href=[\'\"](/news-events/news-releases/[^\'\"]+)[\'\"]', raw, re.I)
-        print(f"  [DBG] news-releases/ 詳細連結數={len(detail)}；樣本={detail[:5]}")
-
+    """PCAOB 新聞發布（news releases）：JS 動態渲染頁，用 headless 瀏覽器渲染後解析。
+    只收 /news-events/news-releases/ 底下的詳細連結，往上找日期並要求有日期；標記 trusted。"""
+    html = render_html(news_url, wait_selector="a[href*='/news-releases/']")
+    if not html:
+        return []
+    soup = BeautifulSoup(html, "lxml")
     for tag in soup.select("nav, footer, header, script, style"):
         tag.decompose()
     main = soup.select_one("main") or soup
 
     reports, seen = [], set()
     for a in main.find_all("a", href=True):
-        href  = urljoin(base_url, a["href"].strip())
+        href = urljoin(base_url, a["href"].strip())
+        p    = urlparse(href)
+        # 僅收新聞發布「詳細頁」（清單頁 /news-releases 之下還有一段 slug）
+        if not re.search(r"/news-events/news-releases/.+", p.path):
+            continue
         title = clean_title(a.get_text(" ", strip=True))
         if not title or href in seen or len(title) < 15:
             continue
-        if "pcaobus.org" not in urlparse(href).netloc and "pcaobus.org" not in href:
-            continue
         seen.add(href)
-        # 日期：往上找最多 3 層，取第一個含日期的容器（新聞列表日期常在鄰近元素）
+        # 日期：往上找最多 3 層，取第一個含日期的容器
         date, node = "", a
         for _ in range(3):
             if node.parent is None:
@@ -619,6 +628,34 @@ def fetch_summary(url: str) -> str:
     return ""
 
 
+def fetch_detail_date(url: str) -> str:
+    """抓詳細頁的發布日期：優先 meta/time 標籤，退而找內文開頭的日期文字。"""
+    if url.lower().endswith(".pdf"):
+        return ""
+    try:
+        soup = BeautifulSoup(fetch(url, timeout=20), "lxml")
+    except Exception:
+        return ""
+    # meta 發布時間
+    for sel, attr in [("meta[property='article:published_time']", "content"),
+                      ("meta[name='date']", "content"),
+                      ("meta[itemprop='datePublished']", "content")]:
+        tag = soup.select_one(sel)
+        if tag:
+            d = normalize_date(tag.get(attr, ""))
+            if d:
+                return d
+    # <time datetime="...">
+    for t in soup.find_all("time"):
+        d = normalize_date(t.get("datetime", "") or t.get_text(" ", strip=True))
+        if d:
+            return d
+    # 內文開頭區塊的可見日期
+    main = soup.select_one("main, article, .content, #content") or soup
+    d = normalize_date(main.get_text(" ", strip=True)[:400])
+    return d
+
+
 # ─────────────────────────────────────────
 #  Claude 翻譯（翻譯真實內容，不創作）
 # ─────────────────────────────────────────
@@ -708,9 +745,9 @@ def revalidate_existing(reports: list[dict]) -> list[dict]:
         if not is_valid_report(title, url, trusted):
             continue
         date = normalize_date(r.get("date") or r.get("date_raw") or "")
-        # PCAOB 幕僚出版品舊資料日期污染：與標題年份矛盾時改用標題年份。
-        # 新聞發布（trusted）有真實日期，不可被標題內的年份覆蓋。
-        if r.get("source") == "PCAOB" and not trusted:
+        # PCAOB 幕僚出版品舊資料日期污染：僅對「弱日期」（空或僅年份 len<=4）以標題年份修正；
+        # 補抓來的完整日期（YYYY-MM 以上）與新聞發布（trusted）真實日期不可被覆蓋。
+        if r.get("source") == "PCAOB" and not trusted and len(date) <= 4:
             m = re.search(r"\b(20\d{2})\b", title)
             if m and date[:4] != m.group(1):
                 date = m.group(1)
@@ -724,6 +761,7 @@ def revalidate_existing(reports: list[dict]) -> list[dict]:
             "title_zh":   r.get("title_zh", ""),
             "summary_en": r.get("summary_en", ""),
             "summary_checked": bool(r.get("summary_checked")),
+            "date_checked":    bool(r.get("date_checked")),
             "trusted":    trusted,
             "intro":      r.get("intro", ""),
             "url":        url,
@@ -774,6 +812,20 @@ def main():
             r["summary_en"] = fetch_summary(r["url"])
             r["summary_checked"] = True
             time.sleep(0.5)
+
+    # PCAOB 幕僚出版品日期補抓：日期太弱（空或僅年份）且未查過詳細頁者，抓一次真實發布日期。
+    # date_checked 快取避免每週重抓，僅新項目才需要。
+    date_pending = [r for r in by_url.values()
+                    if r.get("source") == "PCAOB" and not r.get("trusted")
+                    and not r.get("date_checked") and len(r.get("date", "")) <= 4]
+    if date_pending:
+        print(f"PCAOB 幕僚出版品日期補抓：{len(date_pending)} 則…")
+        for r in date_pending:
+            d = fetch_detail_date(r["url"])
+            if d:
+                r["date"] = d
+            r["date_checked"] = True
+            time.sleep(0.3)
 
     # 補翻譯：缺中文標題的，或有真實摘要但還沒翻譯的
     pending = [r for r in by_url.values()
