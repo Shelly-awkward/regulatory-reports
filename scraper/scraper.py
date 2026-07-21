@@ -535,12 +535,20 @@ def scrape_pcaob(src: dict) -> list[dict]:
             continue
         seen.add(href)
 
-        # 日期：僅信任緊鄰容器（不往上爬太多層，避免抓到頁面角落不相干日期）
-        ctx = a.parent.get_text(" ", strip=True) if a.parent else ""
-        date = normalize_date(ctx.replace(title, " "))
+        # 日期：往上找最多 3 層取第一個含日期的容器（清單頁日期常在鄰近兄弟/表親元素；
+        # 停在第一個含日期的層級，避免抓到頁面角落不相干日期）。取不到再退回標題年份。
+        date, node = "", a
+        for _ in range(3):
+            if node.parent is None:
+                break
+            node = node.parent
+            d = normalize_date(node.get_text(" ", strip=True).replace(title, " "))
+            if d:
+                date = d
+                break
         if not date:
-            m = re.search(r"\b(20\d{2})\b", title)
-            date = m.group(1) if m else ""
+            mm = re.search(r"\b(20\d{2})\b", title)
+            date = mm.group(1) if mm else ""
 
         staff.append({
             "source": "PCAOB", "title_en": title, "url": href,
@@ -794,7 +802,8 @@ def main():
                 # 已存在：用新抓到的標題／日期更新（修復舊的壞標題），保留翻譯
                 old = by_url[r["url"]]
                 old["title_en"] = r["title_en"]
-                if r["date"]:
+                # 只在新日期更精確時才更新（避免把已補到的完整日期降級為年份）
+                if r["date"] and len(r["date"]) > len(old.get("date", "")):
                     old["date"] = r["date"]
                 if r.get("summary_en") and not old.get("summary_en"):
                     old["summary_en"] = r["summary_en"]
