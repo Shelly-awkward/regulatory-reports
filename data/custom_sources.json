@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "IFRS",
+    "name": "IFRS Foundation",
+    "fullname": "國際財務報導準則基金會",
+    "url": "https://www.ifrs.org/news-and-events/news/",
+    "base_url": "https://www.ifrs.org"
+  }
+]
