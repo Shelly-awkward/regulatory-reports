@@ -101,6 +101,12 @@ regulatory-reports/
 
 > **注意**：若要讓自訂網站納入自動排程，需將資料新增到 `data/custom_sources.json` 並 push 到 GitHub。
 
+目前已納入自動排程的自訂來源：
+
+| 代號 | 機構 | 來源網址 |
+|---|---|---|
+| `IFRS` | IFRS Foundation（國際財務報導準則基金會） | https://www.ifrs.org/news-and-events/news/ |
+
 ---
 
 ## 費用估計
