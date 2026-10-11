@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-04 16:38 UTC",
-  "last_batch": "2026-10-04",
-  "total": 147,
+  "last_updated": "2026-10-11 17:30 UTC",
+  "last_batch": "2026-10-11",
+  "total": 152,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -48,14 +48,75 @@
   "reports": [
     {
       "source": "FSB",
+      "title_en": "Thematic review on public sector backstop funding mechanisms: Peer re",
+      "url": "https://www.fsb.org/2026/10/thematic-review-on-public-sector-backstop-funding-mechanisms-peer-review-report/",
+      "date": "2026-10-09",
+      "summary_en": "Peer review finds that further work is needed to complete the implementation of Key Attribute 6 to ensure resolution remains a credible option to deal with the failure of large systemic banks.",
+      "id": "73bc2b4af31d",
+      "first_seen": "2026-10-11",
+      "title_zh": "",
+      "intro": ""
+    },
+    {
+      "source": "FSB",
+      "title_en": "FSB report assesses jurisdictions on public sector backstops",
+      "url": "https://www.fsb.org/2026/10/fsb-report-assesses-jurisdictions-on-public-sector-backstops/",
+      "date": "2026-10-09",
+      "summary_en": "Report finds that few FSB jurisdictions have a public sector backstop arranged in advance that can credibly meet the funding needs of large systemic banks in resolution or failure.",
+      "id": "8e39215fbf52",
+      "first_seen": "2026-10-11",
+      "title_zh": "",
+      "intro": ""
+    },
+    {
+      "source": "IFAC",
+      "title_en": "Accountancy Policy",
+      "url": "https://www.ifac.org/knowledge-gateway/accountancy-policy",
+      "date": "2026-10-07",
+      "summary_en": "Updates on advancing the agenda of the global accountancy profession.",
+      "id": "567426ab3767",
+      "first_seen": "2026-10-11",
+      "summary_checked": true,
+      "title_zh": "",
+      "intro": ""
+    },
+    {
+      "source": "IFAC",
+      "title_en": "International Standards",
+      "url": "https://www.ifac.org/knowledge-gateway/international-standards",
+      "date": "2026-10-07",
+      "summary_en": "Resources, news and implementation guidance for audit, education, ethics, financial reporting and the public sector.",
+      "id": "a92c8c3c43b7",
+      "first_seen": "2026-10-11",
+      "summary_checked": true,
+      "title_zh": "",
+      "intro": ""
+    },
+    {
+      "source": "IFAC",
+      "title_en": "Thriving Together: 6 Principles for a Resilient Accountancy Profession",
+      "url": "https://www.ifac.org/knowledge-gateway/discussion/thriving-together-6-principles-resilient-accountancy-profession",
+      "date": "2026-10-06",
+      "summary_en": "",
+      "id": "f6b48783750f",
+      "first_seen": "2026-10-11",
+      "summary_checked": true,
+      "title_zh": "",
+      "intro": ""
+    },
+    {
+      "id": "610ac3cf970e",
+      "source": "FSB",
       "title_en": "FSB Regional Consultative Group for the Americas meets in Mexico City",
+      "title_zh": "FSB美洲區域諮詢小組於墨西哥城舉行會議",
+      "summary_en": "BIS Americas Office hosts the FSB Americas group in Mexico City.",
+      "summary_checked": false,
+      "date_checked": false,
+      "trusted": false,
+      "intro": "國際清算銀行（BIS）美洲辦事處於墨西哥城接待FSB美洲小組舉行會議。",
       "url": "https://www.fsb.org/2026/09/fsb-regional-consultative-group-for-the-americas-meets-in-mexico-city/",
       "date": "2026-09-30",
-      "summary_en": "BIS Americas Office hosts the FSB Americas group in Mexico City.",
-      "id": "610ac3cf970e",
-      "first_seen": "2026-10-04",
-      "title_zh": "FSB美洲區域諮詢小組於墨西哥城舉行會議",
-      "intro": "國際清算銀行（BIS）美洲辦事處於墨西哥城接待FSB美洲小組舉行會議。"
+      "first_seen": "2026-10-04"
     },
     {
       "id": "32775caf626d",
