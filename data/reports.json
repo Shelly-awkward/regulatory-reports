@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-10-25 15:46 UTC",
-  "last_batch": "2026-10-25",
-  "total": 164,
+  "last_updated": "2026-11-01 17:45 UTC",
+  "last_batch": "2026-11-01",
+  "total": 165,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -48,25 +48,42 @@
   "reports": [
     {
       "source": "FSB",
-      "title_en": "FSB Regional Consultative Group for Sub-Saharan Africa meets in Maseru",
-      "url": "https://www.fsb.org/2026/10/fsb-regional-consultative-group-for-sub-saharan-africa-meets-in-maseru/",
-      "date": "2026-10-24",
-      "summary_en": "Central Bank of Lesotho hosts the FSB Sub-Saharan Africa group in Maseru.",
-      "id": "b9afbf54e6aa",
-      "first_seen": "2026-10-25",
+      "title_en": "Strengthening the crisis-preparedness community in an interconnected world",
+      "url": "https://www.fsb.org/2026/10/strengthening-the-crisis-preparedness-community-in-an-interconnected-world/",
+      "date": "2026-10-29",
+      "summary_en": "In this speech, Dominique Laboureix, Chair of the FSB Resolution Steering Group, discusses the importance of cross-border, cross-sectoral crisis preparedness.",
+      "id": "c38a1ab1ccd0",
+      "first_seen": "2026-11-01",
       "title_zh": "",
       "intro": ""
     },
     {
+      "id": "b9afbf54e6aa",
+      "source": "FSB",
+      "title_en": "FSB Regional Consultative Group for Sub-Saharan Africa meets in Maseru",
+      "title_zh": "",
+      "summary_en": "Central Bank of Lesotho hosts the FSB Sub-Saharan Africa group in Maseru.",
+      "summary_checked": false,
+      "date_checked": false,
+      "trusted": false,
+      "intro": "",
+      "url": "https://www.fsb.org/2026/10/fsb-regional-consultative-group-for-sub-saharan-africa-meets-in-maseru/",
+      "date": "2026-10-24",
+      "first_seen": "2026-10-25"
+    },
+    {
+      "id": "2f4ccb4a2693",
       "source": "FSB",
       "title_en": "Innovation and resilience: managing the risks of a changing financial system",
+      "title_zh": "",
+      "summary_en": "In this speech at RiskLive Asia 2026, John Schindler, FSB Secretary General, addresses the importance of international organisations in a shifting geopolitical landscape.",
+      "summary_checked": false,
+      "date_checked": false,
+      "trusted": false,
+      "intro": "",
       "url": "https://www.fsb.org/2026/10/innovation-and-resilience-managing-the-risks-of-a-changing-financial-system/",
       "date": "2026-10-21",
-      "summary_en": "In this speech at RiskLive Asia 2026, John Schindler, FSB Secretary General, addresses the importance of international organisations in a shifting geopolitical landscape.",
-      "id": "2f4ccb4a2693",
-      "first_seen": "2026-10-25",
-      "title_zh": "",
-      "intro": ""
+      "first_seen": "2026-10-25"
     },
     {
       "id": "04a12774b60b",
