@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
-  "last_updated": "2026-11-01 17:45 UTC",
-  "last_batch": "2026-11-01",
-  "total": 165,
+  "last_updated": "2026-11-05 07:36 UTC",
+  "last_batch": "2026-11-05",
+  "total": 166,
   "sources_meta": {
     "IOSCO": {
       "name": "IOSCO",
@@ -48,244 +48,292 @@
   "reports": [
     {
       "source": "FSB",
+      "title_en": "FSB Regional Consultative Group for Europe meets in Bern",
+      "url": "https://www.fsb.org/2026/11/fsb-regional-consultative-group-for-europe-meets-in-bern/",
+      "date": "2026-11-03",
+      "summary_en": "Swiss National Bank hosts the FSB Europe group in Bern.",
+      "id": "5573cc7134a7",
+      "first_seen": "2026-11-05",
+      "title_zh": "FSB歐洲區域諮詢小組於伯恩召開會議",
+      "intro": "瑞士國家銀行於伯恩主辦FSB歐洲區域諮詢小組會議。"
+    },
+    {
+      "id": "c38a1ab1ccd0",
+      "source": "FSB",
       "title_en": "Strengthening the crisis-preparedness community in an interconnected world",
+      "title_zh": "強化跨國互聯世界中的危機預防社群",
+      "summary_en": "In this speech, Dominique Laboureix, Chair of the FSB Resolution Steering Group, discusses the importance of cross-border, cross-sectoral crisis preparedness.",
+      "summary_checked": false,
+      "date_checked": false,
+      "trusted": false,
+      "intro": "在本篇演說中，FSB處理機制指導小組主席Dominique Laboureix探討跨境、跨部門危機預防之重要性。",
       "url": "https://www.fsb.org/2026/10/strengthening-the-crisis-preparedness-community-in-an-interconnected-world/",
       "date": "2026-10-29",
-      "summary_en": "In this speech, Dominique Laboureix, Chair of the FSB Resolution Steering Group, discusses the importance of cross-border, cross-sectoral crisis preparedness.",
-      "id": "c38a1ab1ccd0",
       "first_seen": "2026-11-01",
-      "title_zh": "",
-      "intro": ""
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b9afbf54e6aa",
       "source": "FSB",
       "title_en": "FSB Regional Consultative Group for Sub-Saharan Africa meets in Maseru",
-      "title_zh": "",
+      "title_zh": "FSB撒哈拉以南非洲區域諮詢小組於馬塞盧召開會議",
       "summary_en": "Central Bank of Lesotho hosts the FSB Sub-Saharan Africa group in Maseru.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "賴索托中央銀行於馬塞盧主辦FSB撒哈拉以南非洲小組會議。",
       "url": "https://www.fsb.org/2026/10/fsb-regional-consultative-group-for-sub-saharan-africa-meets-in-maseru/",
       "date": "2026-10-24",
-      "first_seen": "2026-10-25"
+      "first_seen": "2026-10-25",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "2f4ccb4a2693",
       "source": "FSB",
       "title_en": "Innovation and resilience: managing the risks of a changing financial system",
-      "title_zh": "",
+      "title_zh": "創新與韌性：管理不斷變化之金融體系風險",
       "summary_en": "In this speech at RiskLive Asia 2026, John Schindler, FSB Secretary General, addresses the importance of international organisations in a shifting geopolitical landscape.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "FSB秘書長John Schindler於RiskLive Asia 2026發表演說，闡述在地緣政治情勢變動下國際組織之重要性。",
       "url": "https://www.fsb.org/2026/10/innovation-and-resilience-managing-the-risks-of-a-changing-financial-system/",
       "date": "2026-10-21",
-      "first_seen": "2026-10-25"
+      "first_seen": "2026-10-25",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "04a12774b60b",
       "source": "FSB",
       "title_en": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Overview of consultation responses",
-      "title_zh": "",
+      "title_zh": "人工智慧（AI）負責任採用健全實務：諮詢意見彙整",
       "summary_en": "This document summarises the responses to the June 2026 public consultation on the Sound Practices for financial institutions’ responsible AI adoption.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "本文件彙整對2026年6月就金融機構負責任採用AI之健全實務所提出公眾諮詢之意見回饋。",
       "url": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-overview-of-consultation-responses/",
       "date": "2026-10-15",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "a170e26d7300",
       "source": "FSB",
       "title_en": "FSB finalises sound practices for the responsible adoption of artificial intelligence (AI)",
-      "title_zh": "",
+      "title_zh": "FSB完成人工智慧（AI）負責任採用健全實務之訂定",
       "summary_en": "FSB publishes sound practices for financial institutions to adopt, use, and innovate with AI in a responsible manner.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "FSB發布健全實務，供金融機構以負責任方式採用、使用及創新運用AI。",
       "url": "https://www.fsb.org/2026/10/fsb-finalises-sound-practices-for-the-responsible-adoption-of-artificial-intelligence-ai/",
       "date": "2026-10-15",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "973a4f8f2a49",
       "source": "FSB",
       "title_en": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
-      "title_zh": "",
+      "title_zh": "人工智慧（AI）負責任採用健全實務：最終報告",
       "summary_en": "FSB sets out 12 sound practices to facilitate responsible AI adoption by financial institutions.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "FSB提出12項健全實務，以促進金融機構負責任採用AI。",
       "url": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
       "date": "2026-10-15",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "333495e29ab8",
       "source": "FSB",
       "title_en": "FSB consults on high-level principles for regulatory and supervisory modernisation",
-      "title_zh": "",
+      "title_zh": "FSB就監理與督導現代化高階原則展開諮詢",
       "summary_en": "FSB seeks feedback on eight high-level principles to assist financial authorities in their modernisation efforts.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "FSB就八項高階原則徵求意見，以協助金融監理機關推動現代化工作。",
       "url": "https://www.fsb.org/2026/10/fsb-consults-on-high-level-principles-for-regulatory-and-supervisory-modernisation/",
       "date": "2026-10-14",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "d25d65726717",
       "source": "FSB",
       "title_en": "G20 Implementation Monitoring Review: 2026 report",
-      "title_zh": "",
+      "title_zh": "G20執行監測檢視：2026年報告",
       "summary_en": "The second report from the FSB strategic review of implementation looks at how the FSB’s policy development process can help improve implementation outcomes.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "此為FSB執行情形策略檢視之第二份報告，探討FSB政策研擬流程如何有助於提升執行成效。",
       "url": "https://www.fsb.org/2026/10/g20-implementation-monitoring-review-2026-report/",
       "date": "2026-10-14",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "761168003d74",
       "source": "FSB",
       "title_en": "Regulatory and Supervisory Modernisation Principles: Consultation report",
-      "title_zh": "",
+      "title_zh": "監理與監督現代化原則：諮詢報告",
       "summary_en": "As FSB members review their regulatory and supervisory frameworks, the proposed principles should contribute to efforts to keep such frameworks effective and efficient.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "隨著FSB成員檢視其監理與監督架構，所提議之原則有助於維持此類架構之有效性與效率。",
       "url": "https://www.fsb.org/2026/10/regulatory-and-supervisory-modernisation-principles-consultation-report/",
       "date": "2026-10-14",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b1b1eb9c91b6",
       "source": "IFAC",
       "title_en": "Small- and Medium-sized Practices (SMPs)",
-      "title_zh": "",
+      "title_zh": "中小型會計師事務所（SMPs）",
       "summary_en": "Thought leadership, guidance, and insights on SMP transformation and management.",
       "summary_checked": true,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "有關中小型會計師事務所轉型與管理之領導思維、指引與洞見。",
       "url": "https://www.ifac.org/knowledge-gateway/small-and-medium-sized-practices-smps",
       "date": "2026-10-13",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "e9ac804fcfd1",
       "source": "FSB",
       "title_en": "Global Stablecoin Arrangements: Cross-border vulnerabilities and financial stability monitoring",
-      "title_zh": "",
+      "title_zh": "全球穩定幣安排：跨境脆弱性與金融穩定監測",
       "summary_en": "This note to the G20 summarises the FSB’s ongoing work on vulnerabilities related to global stablecoins along with data for their financial stability monitoring.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "此份致G20之說明文件彙整FSB就全球穩定幣相關脆弱性之持續性工作，並提供其金融穩定監測所需之資料。",
       "url": "https://www.fsb.org/2026/10/global-stablecoin-arrangements-cross-border-vulnerabilities-and-financial-stability-monitoring/",
       "date": "2026-10-12",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "6b285543b2fd",
       "source": "FSB",
       "title_en": "FSB Chair’s letter to G20 Finance Ministers and Central Bank Governors: October 2026",
-      "title_zh": "",
+      "title_zh": "FSB主席致G20財長與央行總裁之信函：2026年10月",
       "summary_en": "FSB Chair, Andrew Bailey’s letter to the G20 Finance Ministers and Central Bank Governors ahead of their October meeting in Bangkok.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "FSB主席Andrew Bailey於G20財長與央行總裁曼谷會議前致函各方。",
       "url": "https://www.fsb.org/2026/10/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-october-2026/",
       "date": "2026-10-12",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c3e578c20b91",
       "source": "FSB",
       "title_en": "FSB Chair sets out FSB work on AI and stablecoins",
-      "title_zh": "",
+      "title_zh": "FSB主席說明FSB在人工智慧與穩定幣方面之工作",
       "summary_en": "Andrew Bailey delivers note on vulnerabilities and monitoring of global stablecoins and finalised sound practices on AI adoption.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "Andrew Bailey提出有關全球穩定幣之脆弱性與監測說明文件，並定案人工智慧採用之健全實務做法。",
       "url": "https://www.fsb.org/2026/10/fsb-chair-sets-out-fsb-work-on-ai-and-stablecoins/",
       "date": "2026-10-12",
-      "first_seen": "2026-10-18"
+      "first_seen": "2026-10-18",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "73bc2b4af31d",
       "source": "FSB",
       "title_en": "Thematic review on public sector backstop funding mechanisms: Peer re",
-      "title_zh": "",
+      "title_zh": "公部門後盾融資機制專題審查：同儕檢視",
       "summary_en": "Peer review finds that further work is needed to complete the implementation of Key Attribute 6 to ensure resolution remains a credible option to deal with the failure of large systemic banks.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "同儕檢視發現，為確保清理仍為處理大型系統性銀行倒閉之可信選項，尚需進一步落實關鍵屬性第6項之執行。",
       "url": "https://www.fsb.org/2026/10/thematic-review-on-public-sector-backstop-funding-mechanisms-peer-review-report/",
       "date": "2026-10-09",
-      "first_seen": "2026-10-11"
+      "first_seen": "2026-10-11",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "8e39215fbf52",
       "source": "FSB",
       "title_en": "FSB report assesses jurisdictions on public sector backstops",
-      "title_zh": "",
+      "title_zh": "FSB報告評估各轄區之公部門後盾機制",
       "summary_en": "Report finds that few FSB jurisdictions have a public sector backstop arranged in advance that can credibly meet the funding needs of large systemic banks in resolution or failure.",
       "summary_checked": false,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "報告發現，僅少數FSB轄區事先安排了能可信滿足大型系統性銀行清理或倒閉時資金需求之公部門後盾機制。",
       "url": "https://www.fsb.org/2026/10/fsb-report-assesses-jurisdictions-on-public-sector-backstops/",
       "date": "2026-10-09",
-      "first_seen": "2026-10-11"
+      "first_seen": "2026-10-11",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "567426ab3767",
       "source": "IFAC",
       "title_en": "Accountancy Policy",
-      "title_zh": "",
+      "title_zh": "會計政策",
       "summary_en": "Updates on advancing the agenda of the global accountancy profession.",
       "summary_checked": true,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "有關推動全球會計專業議程之最新消息。",
       "url": "https://www.ifac.org/knowledge-gateway/accountancy-policy",
       "date": "2026-10-07",
-      "first_seen": "2026-10-11"
+      "first_seen": "2026-10-11",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "a92c8c3c43b7",
       "source": "IFAC",
       "title_en": "International Standards",
-      "title_zh": "",
+      "title_zh": "國際準則",
       "summary_en": "Resources, news and implementation guidance for audit, education, ethics, financial reporting and the public sector.",
       "summary_checked": true,
       "date_checked": false,
       "trusted": false,
-      "intro": "",
+      "intro": "有關查核、教育、職業道德、財務報導及公部門的資源、新聞與實施指引。",
       "url": "https://www.ifac.org/knowledge-gateway/international-standards",
       "date": "2026-10-07",
-      "first_seen": "2026-10-11"
+      "first_seen": "2026-10-11",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f6b48783750f",
       "source": "IFAC",
       "title_en": "Thriving Together: 6 Principles for a Resilient Accountancy Profession",
-      "title_zh": "",
+      "title_zh": "共榮共生：打造具韌性會計師專業的6項原則",
       "summary_en": "",
       "summary_checked": true,
       "date_checked": false,
@@ -293,7 +341,9 @@
       "intro": "",
       "url": "https://www.ifac.org/knowledge-gateway/discussion/thriving-together-6-principles-resilient-accountancy-profession",
       "date": "2026-10-06",
-      "first_seen": "2026-10-11"
+      "first_seen": "2026-10-11",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "610ac3cf970e",
@@ -307,7 +357,9 @@
       "intro": "國際清算銀行（BIS）美洲辦事處於墨西哥城接待FSB美洲小組舉行會議。",
       "url": "https://www.fsb.org/2026/09/fsb-regional-consultative-group-for-the-americas-meets-in-mexico-city/",
       "date": "2026-09-30",
-      "first_seen": "2026-10-04"
+      "first_seen": "2026-10-04",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "32775caf626d",
@@ -321,7 +373,9 @@
       "intro": "全球商業環境正經歷重大變革，其驅動因素包括地緣政治分歧、貿易動態演變、科技快速進步、人工智慧（AI）發展、低碳經濟轉型，以及監理期待的變化。",
       "url": "https://www.ifac.org/knowledge-gateway/discussion/indonesia-australia-executive-business-finance-dialogue-2026-building-resilient-businesses-through",
       "date": "2026-09-17",
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "6c664b9c7915",
@@ -335,7 +389,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，Addison（Addi）Scott 與 Zian Xi 獲任命為兩名審計實務研究員，此為 PCAOB 首席審計官辦公室新設立之審計實務研究員計畫的一部分。Scott 女士與 Xi 女士自即日起展開為期兩年的任期，協助委員會的準則制定與研究工作，並以其近期審計實務經驗強化 PCAOB 的監督活動，促進公眾利益。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-announces-new-audit-practitioner-fellows",
       "date": "2026-09-15",
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "cd581a3b3952",
@@ -349,7 +405,9 @@
       "intro": "9月11日，美國上市公司會計監督委員會（PCAOB）圓滿結束第13屆年度審計與資本市場研討會，該活動旨在促進與審計相關議題之嚴謹經濟研究，包括審計對資本市場的經濟影響、審計監理及審計監督等主題。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-concludes-2026-conference-on-auditing-and-capital-markets",
       "date": "2026-09-14",
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "e0bc0f8b8f2d",
@@ -363,7 +421,9 @@
       "intro": "本次圓桌會議旨在探討公私部門合作機制應如何建構與運用，以利因應及管理重大營運中斷事件。",
       "url": "https://www.fsb.org/2026/09/fsb-hosts-roundtable-on-public-private-sector-collaboration-to-strengthen-operational-resilience/",
       "date": "2026-09-11",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b85cf9da06b3",
@@ -377,7 +437,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日通過對QC 1000（會計師事務所品質控制系統）部分條文之修正，並相應修訂PCAOB相關表格及品質控制申報規則。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-adopts-amendments-to-its-quality-control-standard",
       "date": "2026-09-09",
-      "first_seen": "2026-09-13"
+      "first_seen": "2026-09-13",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "d6d0c306d494",
@@ -391,7 +453,9 @@
       "intro": "FSB截至2026年3月31日止12個月期間之年度財務報告。",
       "url": "https://www.fsb.org/2026/09/fsb-annual-financial-report-2025-26/",
       "date": "2026-09-04",
-      "first_seen": "2026-09-06"
+      "first_seen": "2026-09-06",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "5a18fa8f98b7",
@@ -405,7 +469,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）將於2026年9月9日（星期三）美東時間上午10時召開公開會議，審議通過對其品質管理準則QC 1000《會計師事務所之品質管理制度》之修正提案，以及相關PCAOB表格與品質管理申報規則之修正提案，預計於2026年12月15日生效。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/at-september-9-open-meeting--pcaob-to-consider-adopting-amendments-to-quality-control-standard",
       "date": "2026-09-03",
-      "first_seen": "2026-09-06"
+      "first_seen": "2026-09-06",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "70bdfbb0eb18",
@@ -419,7 +485,9 @@
       "intro": "依據PCAOB規則第4009(d)條，PCAOB今日公開下列先前已發布檢查報告之額外內容，原因為相關會計師事務所未能於報告發布後12個月內，就特定品質管理問題提出令委員會滿意之改善。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-one-new-inspection-report-and-two-expanded-reports-september-2026",
       "date": "2026-09-01",
-      "first_seen": "2026-09-06"
+      "first_seen": "2026-09-06",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "326385be2b5d",
@@ -433,7 +501,9 @@
       "intro": "FSB主席安德魯・貝利表示，前沿AI對網路風險的潛在影響，是當前金融體系面臨最迫切的隱憂。",
       "url": "https://www.fsb.org/2026/08/fsb-chair-warns-of-risks-arising-from-frontier-artificial-intelligence-ai-models/",
       "date": "2026-08-31",
-      "first_seen": "2026-09-06"
+      "first_seen": "2026-09-06",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "76feafde5b32",
@@ -447,7 +517,9 @@
       "intro": "FSB主席安德魯・貝利於致G20財政部長暨央行總裁函中警示，市場仍易受無序修正衝擊，並提醒應留意前沿AI模型所帶來的風險。",
       "url": "https://www.fsb.org/2026/08/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-august-2026/",
       "date": "2026-08-31",
-      "first_seen": "2026-09-06"
+      "first_seen": "2026-09-06",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "6b2b9d1a5094",
@@ -461,7 +533,9 @@
       "intro": "",
       "url": "https://www.ifac.org/knowledge-gateway/discussion/ifac-2025-annual-report-building-trust-and-shaping-future-global-accountancy-profession",
       "date": "2026-08-25",
-      "first_seen": "2026-08-30"
+      "first_seen": "2026-08-30",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "d1e7c5bc8eac",
@@ -475,7 +549,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日公布為與檢查現代化委員會（IMC）於2026年7月及8月會議討論而提供的部分資料。該討論資料涵蓋以品質控制為基礎之檢查方法之發展、科技運用、檢查報告及缺失改善等議題，並已刊登於PCAOB網站IMC專頁。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-discussion-materials-from-summer-2026-meetings-of-the-inspections-modernization-council",
       "date": "2026-08-24",
-      "first_seen": "2026-08-30"
+      "first_seen": "2026-08-30",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "921306f8eee1",
@@ -489,7 +565,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日公布由委員George R. Botic主辦、預定於2026年9月22日舉行之實體論壇詳情，該論壇專為小型企業查核人員及經紀自營商查核人員舉辦。此為2026年系列論壇之一，將於舊金山大學舉行為期一天之活動。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-board-member-botic-to-host-forum-in-san-francisco-for-auditors-of-small-businesses-and-auditors-of-broker-dealers",
       "date": "2026-08-24",
-      "first_seen": "2026-08-30"
+      "first_seen": "2026-08-30",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "37617228c504",
@@ -503,7 +581,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD821.pdf",
       "date": "2026-08-21",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "此為IOSCO理事會就股票市場收盤前流動性集中趨勢及其監理因應之諮詢報告，徵詢各界意見至2026年8月21日止",
+        "報告分析收盤拍賣流動性集中化之成因與風險，包括市場操縱、波動加劇及交易所營運韌性壓力，並提出良好實務建議",
+        "監理機關宜檢視現行監理工具是否足以因應流動性型態變化，並參考報告提出之良好實務以強化市場誠信與投資人保護"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "11f1dd3682f8",
@@ -517,7 +601,9 @@
       "intro": "依據PCAOB第4009(d)條規則，PCAOB今日公開先前發布之檢查報告的額外內容，原因為相關會計師事務所未能於報告發布後12個月內，就特定品質控制問題採取令本會滿意之改善措施。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-three-new-inspection-reports-and-one-expanded-report-august-2026",
       "date": "2026-08-18",
-      "first_seen": "2026-08-23"
+      "first_seen": "2026-08-23",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b07cbe1256aa",
@@ -531,7 +617,9 @@
       "intro": "美國公開發行公司會計監督委員會（PCAOB）今日公布由董事Steven D. Laughton主辦、預定於2026年9月18日舉行之小型企業及證券經紀商查核人員實體論壇活動細節。此為2026年系列論壇之一，屆時將於丹佛君悅酒店舉行為期一天之活動。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-board-member-laughton-to-host-forum-in-denver-for-auditors-of-small-businesses-and-auditors-of-broker-dealers",
       "date": "2026-08-18",
-      "first_seen": "2026-08-23"
+      "first_seen": "2026-08-23",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "7ef2a8a24cc8",
@@ -545,7 +633,9 @@
       "intro": "《QC 1000問答集》為PCAOB持續提供實施資訊與資源之最新成果。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-new-resource-to-help-auditors-implement-quality-control-standard",
       "date": "2026-08-17",
-      "first_seen": "2026-08-23"
+      "first_seen": "2026-08-23",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c936abd8ca60",
@@ -559,7 +649,9 @@
       "intro": "PCAOB「會計師事務所檢查報告」網頁彙整所有已公布之檢查報告，並可依全球網絡、國家、年度等條件篩選查詢；該網頁亦提供可下載之機器可讀格式（CSV、XML、JSON）資料集。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-six-new-inspection-reports-august-2026",
       "date": "2026-08-13",
-      "first_seen": "2026-08-16"
+      "first_seen": "2026-08-16",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "6f4598a03971",
@@ -573,7 +665,9 @@
       "intro": "2026年6月24日至25日，IFAC與阿爾及利亞ONEC及非洲會計師聯合會（PAFA）合作，共同舉辦IFAC Connect非洲論壇，並於會中簽署IFAC-PAFA-FIDEF-OHADA合作備忘錄。",
       "url": "https://www.ifac.org/knowledge-gateway/discussion/ifac-connect-africa-2026-building-trust-and-shaping-future-profession",
       "date": "2026-08-12",
-      "first_seen": "2026-08-16"
+      "first_seen": "2026-08-16",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "43c9ff4fe953",
@@ -587,7 +681,9 @@
       "intro": "PCAOB係依據SEC規則第140條之認定發布本報告，本報告取代先前對該事務所發布之檢查報告（發布編號104-2025-138）。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-15-new-inspection-reports-august-2026",
       "date": "2026-08-12",
-      "first_seen": "2026-08-16"
+      "first_seen": "2026-08-16",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "7c15939b8649",
@@ -601,7 +697,9 @@
       "intro": "沙烏地中央銀行（SAMA）總裁Ayman M. Al-Sayari出任FSB區域參與主席，將就如何強化區域諮詢小組對FSB工作之貢獻，向FSB主席及全體會議提供建議。",
       "url": "https://www.fsb.org/2026/08/ayman-m-al-sayari-appointed-fsbs-regional-engagement-chair/",
       "date": "2026-08-10",
-      "first_seen": "2026-08-16"
+      "first_seen": "2026-08-16",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "df279a4a0a6c",
@@ -615,7 +713,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，Kyle S. Hauptman已宣誓就任董事會成員，宣誓儀式於美國證券交易委員會（SEC）舉行。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/kyle-s.-hauptman-sworn-in-as-pcaob-board-member",
       "date": "2026-08-10",
-      "first_seen": "2026-08-16"
+      "first_seen": "2026-08-16",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "fde3e83f2966",
@@ -629,7 +729,9 @@
       "intro": "FSB於2026年6月10日發布《負責任採用人工智慧（AI）之健全實務：諮詢報告》，並邀請各界於2026年7月22日前提交書面意見，現已公布所收到之公眾意見回覆。FSB感謝各界撥冗表達意見。",
       "url": "https://www.fsb.org/2026/08/public-responses-to-consultation-on-sound-practices-for-responsible-adoption-of-artificial-intelligence-ai/",
       "date": "2026-08-06",
-      "first_seen": "2026-08-09"
+      "first_seen": "2026-08-09",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "771192690d2e",
@@ -643,7 +745,9 @@
       "intro": "在本演講中，FSB秘書長John Schindler闡述了在地緣政治格局變動下，國際組織的重要性。",
       "url": "https://www.fsb.org/2026/07/multilateralism-utopia-and-the-financial-stability-board/",
       "date": "2026-07-28",
-      "first_seen": "2026-08-02"
+      "first_seen": "2026-08-02",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "911c95aea12f",
@@ -657,7 +761,9 @@
       "intro": "請造訪PCAOB的「事務所檢查報告」網頁，查閱PCAOB已發布之所有檢查報告；該網頁可依全球網絡、國家、年度及其他條件進行排序與篩選。該網頁亦提供可下載之資料集，內含報告中之關鍵資訊，並以機器可讀格式（CSV、XML、JSON）呈現。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-12-new-inspection-reports-7-22-2026",
       "date": "2026-07-22",
-      "first_seen": "2026-07-26"
+      "first_seen": "2026-07-26",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f3762296be24",
@@ -671,7 +777,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）於今日召開之公開會議中，發布就其2026-2030年策略計畫目標與宗旨草案徵求公眾意見之通知。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-advances-strategic-planning-process-with-request-for-comment-on-draft-2026-2030-goals-and-objectives",
       "date": "2026-07-20",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c0f999617dfb",
@@ -685,7 +793,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，677名經美國大專院校推薦之學生獲選，每人將獲頒15,000美元之學業表現獎學金，適用於2026-2027學年度。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/677-students-named-pcaob-scholars-for-the-2026-2027-academic-year",
       "date": "2026-07-16",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "498b936bb43d",
@@ -699,7 +809,9 @@
       "intro": "模里西斯央行於模里西斯主辦FSB撒哈拉以南非洲小組會議。",
       "url": "https://www.fsb.org/2026/07/fsb-regional-consultative-group-for-sub-saharan-africa-meets-in-mauritius/",
       "date": "2026-07-16",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "40a93d584218",
@@ -713,7 +825,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）將於2026年7月20日（星期一）美東時間上午10時召開公開會議，會中將討論是否就其2026-2030年策略計畫目標與宗旨草案徵求公眾意見。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/at-july-20-open-meeting--pcaob-to-consider-requesting-comment-on-draft-goals-and-objectives-for-2026-2030-strategic-plan",
       "date": "2026-07-15",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "e87feebc3ed2",
@@ -727,7 +841,9 @@
       "intro": "FSB秘書長John Schindler在本演說中強調清理計畫執行決心的重要性，並著重於協作與整備以維持金融體系韌性。",
       "url": "https://www.fsb.org/2026/07/exploring-cross-sectoral-interconnections-in-resolution-planning/",
       "date": "2026-07-09",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0751c70ae764",
@@ -741,7 +857,9 @@
       "intro": "在OMFIF主辦的線上活動中，FSB副秘書長呼籲就2027年後跨境支付的下一步進行討論。",
       "url": "https://www.fsb.org/2026/07/cross-border-payments-towards-the-next-chapter/",
       "date": "2026-07-08",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "150357869c3b",
@@ -755,7 +873,9 @@
       "intro": "FSB清理處理指導小組主席Dominique Laboureix在本演說中闡述跨境、跨部門危機整備的重要性。",
       "url": "https://www.fsb.org/2026/07/opening-remarks-for-the-fsb-2026-resolve-event-exploring-cross-sectoral-interconnections-and-financial-stability-implications/",
       "date": "2026-07-08",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f09bddee9b36",
@@ -769,7 +889,9 @@
       "intro": "FSB監理與監管合作常設委員會（SRC）主席Michelle W. Bowman在致詞中說明FSB有關人工智慧負責任採用之穩健實務諮詢報告。",
       "url": "https://www.fsb.org/2026/07/opening-remarks-on-sound-practices-for-artificial-intelligence/",
       "date": "2026-07-07",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "db2013b3ede7",
@@ -783,7 +905,9 @@
       "intro": "IFAC於2026年5月20日至21日，與會員組織阿根廷經濟科學專業委員會聯合會（FACPCE）及美洲會計師協會（AIC）合作，共同舉辦「IFAC Connect LATAM 2026」，此為IFAC持續辦理之Connect系列活動之一。",
       "url": "https://www.ifac.org/knowledge-gateway/discussion/global-event-series-ifac-connect-latam-2026-highlights",
       "date": "2026-07-07",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c3bdbdf6d574",
@@ -797,7 +921,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，George Kostolampros獲任命為PCAOB法務長。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/george-kostolampros-named-pcaob-general-counsel",
       "date": "2026-07-01",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "90933828b858",
@@ -811,7 +937,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，任命Ying Li Compton博士為PCAOB首席經濟學家暨經濟與風險分析辦公室（OERA）主任。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/dr.-ying-li-compton-named-pcaob-chief-economist-and-director-of-its-office-of-economic-and-risk-analysis",
       "date": "2026-06-29",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "16c6d9c64a09",
@@ -825,7 +953,9 @@
       "intro": "FSB於2026年7月7日舉辦線上宣導活動。",
       "url": "https://www.fsb.org/2026/06/virtual-outreach-event-on-fsb-sound-practices-for-financial-institutions-responsible-adoption-of-artificial-intelligence/",
       "date": "2026-06-29",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c25117ab814a",
@@ -839,7 +969,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，首席審計師Barbara Vanich將於服務逾17年後，於2026年7月15日離職。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/chief-auditor-barbara-vanich-to-depart-the-pcaob",
       "date": "2026-06-26",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "113a01e7dea1",
@@ -853,7 +985,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD823.pdf",
       "date": "2026-06-26",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會發布之最終報告，提供會員機關監理資本市場AI應用之非強制性、非規範性實務工具箱",
+        "工具箱分三層：監理考量領域、治理風險管理等四大面向之監理工具、以及監理指標與資料來源",
+        "IOSCO就報告內容徵詢各界意見，回饋可透過簡短問卷提交，截止日期為6月26日"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "730c928c0299",
@@ -867,7 +1005,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD822.pdf",
       "date": "2026-06-26",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會發布之資本市場AI監理工具箱獨立版，彙整實務性、非強制性監理工具供會員機關參考運用。",
+        "內容涵蓋AI治理監督、模型風險管理、投資建議適合性、市場風險、系統穩健性及委外第三方依賴等監理重點與佐證文件項目。",
+        "可供監理機關於現場檢查及日常監理作業中，據以評估受監理機構AI系統使用情形並彈性調整監理作法。"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "4566e9ce9a60",
@@ -881,7 +1025,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，由其首席審計師辦公室（OCA）主導建立會計師事務所諮詢機制，旨在提供更即時且一致之PCAOB幕僚指引。此新機制將允許經登記之公開會計師事務所直接向OCA幕僚提出問題，就新準則之執行與現行準則之適用取得非正式之幕僚意見。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-staff-launches-firm-consultation-process-to-enhance-clarity-and-to-support-application-and-implementation-of-pcaob-standards",
       "date": "2026-06-25",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "caae32b82f29",
@@ -895,7 +1041,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD826.pdf",
       "date": "2026-06-18",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "此報告為IOSCO董事會首次SupTech（監理科技）調查報告，由FINMA主導，彙整49個會員機關實務現況。",
+        "調查顯示SupTech已非實驗性質，各機關採用動機以效率與時效為主，AI、資料取得與雲端為關鍵推動因素，惟網路風險與資源限制仍為障礙。",
+        "各機關策略與實施進度不一，國際合作多停留於經驗分享，本報告可作為我國監理科技發展與國際對標之參考基礎。"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "eb01c94e1109",
@@ -909,7 +1061,9 @@
       "intro": "本次由西班牙銀行主辦之圓桌會議，探討外部查核相關議題。",
       "url": "https://www.fsb.org/2026/06/fsb-holds-a-roundtable-on-audit-quality-and-structural-shifts-in-the-global-audit-industry/",
       "date": "2026-06-18",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "608830af0f83",
@@ -923,7 +1077,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布，George G. Demos獲任命為PCAOB執法與調查處（DEI）處長，將負責監督並指揮PCAOB對其規則、專業準則及其他相關證券法規違反情事之調查與執法工作。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/george-g.-demos-named-director-of-the-pcaob-s-division-of-enforcement-and-investigations",
       "date": "2026-06-15",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "24ccb9629a57",
@@ -937,7 +1093,9 @@
       "intro": "檢視意見函全文",
       "url": "https://www.ifiar.org/latest-news/ifiar-comments-on-iaasbs-pir-of-isa-540-revised-survey-12-june-2026/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-comments-on-iaasbs-pir-of-isa-540-revised-survey-12-june-2026",
       "date": "2026-06-13",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "a5d87aa317b9",
@@ -951,7 +1109,9 @@
       "intro": "PCAOB已發布其「經紀商與自營商查核期中檢查計畫年度報告」。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-publishes-annual-report-on-broker-dealer-audits-2026",
       "date": "2026-06-11",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b93ae458c419",
@@ -965,7 +1125,9 @@
       "intro": "依據PCAOB規則第4009(d)條，PCAOB今日公開先前發布之檢查報告的額外內容，原因為相關會計師事務所未能在報告發布後12個月內，就特定品質控制問題提出令委員會滿意之因應措施。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-eight-new-inspection-reports--one-expanded-report--and-one-updated-report",
       "date": "2026-06-10",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "796c374028c2",
@@ -979,7 +1141,9 @@
       "intro": "FSB就金融機構如何負責任地採用、使用及創新運用AI之健全做法草案徵求意見。",
       "url": "https://www.fsb.org/2026/06/fsb-consults-on-sound-practices-for-the-responsible-adoption-of-artificial-intelligence-ai/",
       "date": "2026-06-10",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "9a305e6c3c1d",
@@ -993,7 +1157,9 @@
       "intro": "FSB制定健全做法，協助各類型金融機構在採用AI過程中，負責任地權衡其效益與風險。",
       "url": "https://www.fsb.org/2026/06/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-consultation-report/",
       "date": "2026-06-10",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "147f6378b7d5",
@@ -1007,7 +1173,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日發布補充徵求意見稿，就QC 1000「會計師事務所品質控制制度」之小範圍、針對性修正草案，以及PCAOB相關表格與品質控制申報規則之相應修正，公開徵求意見。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-issues-proposed-amendments-to-qc-1000-and-seeks-public-comment",
       "date": "2026-06-09",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "ddcf33cef8bf",
@@ -1021,7 +1189,9 @@
       "intro": "FSB舉辦研討會，支持會員推動監理與法規現代化之相關努力。",
       "url": "https://www.fsb.org/2026/06/fsb-regulatory-and-supervisory-modernisation-symposium/",
       "date": "2026-06-09",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "154fe477342e",
@@ -1035,7 +1205,9 @@
       "intro": "檢視概況說明全文",
       "url": "https://www.ifiar.org/latest-news/ifiar-public-factsheet/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-public-factsheet",
       "date": "2026-06-09",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0fb41a311940",
@@ -1049,7 +1221,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD825.pdf",
       "date": "2026-06-08",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會發布之最終報告，提出次級市場揭露建議，供各法域參考訂定上市公司資訊揭露規範。",
+        "內容涵蓋所有揭露應遵循之重大性與公平表達原則、定期與即時事件揭露要求，以及課責與內控機制等三大面向建議。",
+        "另訂有永續相關次級市場揭露建議附件供有意法域採用，惟美國SEC與CFTC對其納入正式建議表示反對。"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "4b052fc43eee",
@@ -1063,7 +1241,9 @@
       "intro": "PCAOB主席Demetrios（Jim）Logothetis今日於加州洛杉磯舉行之南加州大學暨SEC財務報導研討會發表演說。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-chairman-logothetis-delivers-remarks-at-usc-sec-financial-reporting-conference",
       "date": "2026-06-04",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "ed76ea12ef10",
@@ -1077,7 +1257,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）將於2026年6月9日（星期二）美東時間上午10時召開公開會議，會中將審議是否就QC 1000（訂於2026年12月15日生效之PCAOB品質控制準則）之修正草案，以及PCAOB相關表格與品質控制申報規則之相應修正，公開徵求意見。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/at-june-9-open-meeting--pcaob-to-consider-issuing-proposed-quality-control-related-amendments-for-public-comment",
       "date": "2026-06-03",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "19a3b72fed5c",
@@ -1091,7 +1273,9 @@
       "intro": "檢視意見函。",
       "url": "https://www.ifiar.org/latest-news/ifiar-comments-on-joint-iesba-and-iaasb-stakeholder-survey-29-may-2026/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-comments-on-joint-iesba-and-iaasb-stakeholder-survey-29-may-2026",
       "date": "2026-05-29",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f8351b902223",
@@ -1105,7 +1289,9 @@
       "intro": "此新設諮詢機構聚焦於PCAOB檢查工作之現代化，將借重來自資本市場各領域專家之觀點；申請截止日期為2026年6月15日。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-announces-inspections-modernization-council--seeks-participation-from-outside-experts",
       "date": "2026-05-28",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "91dec2cb91bf",
@@ -1119,7 +1305,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD820.pdf",
       "date": "2026-05-21",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會研究報告，檢視各會員轄區交易所延長交易時段之提案與監理議題，非屬意見徵詢文件。",
+        "報告指出延長交易時段多由交易所主導而非監理強制，盤後交易流動性較低、價差較大，需求主要來自散戶而非法人。",
+        "監理機關多採現有市場誠信、揭露、監控及作業韌性框架因應，而非另訂專法，清算結算安排仍與正常交易時段高度一致，建議持續監測並加強資訊分享。"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "4d9085991c0e",
@@ -1133,7 +1325,9 @@
       "intro": "下載報告。",
       "url": "https://www.ifiar.org/latest-news/ifiar-2025-annual-report/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-2025-annual-report",
       "date": "2026-05-21",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "eadda3370e2e",
@@ -1147,7 +1341,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）今日宣布任命Randy L. Thornton為其營運長（COO）。在此任命前，Thornton自2025年7月起擔任PCAOB代理營運長，並自2022年12月起擔任其人力資源長。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/randy-l.-thornton-named-the-pcaob-s-chief-operating-officer",
       "date": "2026-05-19",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "1fbc8db5ae18",
@@ -1161,7 +1357,9 @@
       "intro": "私募信貸市場快速成長，資產規模估計達1.5兆至2兆美元，雖有助於支持中型企業融資，但亦可能帶來潛在的金融穩定風險。",
       "url": "https://www.fsb.org/2026/05/report-on-vulnerabilities-in-private-credit/",
       "date": "2026-05-06",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b64860d832d6",
@@ -1175,7 +1373,9 @@
       "intro": "依據PCAOB第4009(d)條規則，PCAOB公開下列先前發布之檢查報告的額外內容，原因是相關會計師事務所未能在報告發布後12個月內，就特定品質控管問題做出令委員會滿意之改善。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-posts-10-inspection-reports-and-two-expanded-reports",
       "date": "2026-05-05",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "467b02a5b74a",
@@ -1189,7 +1389,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）將於2026年5月6日（星期三）美東時間上午10時召開「準則與新興議題諮詢小組」（SEIAG）會議。該會議公開對外，將於全美住宅建築商協會大樓（華盛頓特區西北15街1201號）舉行，公眾亦可透過PCAOB活動網頁觀看直播。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-standards-and-emerging-issues-advisory-group-to-meet-on-may-6",
       "date": "2026-04-30",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "32aa1617083a",
@@ -1203,7 +1405,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可提供關鍵查核事項或重大查核事項範例，供PCAOB投資人諮詢小組分析之用。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory--pcaob-investor-advisory-group-requests-public-submit-examples-of-critical-or-key-audit-matters-5-2026",
       "date": "2026-04-30",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "a9c11158831c",
@@ -1217,7 +1421,9 @@
       "intro": "最終指引闡明主管機關評估個別保險業者應考量之關鍵標準，並specifies於何種情況下應一律適用復原與清理計畫要求。",
       "url": "https://www.fsb.org/2026/04/scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes-final-report/",
       "date": "2026-04-29",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "9704759471fb",
@@ -1231,7 +1437,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）將於2026年4月29日（星期三）美東時間上午9時30分召開「投資者諮詢小組」（IAG）會議。該會議公開對外，將於PCAOB總部（華盛頓特區西北K街1666號）舉行，公眾亦可透過下方Webex資訊觀看會議。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-investor-advisory-group-to-meet-on-april-29",
       "date": "2026-04-23",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "e7227f21d309",
@@ -1245,7 +1453,9 @@
       "intro": "檢視利害關係人公告。",
       "url": "https://www.ifiar.org/latest-news/2026-plenary-meeting/?utm_source=rss&utm_medium=rss&utm_campaign=2026-plenary-meeting",
       "date": "2026-04-23",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "73da8b1903a9",
@@ -1259,7 +1469,9 @@
       "intro": "下載報告。",
       "url": "https://www.ifiar.org/latest-news/ifiar-releases-2026-report-on-the-use-of-technology-in-audits/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-releases-2026-report-on-the-use-of-technology-in-audits",
       "date": "2026-04-20",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "077ecbe12ed8",
@@ -1273,7 +1485,9 @@
       "intro": "該年度報告闡述PCAOB於2025財政年度如何推動其投資者保護使命，並提供PCAOB之財務成果，包括經審計財務報表、審計師報告，以及管理層對財務報導內部控制之報告。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-releases-its-2025-annual-report",
       "date": "2026-04-14",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "9738d2527533",
@@ -1287,7 +1501,9 @@
       "intro": "本次公告揭露5月13日實體及線上直播論壇之更多細節，該論壇將就影響審計品質之相關議題提供最新資訊、資源與觀點。",
       "url": "https://pcaobus.org/news-events/news-releases/news-release-detail/pcaob-chairman-logothetis-to-host-forum-in-jersey-city-for-auditors-of-small-businesses-and-auditors-of-broker-dealers",
       "date": "2026-04-13",
-      "first_seen": "2026-07-21"
+      "first_seen": "2026-07-21",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "5d15f20cf948",
@@ -1301,7 +1517,9 @@
       "intro": "FSB主席警示，多重脆弱性同時浮現的風險已上升，對全球金融穩定構成升高的威脅。",
       "url": "https://www.fsb.org/2026/04/fsb-chairs-letter-to-g20-finance-ministers-and-central-bank-governors-april-2026/",
       "date": "2026-04-13",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "2ad4ce2e5050",
@@ -1315,7 +1533,9 @@
       "intro": "下載該報告。",
       "url": "https://www.ifiar.org/latest-news/ifiar-releases-2025-report-on-annual-survey-of-audit-inspection-findings/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-releases-2025-report-on-annual-survey-of-audit-inspection-findings",
       "date": "2026-04-01",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "eddc2ab47b91",
@@ -1329,7 +1549,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD816.pdf",
       "date": "2026-03-24",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會發布之2025年投資基金統計報告，彙整38個會員轄區2024年度避險基金、開放式及封閉式基金之規模與風險資料",
+        "報告顯示全球基金資產規模持續成長，合格避險基金槓桿結構性高於開放式及封閉式基金，投資活動集中於少數轄區與資產類別",
+        "報告非屬意見徵詢案，可供我國監理機關參考全球基金業槓桿、流動性及交易對手風險趨勢以強化基金監理政策"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "c0366bfc85e9",
@@ -1343,7 +1569,9 @@
       "intro": "在脆弱性升高的背景下，FSB於2025年在非銀行金融中介（NBFI）槓桿、加密資產與穩定幣、作業韌性及強化跨境合作等關鍵領域推動相關工作。",
       "url": "https://www.fsb.org/2026/03/promoting-global-financial-stability-2025-fsb-annual-report/",
       "date": "2026-03-24",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "7fa7b8a51f67",
@@ -1357,7 +1585,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD815.pdf",
       "date": "2026-03-19",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO就店頭商品衍生性商品市場良好實務之諮詢報告，延續2024年11月商品衍生性商品原則實施情形之檢視成果",
+        "內容針對原則12、15、16提出建議，聚焦OTC商品衍生性商品部位資訊之蒐集、彙整，以及防範與處理市場失序之作法",
+        "本報告為公開徵詢意見，截止日為2026年6月19日，供監理機關評估強化OTC部位資料蒐集及跨境監理合作之參考"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "74a233d8a545",
@@ -1371,7 +1605,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD813.pdf",
       "date": "2026-02-09",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會發布之2026年工作計畫，說明該組織於投資人保護、市場公平效能及系統性風險等面向之年度工作方向。",
+        "2026年五大策略優先領域包括強化金融韌性與市場效能、投資人保護、公私募市場演變、科技轉型及促進監理合作，並將推動加密資產評估方法論等具體措施。",
+        "本計畫涉及OTC商品衍生性商品、FMI營運韌性、投資人線上安全及加密資產監理等議題，可作為我國監理機關掌握國際監理趨勢及研擬對應政策之參考。"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "1e68aa12ce25",
@@ -1385,7 +1625,13 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD803.pdf",
       "date": "2026-02-03",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [
+        "本報告為IOSCO董事會就「次級市場揭露建議」發布之意見徵詢文件，旨在建立上市公司定期及事件驅動揭露之監理框架。",
+        "建議內容涵蓋重大性與公平表達、揭露時效性、資訊取得與公開、年報與期中報告應載事項，以及揭露控制與財務報導內控機制。",
+        "意見徵詢截止日為2026年2月3日，供各法域會員參考以建立或檢視相關證券揭露法規，另設附錄納入永續相關揭露建議。"
+      ],
+      "key_points_checked": true
     },
     {
       "id": "65b5cf645867",
@@ -1399,7 +1645,9 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD811.pdf",
       "date": "2026-02-02",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "05d7848831d4",
@@ -1413,7 +1661,9 @@
       "intro": "本報告彙總FSB於2026年的各項計畫，並列出FSB當年度預定出版品之時程表。",
       "url": "https://www.fsb.org/2026/02/fsb-work-programme-for-2026/",
       "date": "2026",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "086892618488",
@@ -1427,7 +1677,9 @@
       "intro": "本文件代表美國上市公司會計監督委員會（PCAOB）投資人保護辦公室之意見，未必代表其他PCAOB職員或理事會立場，亦非理事會之規則、政策或聲明。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-an-introduction-to-pcaob-inspections",
       "date": "2025-11-18",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "2aeddb24465d",
@@ -1441,7 +1693,9 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD810.pdf",
       "date": "2025-11-12",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "26a0f63beef7",
@@ -1455,7 +1709,9 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD809.pdf",
       "date": "2025-11-11",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "5683e3b1e724",
@@ -1469,7 +1725,9 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD801-joint-note.pdf",
       "date": "2025-10-16",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0bd2d6e75fd0",
@@ -1483,7 +1741,9 @@
       "intro": "詳見意見函。",
       "url": "https://www.ifiar.org/latest-news/ifiar-comments-on-iaasbs-exposure-draft-on-narrow-scope-amendments-to-iaasb-standards-arising-from-the-iesbas-using-the-work-of-an-external-expert-project-24-july-2025/?utm_source=rss&utm_medium=rss&utm_campaign=ifiar-comments-on-iaasbs-exposure-draft-on-narrow-scope-amendments-to-iaasb-standards-arising-from-the-iesbas-using-the-work-of-an-external-expert-project-24-july-2025",
       "date": "2025-07-24",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "242b5fa58021",
@@ -1497,7 +1757,9 @@
       "intro": "本文件僅代表美國上市公司會計監督委員會（PCAOB）投資人辯護辦公室之觀點，未必代表PCAOB其他幕僚或委員會之立場，亦非委員會之規則、政策或正式聲明。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin--the-importance-of-auditor-professional-responsibilities-and-ethics",
       "date": "2025-07-22",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c4ead8e9d9c9",
@@ -1511,7 +1773,9 @@
       "intro": "PCAOB投資人辯護辦公室提醒投資人，可提供關鍵查核事項（critical/key audit matters）範例予PCAOB投資人諮詢小組進行分析。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory--pcaob-investor-advisory-group-requests-public-submit-examples-of-critical-or-key-audit-matters",
       "date": "2025-04-29",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "43099bb78498",
@@ -1525,13 +1789,15 @@
       "intro": "本文件僅代表美國上市公司會計監督委員會（PCAOB）投資人辯護辦公室之觀點，未必代表PCAOB其他幕僚或委員會之立場，亦非委員會之規則、政策或正式聲明。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-why-audits-matter",
       "date": "2025-03-26",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "8352a2893d49",
       "source": "PCAOB",
       "title_en": "Spotlight: Insights on Culture and Audit Quality",
-      "title_zh": "焦點報告：企業文化與審計品質之洞察",
+      "title_zh": "聚焦：企業文化與查核品質之觀察",
       "summary_en": "%PDF-1.4\r%����\r\n959 0 obj\r<>\rendobj\r            \r\nxref\r\n959 34\r\n0000000016 00000 n\r\n0000001872 00000 n\r\n0000002045 00000 n\r\n0000002080 00000 n\r\n0000004410 00000 n\r\n0000004942 00000 n\r\n0000005474 00000 n\r\n0000005588 00000 n\r\n0000005672 00000 n\r\n0000006115 00000 n\r\n0000006681 00000 n\r\n0000007132 00000 n\r\n0000007694 00000 n\r\n0000010997 00000 n\r\n0000014185 00000 n\r\n0000017273 00000 n\r\n0000020343 00000 n\r\n0000023399 00000 n\r\n0000026180 00000 n\r\n0000026755 00000 n\r\n0000026867 00000 n\r\n0000026954 00000 n\r\n0000027558 00000 n\r\n0000028213 00000 n\r\n0000031456 00000 n\r\n0000034965 00000 n\r\n0000039867 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -1539,13 +1805,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/culture-spotlight.pdf?sfvrsn=d0a0346e_1",
       "date": "2025",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "47ce8397b704",
       "source": "PCAOB",
       "title_en": "Spotlight: Inspection Observations Related to Auditor Independence",
-      "title_zh": "焦點報告：與查核人員獨立性相關之檢查觀察結果",
+      "title_zh": "聚焦：有關查核人員獨立性之檢查觀察",
       "summary_en": "%PDF-1.4\r%����\r\n2770 0 obj\r<>\rendobj\r         \r\nxref\r\n2770 34\r\n0000000016 00000 n\r\n0000002312 00000 n\r\n0000002490 00000 n\r\n0000002527 00000 n\r\n0000004874 00000 n\r\n0000005413 00000 n\r\n0000005989 00000 n\r\n0000006104 00000 n\r\n0000006189 00000 n\r\n0000006645 00000 n\r\n0000007220 00000 n\r\n0000007804 00000 n\r\n0000008454 00000 n\r\n0000011778 00000 n\r\n0000014971 00000 n\r\n0000018060 00000 n\r\n0000021131 00000 n\r\n0000024188 00000 n\r\n0000026973 00000 n\r\n0000027580 00000 n\r\n0000027693 00000 n\r\n0000027781 00000 n\r\n0000028345 00000 n\r\n0000028991 00000 n\r\n0000032251 00000 n\r\n0000035745 00000 n\r\n0000040500 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -1553,13 +1821,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/auditor-independence-spotlight.pdf?sfvrsn=7fddcf7b_2",
       "date": "2025",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "59005838c45b",
       "source": "PCAOB",
       "title_en": "Spotlight: Auditing Considerations Related to Commercial Real Estate",
-      "title_zh": "焦點報告：與商用不動產相關之審計考量",
+      "title_zh": "聚焦：有關商用不動產之查核考量",
       "summary_en": "%PDF-1.4\r%����\r\n369 0 obj\r<>\rendobj\r             \r\nxref\r\n369 33\r\n0000000016 00000 n\r\n0000001627 00000 n\r\n0000001800 00000 n\r\n0000001835 00000 n\r\n0000004169 00000 n\r\n0000004283 00000 n\r\n0000007487 00000 n\r\n0000010671 00000 n\r\n0000013744 00000 n\r\n0000016813 00000 n\r\n0000019818 00000 n\r\n0000022703 00000 n\r\n0000023165 00000 n\r\n0000023732 00000 n\r\n0000024163 00000 n\r\n0000024275 00000 n\r\n0000024362 00000 n\r\n0000024918 00000 n\r\n0000025559 00000 n\r\n0000025936 00000 n\r\n0000026394 00000 n\r\n0000026804 00000 n\r\n0000027323 00000 n\r\n0000030623 00000 n\r\n0000034097 00000 n\r\n0000038518 00000 n\r\n0000041197 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -1567,13 +1837,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/commercial-real-estate-spotlight.pdf?sfvrsn=904d2865_2",
       "date": "2025",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "d8cb29261435",
       "source": "PCAOB",
       "title_en": "Spotlight: Root Cause Analysis – An Effective Practice To Drive Audit Quality",
-      "title_zh": "焦點報告：根本原因分析－提升審計品質之有效作法",
+      "title_zh": "聚焦：根本原因分析——提升查核品質之有效做法",
       "summary_en": "%PDF-1.4\r%����\r\n359 0 obj\r<>\rendobj\r             \r\nxref\r\n359 33\r\n0000000016 00000 n\r\n0000001658 00000 n\r\n0000001831 00000 n\r\n0000001866 00000 n\r\n0000004200 00000 n\r\n0000004314 00000 n\r\n0000007518 00000 n\r\n0000010702 00000 n\r\n0000013786 00000 n\r\n0000016847 00000 n\r\n0000019840 00000 n\r\n0000022733 00000 n\r\n0000023259 00000 n\r\n0000023819 00000 n\r\n0000024273 00000 n\r\n0000024385 00000 n\r\n0000024469 00000 n\r\n0000025021 00000 n\r\n0000025643 00000 n\r\n0000026047 00000 n\r\n0000026548 00000 n\r\n0000026974 00000 n\r\n0000027509 00000 n\r\n0000030803 00000 n\r\n0000034283 00000 n\r\n0000038520 00000 n\r\n0000041679 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -1581,7 +1853,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/root-cause-spotlight.pdf?sfvrsn=55f82206_2",
       "date": "2025",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0349d6197d26",
@@ -1595,7 +1869,9 @@
       "intro": "2005年至2024年間，重大財務重編（Big R）的年發生率約為3%。平均而言，這些重編案件中近30%發生在前一年變更查核人員之後；相較之下，涵蓋無重大重編公司之整體母體的平均年度查核人員變動率為11%。",
       "url": "https://pcaobus.org/resources/staff-publications/data-points/data-points--financial-restatements-and-auditor-turnover",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f0b0c5bdfaa4",
@@ -1609,13 +1885,15 @@
       "intro": "本文件於2025年9月發布，內容代表PCAOB幕僚意見，未必反映理事會之立場，亦非理事會之規則、政策或聲明。",
       "url": "https://pcaobus.org/resources/staff-publications/audit-focus/broker-dealer-audit-focus--review-engagements-regarding-exemption-reports",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "d6f7f4794257",
       "source": "PCAOB",
       "title_en": "Spotlight: Inspection Observations Related to Auditor Use of Data and Reports",
-      "title_zh": "焦點報告：與查核人員使用資料及報告相關之檢查觀察結果",
+      "title_zh": "聚焦：有關查核人員運用資料與報告之檢查觀察",
       "summary_en": "%PDF-1.4\r%����\r\n782 0 obj\r<>\rendobj\r            \r\nxref\r\n782 33\r\n0000000016 00000 n\r\n0000001816 00000 n\r\n0000001989 00000 n\r\n0000002024 00000 n\r\n0000004354 00000 n\r\n0000004803 00000 n\r\n0000005351 00000 n\r\n0000005465 00000 n\r\n0000005866 00000 n\r\n0000006372 00000 n\r\n0000006904 00000 n\r\n0000007523 00000 n\r\n0000010867 00000 n\r\n0000014068 00000 n\r\n0000017160 00000 n\r\n0000020235 00000 n\r\n0000023302 00000 n\r\n0000026100 00000 n\r\n0000026657 00000 n\r\n0000026769 00000 n\r\n0000026856 00000 n\r\n0000027408 00000 n\r\n0000028039 00000 n\r\n0000031311 00000 n\r\n0000034813 00000 n\r\n0000039123 00000 n\r\n0000042169 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -1623,7 +1901,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/data-and-reports-spotlight.pdf?sfvrsn=4b2cb315_2",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "83d0fd51305e",
@@ -1637,7 +1917,9 @@
       "intro": "基礎處置架構大致已建置完成，且在作業規劃及可處置性評估方面已有顯著進展。",
       "url": "https://www.fsb.org/2026/01/2025-resolution-report-from-plans-to-practice-operationalising-resolution/",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "bafb6cd9c75a",
@@ -1651,7 +1933,9 @@
       "intro": "本年度報告提供非銀行機構運用批發性資金及金融公司貸款資產（含房貸）之強化數據。",
       "url": "https://www.fsb.org/2025/12/global-monitoring-report-on-nonbank-financial-intermediation-2025/",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "4dfabcc30253",
@@ -1665,13 +1949,15 @@
       "intro": "G-SIBs名單維持29家，其中2家銀行調升至較高分組，1家銀行調降至較低分組。",
       "url": "https://www.fsb.org/2025/11/2025-list-of-global-systemically-important-banks-g-sibs/",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0f4cf6796881",
       "source": "PCAOB",
       "title_en": "Spotlight: Bank Financial Reporting Audits",
-      "title_zh": "焦點報告：銀行財務報表審計",
+      "title_zh": "聚焦：銀行財務報導查核",
       "summary_en": "%PDF-1.4\r%����\r\n711 0 obj\r<>\rendobj\r            \r\nxref\r\n711 34\r\n0000000016 00000 n\r\n0000001850 00000 n\r\n0000002023 00000 n\r\n0000002058 00000 n\r\n0000004395 00000 n\r\n0000004509 00000 n\r\n0000007703 00000 n\r\n0000010879 00000 n\r\n0000013958 00000 n\r\n0000017031 00000 n\r\n0000020039 00000 n\r\n0000022902 00000 n\r\n0000023365 00000 n\r\n0000023940 00000 n\r\n0000024478 00000 n\r\n0000024590 00000 n\r\n0000024677 00000 n\r\n0000025255 00000 n\r\n0000025911 00000 n\r\n0000026360 00000 n\r\n0000026936 00000 n\r\n0000027020 00000 n\r\n0000027436 00000 n\r\n0000027976 00000 n\r\n0000031279 00000 n\r\n0000034756 00000 n\r\n0000039605 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -1679,7 +1965,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/banking-spotlight.pdf?sfvrsn=c3f496ab_2",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f99e894bf416",
@@ -1693,7 +1981,9 @@
       "intro": "",
       "url": "https://pcaobus.org/documents/generative-ai-spotlight.pdf",
       "date": "2025",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "69f05a0c13a6",
@@ -1707,7 +1997,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB，以下簡稱「委員會」）投資人保護辦公室提醒投資人，可就「設計及執行實質性分析程序」提案及其他PCAOB準則之相關修訂提供意見。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin--opportunity-to-comment-on-proposal-to-enhance-how-auditors-address-certain-assessed-risks-of-material-misstatement",
       "date": "2024-06-27",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "187de838751c",
@@ -1721,7 +2013,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可提供關鍵查核事項或關鍵審計事項之範例供PCAOB投資人諮詢小組分析參考。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/pcaob-investor-advisory-group-requests-public-submit-examples-of-critical-or-key-audit-matters",
       "date": "2024-04-29",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "661ac853a428",
@@ -1735,7 +2029,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可就（1）事務所與查核案件指標及（2）事務所報告等相關提案提供意見。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-opportunity-to-comment-on-proposals-to-enhance-transparency-into-audits-and-audit-firms",
       "date": "2024-04-26",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c5ff072bd778",
@@ -1749,7 +2045,9 @@
       "intro": "本文件僅代表PCAOB投資人保護辦公室（OIAD）之觀點，不必然代表PCAOB其他職員或委員會之意見，亦非委員會之規則、政策或聲明。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin---what-is-the-pcaob-s-office-of-the-investor-advocate",
       "date": "2024-04-01",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b9047bfec67e",
@@ -1763,13 +2061,15 @@
       "intro": "本文件僅代表PCAOB投資人保護辦公室之觀點，不必然代表PCAOB其他職員或委員會之意見，亦非委員會之規則、政策或聲明。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin---commemorating-the-pcaob-s-office-of-the-investor-advocate-s-one-year-anniversary",
       "date": "2024-03-21",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "03019c0283da",
       "source": "PCAOB",
       "title_en": "Spotlight: Considerations for Audit Firms Using the Work of Specialists",
-      "title_zh": "焦點報告：會計師事務所運用專家工作之考量",
+      "title_zh": "焦點報告：會計師事務所運用專家工作成果之考量",
       "summary_en": "%PDF-1.4\r%����\r\n688 0 obj\r<>\rendobj\r            \r\nxref\r\n688 34\r\n0000000016 00000 n\r\n0000001849 00000 n\r\n0000002022 00000 n\r\n0000002057 00000 n\r\n0000004387 00000 n\r\n0000004863 00000 n\r\n0000005337 00000 n\r\n0000005451 00000 n\r\n0000005535 00000 n\r\n0000005982 00000 n\r\n0000006548 00000 n\r\n0000006985 00000 n\r\n0000007549 00000 n\r\n0000010882 00000 n\r\n0000014074 00000 n\r\n0000017162 00000 n\r\n0000020232 00000 n\r\n0000023288 00000 n\r\n0000026072 00000 n\r\n0000026629 00000 n\r\n0000026741 00000 n\r\n0000026828 00000 n\r\n0000027363 00000 n\r\n0000027988 00000 n\r\n0000031247 00000 n\r\n0000034744 00000 n\r\n0000038880 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -1777,13 +2077,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/use-of-specialist-spotlight.pdf?sfvrsn=29f54f7c_3",
       "date": "2024",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "5cf61668f313",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update on 2024 Inspection Activities",
-      "title_zh": "焦點報告：2024年度檢查活動工作人員最新報告",
+      "title_zh": "焦點報告：2024年度檢查活動幕僚最新報告",
       "summary_en": "%PDF-1.4\r%����\r\n1602 0 obj\r<>\rendobj\r         \r\nxref\r\n1602 34\r\n0000000016 00000 n\r\n0000002665 00000 n\r\n0000002843 00000 n\r\n0000002880 00000 n\r\n0000005227 00000 n\r\n0000005712 00000 n\r\n0000006252 00000 n\r\n0000006367 00000 n\r\n0000006452 00000 n\r\n0000006918 00000 n\r\n0000007495 00000 n\r\n0000007966 00000 n\r\n0000008561 00000 n\r\n0000011868 00000 n\r\n0000015057 00000 n\r\n0000018146 00000 n\r\n0000021217 00000 n\r\n0000024274 00000 n\r\n0000027056 00000 n\r\n0000027631 00000 n\r\n0000027744 00000 n\r\n0000027832 00000 n\r\n0000028408 00000 n\r\n0000029059 00000 n\r\n0000032303 00000 n\r\n0000035809 00000 n\r\n0000040520 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -1791,7 +2093,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2024-inspection-activities-spotlight.pdf?sfvrsn=86794c04_2",
       "date": "2024",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "1d0a20193a5b",
@@ -1805,7 +2109,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可就PCAOB規則第3502條（規範共同責任）之修正提案提供意見。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-opportunity-to-comment-on-proposal-to-strengthen-accountability-for-contributing-to-an-audit-firm-s-violations",
       "date": "2023-09-20",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0a74ba5812f1",
@@ -1819,7 +2125,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可就PCAOB提出之「涉及以科技輔助分析電子形式資訊之審計程序設計與執行相關修正案」提出意見。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/bulletin-opportunity-to-comment-on-proposed-updates-to-pcaob-standards-addressing-the-use-of-data-analytics-by-auditors",
       "date": "2023-07-28",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "5a78c6324f2c",
@@ -1833,7 +2141,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可就PCAOB提出之「有關公司違反法令之審計準則修正案及其他相關修正案」提出意見。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-bulletin-opportunity-to-comment-on-proposed-standard-addressing-an-auditor-s-responsibility-related-company-noncompliance-with-laws-regulations",
       "date": "2023-06-30",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "91b3b1f1ab85",
@@ -1847,7 +2157,9 @@
       "intro": "美國上市公司會計監督委員會（PCAOB）投資人保護辦公室提醒投資人，可就PCAOB提出之審計準則草案AS 1000「審計人員執行審計之一般責任」提出意見。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/opportunity-to-comment-proposed-standard-addressing-core-auditing-principles-and-responsibilities",
       "date": "2023-04-17",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "c95ad3538693",
@@ -1861,13 +2173,15 @@
       "intro": "準備金證明報告本質上具有其侷限性，客戶不應僅憑該報告即認定有足夠資產可支應客戶負債，應審慎評估。",
       "url": "https://pcaobus.org/resources/information-for-investors/investor-advisories/investor-advisory-exercise-caution-with-third-party-verification-proof-of-reserve-reports",
       "date": "2023-03-08",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "9f55a785da81",
       "source": "PCAOB",
       "title_en": "Spotlight: Observations From the Target Team’s 2023 Inspections",
-      "title_zh": "焦點報告：目標團隊2023年檢查觀察結果",
+      "title_zh": "焦點報告：目標檢查團隊2023年度檢查觀察報告",
       "summary_en": "%PDF-1.7\r%����\r\n177 0 obj\r<>\rendobj\r             \r\nxref\r\n177 35\r\n0000000016 00000 n\r\n0000001668 00000 n\r\n0000001813 00000 n\r\n0000001849 00000 n\r\n0000002982 00000 n\r\n0000003531 00000 n\r\n0000004034 00000 n\r\n0000004071 00000 n\r\n0000004185 00000 n\r\n0000004269 00000 n\r\n0000004790 00000 n\r\n0000005396 00000 n\r\n0000005810 00000 n\r\n0000006334 00000 n\r\n0000009625 00000 n\r\n0000012790 00000 n\r\n0000015873 00000 n\r\n0000018930 00000 n\r\n0000021980 00000 n\r\n0000024749 00000 n\r\n0000025320 00000 n\r\n0000025432 00000 n\r\n0000025519 00000 n\r\n0000026099 00000 n\r\n0000026749 00000 n\r\n0000029991 00000 n\r\n0000033480 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -1875,13 +2189,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2023-inspections-spotlight.pdf?sfvrsn=acf72513_2",
       "date": "2023",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "2f8f3c5634ec",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update on 2023 Inspection Activities",
-      "title_zh": "焦點報告：工作人員對2023年檢查活動之最新報告",
+      "title_zh": "焦點報告：2023年度檢查活動幕僚最新報告",
       "summary_en": "%PDF-1.4\r%����\r\n1786 0 obj\r<>\rendobj\r         \r\nxref\r\n1786 34\r\n0000000016 00000 n\r\n0000002572 00000 n\r\n0000002750 00000 n\r\n0000002787 00000 n\r\n0000005134 00000 n\r\n0000005681 00000 n\r\n0000006235 00000 n\r\n0000006350 00000 n\r\n0000006438 00000 n\r\n0000006932 00000 n\r\n0000007524 00000 n\r\n0000008014 00000 n\r\n0000008619 00000 n\r\n0000011923 00000 n\r\n0000015112 00000 n\r\n0000018201 00000 n\r\n0000021272 00000 n\r\n0000024329 00000 n\r\n0000027111 00000 n\r\n0000027688 00000 n\r\n0000027801 00000 n\r\n0000027889 00000 n\r\n0000028474 00000 n\r\n0000029129 00000 n\r\n0000032373 00000 n\r\n0000035880 00000 n\r\n0000040659 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -1889,13 +2205,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-update-2023-inspection-activities-spotlight.pdf?sfvrsn=2afb0f25_2",
       "date": "2023",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "703ab3d3c215",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Priorities for 2023 Inspections",
-      "title_zh": "焦點報告：工作人員2023年檢查優先事項",
+      "title_zh": "焦點報告：2023年度檢查幕僚優先事項",
       "summary_en": "%PDF-1.4\r%����\r\n550 0 obj\r<>\rendobj\r            \r\nxref\r\n550 34\r\n0000000016 00000 n\r\n0000001769 00000 n\r\n0000001942 00000 n\r\n0000001977 00000 n\r\n0000004308 00000 n\r\n0000004422 00000 n\r\n0000007670 00000 n\r\n0000010860 00000 n\r\n0000013935 00000 n\r\n0000017009 00000 n\r\n0000020036 00000 n\r\n0000022880 00000 n\r\n0000023342 00000 n\r\n0000023903 00000 n\r\n0000024341 00000 n\r\n0000024453 00000 n\r\n0000024540 00000 n\r\n0000025103 00000 n\r\n0000025735 00000 n\r\n0000025819 00000 n\r\n0000026220 00000 n\r\n0000026706 00000 n\r\n0000027146 00000 n\r\n0000027685 00000 n\r\n0000030986 00000 n\r\n0000034412 00000 n\r\n0000038896 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -1903,13 +2221,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/priorities-spotlight.pdf?sfvrsn=5c104095_4",
       "date": "2023",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "4e1fae91f7d7",
       "source": "PCAOB",
       "title_en": "Spotlight: Observations From the Target Team’s 2022 Inspections",
-      "title_zh": "焦點報告：目標團隊2022年檢查觀察結果",
+      "title_zh": "焦點報告：目標檢查團隊2022年度檢查觀察報告",
       "summary_en": "%PDF-1.4\r%����\r\n815 0 obj\r<>\rendobj\r            \r\nxref\r\n815 33\r\n0000000016 00000 n\r\n0000001727 00000 n\r\n0000001900 00000 n\r\n0000001935 00000 n\r\n0000004265 00000 n\r\n0000004792 00000 n\r\n0000005328 00000 n\r\n0000005442 00000 n\r\n0000005894 00000 n\r\n0000006454 00000 n\r\n0000006929 00000 n\r\n0000007513 00000 n\r\n0000010859 00000 n\r\n0000014060 00000 n\r\n0000017157 00000 n\r\n0000020236 00000 n\r\n0000023301 00000 n\r\n0000026094 00000 n\r\n0000026657 00000 n\r\n0000026769 00000 n\r\n0000026853 00000 n\r\n0000027416 00000 n\r\n0000028062 00000 n\r\n0000031330 00000 n\r\n0000034829 00000 n\r\n0000039376 00000 n\r\n0000043178 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -1917,13 +2237,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-2022-inspections-spotlight.pdf?sfvrsn=7917915b_4",
       "date": "2022",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "142943a4e94d",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update and Preview of 2022 Inspection Observations",
-      "title_zh": "焦點報告：工作人員最新報告暨2022年檢查觀察結果預覽",
+      "title_zh": "焦點報告：2022年度檢查觀察幕僚最新報告與預覽",
       "summary_en": "%PDF-1.4\r%����\r\n1101 0 obj\r<>\rendobj\r         \r\nxref\r\n1101 34\r\n0000000016 00000 n\r\n0000002313 00000 n\r\n0000002491 00000 n\r\n0000002528 00000 n\r\n0000004875 00000 n\r\n0000005397 00000 n\r\n0000005889 00000 n\r\n0000006004 00000 n\r\n0000006089 00000 n\r\n0000006542 00000 n\r\n0000007106 00000 n\r\n0000007581 00000 n\r\n0000008183 00000 n\r\n0000011525 00000 n\r\n0000014727 00000 n\r\n0000017825 00000 n\r\n0000020905 00000 n\r\n0000023971 00000 n\r\n0000026765 00000 n\r\n0000027340 00000 n\r\n0000027453 00000 n\r\n0000027541 00000 n\r\n0000028107 00000 n\r\n0000028766 00000 n\r\n0000032035 00000 n\r\n0000035530 00000 n\r\n0000040199 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -1931,13 +2253,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/spotlight-staff-preview-2022-inspection-observations.pdf?sfvrsn=1b116d49_4",
       "date": "2022",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "2de22a005cc8",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Overview for Planned 2022 Inspections",
-      "title_zh": "焦點報告：工作人員對2022年計畫檢查之概述",
+      "title_zh": "焦點報告：2022年度計畫檢查幕僚概覽",
       "summary_en": "%PDF-1.4\r%����\r\n444 0 obj\r<>\rendobj\r             \r\nxref\r\n444 34\r\n0000000016 00000 n\r\n0000001980 00000 n\r\n0000002156 00000 n\r\n0000002192 00000 n\r\n0000003233 00000 n\r\n0000003347 00000 n\r\n0000006595 00000 n\r\n0000009785 00000 n\r\n0000012860 00000 n\r\n0000015934 00000 n\r\n0000018962 00000 n\r\n0000021806 00000 n\r\n0000022320 00000 n\r\n0000022890 00000 n\r\n0000023351 00000 n\r\n0000023463 00000 n\r\n0000023550 00000 n\r\n0000024109 00000 n\r\n0000024752 00000 n\r\n0000025173 00000 n\r\n0000025696 00000 n\r\n0000025780 00000 n\r\n0000026210 00000 n\r\n0000026754 00000 n\r\n0000030055 00000 n\r\n0000033493 00000 n\r\n0000037964 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -1945,13 +2269,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2022-inspections-overview-spotlight.pdf?sfvrsn=8d3e48ef_4",
       "date": "2022",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "172fcdea7cd3",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update and Preview of 2021 Inspection Observations",
-      "title_zh": "焦點報告：工作人員最新報告暨2021年檢查觀察結果預覽",
+      "title_zh": "焦點報告：2021年度檢查觀察結果之幕僚最新報告與前瞻",
       "summary_en": "%PDF-1.4\r%����\r\n761 0 obj\r<>\rendobj\r           \r\nxref\r\n761 34\r\n0000000016 00000 n\r\n0000002228 00000 n\r\n0000002404 00000 n\r\n0000002440 00000 n\r\n0000004771 00000 n\r\n0000005287 00000 n\r\n0000005759 00000 n\r\n0000005873 00000 n\r\n0000005957 00000 n\r\n0000006410 00000 n\r\n0000006961 00000 n\r\n0000007403 00000 n\r\n0000007966 00000 n\r\n0000011298 00000 n\r\n0000014490 00000 n\r\n0000017578 00000 n\r\n0000020648 00000 n\r\n0000023704 00000 n\r\n0000026488 00000 n\r\n0000027060 00000 n\r\n0000027172 00000 n\r\n0000027259 00000 n\r\n0000027830 00000 n\r\n0000028475 00000 n\r\n0000031734 00000 n\r\n0000035225 00000 n\r\n0000039690 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -1959,13 +2285,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2021-inspection-observations-spotlight.pdf?sfvrsn=d2590627_4",
       "date": "2021",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "3f1ef6134786",
       "source": "PCAOB",
       "title_en": "Spotlight: Observations From the Target Team’s 2021 Inspections",
-      "title_zh": "焦點報告：目標團隊2021年檢查觀察結果",
+      "title_zh": "焦點報告：目標團隊2021年度檢查觀察結果",
       "summary_en": "%PDF-1.4\r%����\r\n616 0 obj\r<>\rendobj\r             \r\nxref\r\n616 34\r\n0000000016 00000 n\r\n0000001677 00000 n\r\n0000001850 00000 n\r\n0000001885 00000 n\r\n0000004218 00000 n\r\n0000004332 00000 n\r\n0000007536 00000 n\r\n0000010720 00000 n\r\n0000013804 00000 n\r\n0000016864 00000 n\r\n0000019859 00000 n\r\n0000022752 00000 n\r\n0000023259 00000 n\r\n0000023827 00000 n\r\n0000024297 00000 n\r\n0000024409 00000 n\r\n0000024496 00000 n\r\n0000025069 00000 n\r\n0000025710 00000 n\r\n0000025794 00000 n\r\n0000026251 00000 n\r\n0000026805 00000 n\r\n0000027216 00000 n\r\n0000027730 00000 n\r\n0000031024 00000 n\r\n0000034492 00000 n\r\n0000038924 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -1973,13 +2301,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/target-team-spotlight.pdf?sfvrsn=b6a83e28_4",
       "date": "2021",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "3a3ef880c0d8",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Outlook for 2021 Inspections",
-      "title_zh": "焦點報告：2021年檢查工作人員展望",
+      "title_zh": "焦點報告：幕僚對2021年度檢查之展望",
       "summary_en": "%PDF-1.4\r%����\r\n401 0 obj\r<>\rendobj\r             \r\nxref\r\n401 33\r\n0000000016 00000 n\r\n0000001973 00000 n\r\n0000002149 00000 n\r\n0000002185 00000 n\r\n0000003226 00000 n\r\n0000003340 00000 n\r\n0000006598 00000 n\r\n0000009803 00000 n\r\n0000012909 00000 n\r\n0000016000 00000 n\r\n0000018974 00000 n\r\n0000021909 00000 n\r\n0000022416 00000 n\r\n0000022970 00000 n\r\n0000023414 00000 n\r\n0000023526 00000 n\r\n0000023610 00000 n\r\n0000024125 00000 n\r\n0000024736 00000 n\r\n0000025133 00000 n\r\n0000025623 00000 n\r\n0000026039 00000 n\r\n0000026567 00000 n\r\n0000029897 00000 n\r\n0000033276 00000 n\r\n0000037388 00000 n\r\n0000040348 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -1987,13 +2317,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-outlook-2021-inspections-spotlight.pdf?sfvrsn=6b415087_6",
       "date": "2021",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "f40d0cfd6876",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update and Preview of 2020 Inspection Observations",
-      "title_zh": "焦點報告：工作人員更新及2020年檢查觀察結果預覽",
+      "title_zh": "焦點報告：2020年度檢查觀察結果之幕僚最新報告與前瞻",
       "summary_en": "%PDF-1.4\r%����\r\n561 0 obj\r<>\rendobj\r            \r\nxref\r\n561 33\r\n0000000016 00000 n\r\n0000002151 00000 n\r\n0000002327 00000 n\r\n0000002363 00000 n\r\n0000003404 00000 n\r\n0000003909 00000 n\r\n0000004438 00000 n\r\n0000004552 00000 n\r\n0000004990 00000 n\r\n0000005516 00000 n\r\n0000005973 00000 n\r\n0000006538 00000 n\r\n0000009876 00000 n\r\n0000013078 00000 n\r\n0000016182 00000 n\r\n0000019265 00000 n\r\n0000022328 00000 n\r\n0000025141 00000 n\r\n0000025705 00000 n\r\n0000025817 00000 n\r\n0000025901 00000 n\r\n0000026456 00000 n\r\n0000027088 00000 n\r\n0000030382 00000 n\r\n0000033872 00000 n\r\n0000038178 00000 n\r\n0000041447 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2001,13 +2333,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/staff-preview-2020-inspection-observations-spotlight.pdf?sfvrsn=10819041_4",
       "date": "2020",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "05a88e778fa9",
       "source": "PCAOB",
       "title_en": "Spotlight: Staff Update and Preview of 2019 Inspection Observations",
-      "title_zh": "焦點報告：工作人員更新及2019年檢查觀察結果預覽",
+      "title_zh": "焦點報告：2019年度檢查觀察結果之幕僚最新報告與前瞻",
       "summary_en": "%PDF-1.4\r%����\r\n363 0 obj\r<>\rendobj\r             \r\nxref\r\n363 36\r\n0000000016 00000 n\r\n0000001976 00000 n\r\n0000002152 00000 n\r\n0000002187 00000 n\r\n0000003221 00000 n\r\n0000003682 00000 n\r\n0000004147 00000 n\r\n0000004261 00000 n\r\n0000004345 00000 n\r\n0000004787 00000 n\r\n0000005328 00000 n\r\n0000005773 00000 n\r\n0000006323 00000 n\r\n0000009667 00000 n\r\n0000012861 00000 n\r\n0000015949 00000 n\r\n0000019028 00000 n\r\n0000022103 00000 n\r\n0000024904 00000 n\r\n0000025466 00000 n\r\n0000025578 00000 n\r\n0000025665 00000 n\r\n0000026187 00000 n\r\n0000026814 00000 n\r\n0000030075 00000 n\r\n0000033592 00000 n\r\n0000037826 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -2015,13 +2349,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2019-inspection-observations-spotlight.pdf?sfvrsn=57617c98_2",
       "date": "2019",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "ba14109e2b6d",
       "source": "PCAOB",
       "title_en": "Inspections Outlook for 2019",
-      "title_zh": "2019年檢查展望",
+      "title_zh": "2019年度檢查展望",
       "summary_en": "%PDF-1.7\r%����\r\n535 0 obj\r<>\rendobj\r            \r\nxref\r\n535 57\r\n0000000016 00000 n\r\n0000002129 00000 n\r\n0000002288 00000 n\r\n0000003349 00000 n\r\n0000003495 00000 n\r\n0000003766 00000 n\r\n0000004091 00000 n\r\n0000004524 00000 n\r\n0000005050 00000 n\r\n0000005077 00000 n\r\n0000005651 00000 n\r\n0000005765 00000 n\r\n0000005877 00000 n\r\n0000006148 00000 n\r\n0000006685 00000 n\r\n0000007550 00000 n\r\n0000007685 00000 n\r\n0000007712 00000 n\r\n0000008010 00000 n\r\n0000008920 00000 n\r\n0000009772 00000 n\r\n0000009916 00000 n\r\n0000010320 00000 n\r\n0000010347 00000 n\r\n0000010933 00000 n\r\n0000011894 00000 n\r\n0000012692 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2029,13 +2365,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-outlook-for-2019.pdf?sfvrsn=538b8bb7_2",
       "date": "2019",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "91e33c293e4f",
       "source": "PCAOB",
       "title_en": "Staff Preview of 2018 Inspection Observations",
-      "title_zh": "工作人員2018年檢查觀察結果預覽",
+      "title_zh": "2018年度檢查觀察結果之幕僚前瞻報告",
       "summary_en": "%PDF-1.7\r%����\r\n566 0 obj\r<>\rendobj\r            \r\nxref\r\n566 61\r\n0000000016 00000 n\r\n0000002242 00000 n\r\n0000002401 00000 n\r\n0000003463 00000 n\r\n0000003607 00000 n\r\n0000004217 00000 n\r\n0000004244 00000 n\r\n0000004358 00000 n\r\n0000004470 00000 n\r\n0000005263 00000 n\r\n0000005990 00000 n\r\n0000006782 00000 n\r\n0000006928 00000 n\r\n0000007524 00000 n\r\n0000007795 00000 n\r\n0000008076 00000 n\r\n0000008321 00000 n\r\n0000008672 00000 n\r\n0000008943 00000 n\r\n0000009277 00000 n\r\n0000009304 00000 n\r\n0000010147 00000 n\r\n0000010282 00000 n\r\n0000010728 00000 n\r\n0000010755 00000 n\r\n0000011053 00000 n\r\n0000011853 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2043,7 +2381,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/staff-preview-2018-inspection-observations.pdf?sfvrsn=b5f8cb09_0",
       "date": "2018",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "0ec8316076b7",
@@ -2057,13 +2397,15 @@
       "intro": "PCAOB職員擬訂指引以協助落實PCAOB準則與規則。相關文件僅代表PCAOB職員意見，未必代表理事會立場，且非屬理事會之規則、政策或聲明。",
       "url": "https://pcaobus.org/oversight/standards/staff-guidance",
       "date": "2017",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "b6895a32e91f",
       "source": "PCAOB",
       "title_en": "Staff Inspection Brief, Vol. 2017/4: Preview of Observations from 2016 Inspections of Auditors of Issuers (November 2017)",
-      "title_zh": "工作人員檢查簡報，2017年第4期：發行人查核機構2016年檢查觀察結果預覽（2017年11月）",
+      "title_zh": "幕僚檢查簡報，第2017/4卷：發行人查核機構2016年度檢查觀察結果前瞻（2017年11月）",
       "summary_en": "%PDF-1.4\r%����\r\n580 0 obj\r<>\rendobj\r           \r\nxref\r\n580 54\r\n0000000016 00000 n\r\n0000002447 00000 n\r\n0000002606 00000 n\r\n0000003180 00000 n\r\n0000003312 00000 n\r\n0000003866 00000 n\r\n0000004368 00000 n\r\n0000004683 00000 n\r\n0000004731 00000 n\r\n0000004921 00000 n\r\n0000005035 00000 n\r\n0000005147 00000 n\r\n0000005174 00000 n\r\n0000005777 00000 n\r\n0000006026 00000 n\r\n0000006641 00000 n\r\n0000006896 00000 n\r\n0000007408 00000 n\r\n0000009725 00000 n\r\n0000011902 00000 n\r\n0000013760 00000 n\r\n0000015746 00000 n\r\n0000018255 00000 n\r\n0000020229 00000 n\r\n0000020757 00000 n\r\n0000021013 00000 n\r\n0000021556 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -2071,13 +2413,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-4-issuer-results.pdf?sfvrsn=c216d8a7_0",
       "date": "2017",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "db5ff5b68fd4",
       "source": "PCAOB",
       "title_en": "Staff Inspection Brief, Vol. 2017/1: Preview of Observations from 2016 Inspections of Auditors of Brokers and Dealers (June 2017)",
-      "title_zh": "工作人員檢查簡報，2017年第1期：經紀商與自營商查核機構2016年檢查觀察結果預覽（2017年6月）",
+      "title_zh": "幕僚檢查簡報，第2017/1卷：2016年券商暨自營商查核人員檢查觀察預覽（2017年6月）",
       "summary_en": "%PDF-1.6\r%����\r\n658 0 obj\r<>\rendobj\r                                                                                                              \r\n689 0 obj\r<<73fb8cd7660acd1375d38474c8142bc4>]>>stream\r\nx�̭q����ܓ�s��l�]:&�ev���if�4�\t�/��_�Ɋ���&>�wz+W�>�m�\tXO�n@�jW�A� ����z/�����T�|\t\\E!xo��&JM�`�{<֢��\r�Z`���&���\"���$�I�$H��H�8$C\\�%ɑ<)�\")� zD+�\r\nendstream\rendobj\r                                                                                                                                                                                                                                            ",
       "summary_checked": true,
       "date_checked": true,
@@ -2085,7 +2429,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2017-1-broker-dealer-results.pdf?sfvrsn=294b7e1f_0",
       "date": "2017",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "3ceab0474c09",
@@ -2099,13 +2445,15 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD532.pdf",
       "date": "2016-06-07",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "adb58ba46fc7",
       "source": "PCAOB",
       "title_en": "Staff Inspection Brief, Vol. 2016/2: Preview of Observations from 2015 Inspections of Auditors of Brokers and Dealers (April 2016)",
-      "title_zh": "工作人員檢查簡報，2016年第2期：經紀商與自營商查核機構2015年檢查觀察結果預覽（2016年4月）",
+      "title_zh": "幕僚檢查簡報，第2016/2卷：2015年券商暨自營商查核人員檢查觀察預覽（2016年4月）",
       "summary_en": "%PDF-1.4\r%����\r\n415 0 obj\r<>\rendobj\r            \r\nxref\r\n415 58\r\n0000000016 00000 n\r\n0000002263 00000 n\r\n0000002410 00000 n\r\n0000002996 00000 n\r\n0000003023 00000 n\r\n0000003178 00000 n\r\n0000003732 00000 n\r\n0000004170 00000 n\r\n0000004345 00000 n\r\n0000004393 00000 n\r\n0000004507 00000 n\r\n0000004619 00000 n\r\n0000004868 00000 n\r\n0000005484 00000 n\r\n0000005739 00000 n\r\n0000006217 00000 n\r\n0000006874 00000 n\r\n0000007189 00000 n\r\n0000007898 00000 n\r\n0000008566 00000 n\r\n0000008698 00000 n\r\n0000009198 00000 n\r\n0000009746 00000 n\r\n0000009773 00000 n\r\n0000010029 00000 n\r\n0000010531 00000 n\r\n0000011093 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2113,13 +2461,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-2-auditors-broker-dealers.pdf?sfvrsn=2a9d6251_0",
       "date": "2016",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "8469357f61ba",
       "source": "PCAOB",
       "title_en": "Staff Inspection Brief, Vol. 2016/1: Preview of Observations from 2015 Inspections of Auditors of Issuers (April 2016)",
-      "title_zh": "檢查人員簡報，第2016/1卷：2015年發行人查核機構檢查觀察重點預覽（2016年4月）",
+      "title_zh": "幕僚檢查簡報，第2016/1卷：2015年發行人查核人員檢查觀察預覽（2016年4月）",
       "summary_en": "%PDF-1.4\r%����\r\n764 0 obj\r<>\rendobj\r           \r\nxref\r\n764 51\r\n0000000016 00000 n\r\n0000002189 00000 n\r\n0000002336 00000 n\r\n0000002895 00000 n\r\n0000003027 00000 n\r\n0000003548 00000 n\r\n0000004058 00000 n\r\n0000004233 00000 n\r\n0000004281 00000 n\r\n0000004395 00000 n\r\n0000004507 00000 n\r\n0000004534 00000 n\r\n0000005137 00000 n\r\n0000005386 00000 n\r\n0000005941 00000 n\r\n0000006196 00000 n\r\n0000006719 00000 n\r\n0000007405 00000 n\r\n0000007720 00000 n\r\n0000008393 00000 n\r\n0000009095 00000 n\r\n0000009285 00000 n\r\n0000009888 00000 n\r\n0000010476 00000 n\r\n0000011079 00000 n\r\n0000011686 00000 n\r\n0000012180 00000 ",
       "summary_checked": true,
       "date_checked": true,
@@ -2127,7 +2477,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspection-brief-2016-1-auditors-issuers.pdf?sfvrsn=c86199e7_0",
       "date": "2016",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "42431b13bd50",
@@ -2141,7 +2493,9 @@
       "intro": "希望為會員複製這些準則嗎？想在教材或大學課程中納入IFAC出版品嗎？了解我們能提供的協助。",
       "url": "https://www.iaasb.org/publications/glance-new-and-revised-auditor-reporting-standards-and-related-conforming-amendments-2",
       "date": "2015-10-06",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "02933202ac12",
@@ -2155,13 +2509,15 @@
       "intro": "",
       "url": "https://www.iosco.org/library/pubdocs/pdf/IOSCOPD413.pdf",
       "date": "2013-05-03",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "4b77788f3474",
       "source": "PCAOB",
       "title_en": "Spotlight: Insights Into the PCAOB’s Interim Inspection Program Related to Audits of Broker-Dealers",
-      "title_zh": "焦點報告：PCAOB經紀商暨自營商期中檢查計畫之觀察與洞見",
+      "title_zh": "焦點報告：PCAOB券商暨自營商查核過渡期檢查計畫觀察洞見",
       "summary_en": "%PDF-1.4\r%����\r\n627 0 obj\r<>\rendobj\r            \r\nxref\r\n627 34\r\n0000000016 00000 n\r\n0000002021 00000 n\r\n0000002197 00000 n\r\n0000002233 00000 n\r\n0000004645 00000 n\r\n0000004759 00000 n\r\n0000007972 00000 n\r\n0000011178 00000 n\r\n0000014266 00000 n\r\n0000017356 00000 n\r\n0000020335 00000 n\r\n0000023257 00000 n\r\n0000023779 00000 n\r\n0000024344 00000 n\r\n0000024868 00000 n\r\n0000024980 00000 n\r\n0000025067 00000 n\r\n0000025625 00000 n\r\n0000026274 00000 n\r\n0000026358 00000 n\r\n0000026814 00000 n\r\n0000027390 00000 n\r\n0000027838 00000 n\r\n0000028411 00000 n\r\n0000031733 00000 n\r\n0000035200 00000 n\r\n0000039766 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2169,13 +2525,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/2024-broker-dealer-spotlight.pdf?sfvrsn=b6f72dff_4",
       "date": "",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "16134510e52a",
       "source": "PCAOB",
       "title_en": "Spotlight: Inspection Observations Related to Public Company Audits Involving Crypto Assets",
-      "title_zh": "焦點報告：涉及加密資產之上市公司查核檢查觀察重點",
+      "title_zh": "焦點報告：涉及加密資產之公開發行公司查核檢查觀察",
       "summary_en": "%PDF-1.4\r%����\r\n563 0 obj\r<>\rendobj\r            \r\nxref\r\n563 33\r\n0000000016 00000 n\r\n0000001738 00000 n\r\n0000001911 00000 n\r\n0000001946 00000 n\r\n0000004280 00000 n\r\n0000004394 00000 n\r\n0000007598 00000 n\r\n0000010795 00000 n\r\n0000013875 00000 n\r\n0000016942 00000 n\r\n0000019931 00000 n\r\n0000022825 00000 n\r\n0000023337 00000 n\r\n0000023890 00000 n\r\n0000024353 00000 n\r\n0000024465 00000 n\r\n0000024549 00000 n\r\n0000025091 00000 n\r\n0000025710 00000 n\r\n0000026168 00000 n\r\n0000026716 00000 n\r\n0000027137 00000 n\r\n0000027677 00000 n\r\n0000030978 00000 n\r\n0000034441 00000 n\r\n0000038561 00000 n\r\n0000042037 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2183,13 +2541,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/crypto-assets-spotlight.pdf?sfvrsn=f0e1d51c_4",
       "date": "",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "917720a40689",
       "source": "PCAOB",
       "title_en": "Spotlight: Professional Competence and Skepticism Are Essential to Quality Audits",
-      "title_zh": "焦點報告：專業勝任能力與專業懷疑態度為高品質查核之關鍵",
+      "title_zh": "焦點報告：專業勝任能力與專業懷疑態度為確保查核品質之核心要素",
       "summary_en": "%PDF-1.4\r%����\r\n229 0 obj\r<>\rendobj\r             \r\nxref\r\n229 33\r\n0000000016 00000 n\r\n0000001583 00000 n\r\n0000001756 00000 n\r\n0000001791 00000 n\r\n0000004123 00000 n\r\n0000004237 00000 n\r\n0000007485 00000 n\r\n0000010675 00000 n\r\n0000013769 00000 n\r\n0000016852 00000 n\r\n0000019871 00000 n\r\n0000022752 00000 n\r\n0000023208 00000 n\r\n0000023737 00000 n\r\n0000024183 00000 n\r\n0000024295 00000 n\r\n0000024379 00000 n\r\n0000024849 00000 n\r\n0000025419 00000 n\r\n0000025811 00000 n\r\n0000026297 00000 n\r\n0000026695 00000 n\r\n0000027201 00000 n\r\n0000030524 00000 n\r\n0000033942 00000 n\r\n0000037440 00000 n\r\n0000040443 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -2197,13 +2557,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/competence-and-skepticism-spotlight.pdf?sfvrsn=27ba2fa1_4",
       "date": "",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "1f6e7fc92d1a",
       "source": "PCAOB",
       "title_en": "Spotlight: Inspection Observations - Audits of Special Purpose Acquisition Companies and De-SPAC Transactions",
-      "title_zh": "焦點報告：檢查觀察重點－特殊目的收購公司（SPAC）及反向併購交易（De-SPAC）之查核",
+      "title_zh": "焦點報告：檢查觀察－特殊目的收購公司（SPAC）暨SPAC合併交易之查核",
       "summary_en": "%PDF-1.4\r%����\r\n763 0 obj\r<>\rendobj\r            \r\nxref\r\n763 34\r\n0000000016 00000 n\r\n0000001817 00000 n\r\n0000001990 00000 n\r\n0000002025 00000 n\r\n0000004360 00000 n\r\n0000004474 00000 n\r\n0000007735 00000 n\r\n0000010936 00000 n\r\n0000014026 00000 n\r\n0000017110 00000 n\r\n0000020114 00000 n\r\n0000023007 00000 n\r\n0000023545 00000 n\r\n0000024112 00000 n\r\n0000024577 00000 n\r\n0000024689 00000 n\r\n0000024776 00000 n\r\n0000025336 00000 n\r\n0000025980 00000 n\r\n0000026064 00000 n\r\n0000026502 00000 n\r\n0000027045 00000 n\r\n0000027516 00000 n\r\n0000028096 00000 n\r\n0000031405 00000 n\r\n0000034834 00000 n\r\n0000039299 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2211,13 +2573,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/spacs-spotlight.pdf?sfvrsn=b6490773_4",
       "date": "",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "da62526519b6",
       "source": "PCAOB",
       "title_en": "Spotlight: Additional Insights on the Remediation Process",
-      "title_zh": "焦點報告：缺失改善程序之補充觀察",
+      "title_zh": "焦點報告：缺失改善程序之補充洞見",
       "summary_en": "%PDF-1.4\r%����\r\n345 0 obj\r<>\rendobj\r             \r\nxref\r\n345 34\r\n0000000016 00000 n\r\n0000001653 00000 n\r\n0000001826 00000 n\r\n0000001861 00000 n\r\n0000004193 00000 n\r\n0000004307 00000 n\r\n0000007555 00000 n\r\n0000010760 00000 n\r\n0000013846 00000 n\r\n0000016933 00000 n\r\n0000019949 00000 n\r\n0000022850 00000 n\r\n0000023372 00000 n\r\n0000023935 00000 n\r\n0000024395 00000 n\r\n0000024507 00000 n\r\n0000024594 00000 n\r\n0000025159 00000 n\r\n0000025793 00000 n\r\n0000025877 00000 n\r\n0000026307 00000 n\r\n0000026842 00000 n\r\n0000027291 00000 n\r\n0000027856 00000 n\r\n0000031165 00000 n\r\n0000034570 00000 n\r\n0000038893 0000",
       "summary_checked": true,
       "date_checked": true,
@@ -2225,13 +2589,15 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/remediation-spotlight.pdf?sfvrsn=2ae461df_3",
       "date": "",
-      "first_seen": "2026-07-20"
+      "first_seen": "2026-07-20",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "6034d641407b",
       "source": "PCAOB",
       "title_en": "Spotlight: Inspection Observations Related to Engagement Quality Reviews",
-      "title_zh": "焦點報告：複核程序品質之檢查觀察重點",
+      "title_zh": "焦點報告：與委任品質複核相關之檢查觀察",
       "summary_en": "%PDF-1.4\r%����\r\n1092 0 obj\r<>\rendobj\r          \r\nxref\r\n1092 34\r\n0000000016 00000 n\r\n0000001870 00000 n\r\n0000002045 00000 n\r\n0000002081 00000 n\r\n0000004427 00000 n\r\n0000004909 00000 n\r\n0000005459 00000 n\r\n0000005574 00000 n\r\n0000005659 00000 n\r\n0000006123 00000 n\r\n0000006708 00000 n\r\n0000007237 00000 n\r\n0000007859 00000 n\r\n0000011199 00000 n\r\n0000014395 00000 n\r\n0000017476 00000 n\r\n0000020549 00000 n\r\n0000023618 00000 n\r\n0000026417 00000 n\r\n0000026992 00000 n\r\n0000027105 00000 n\r\n0000027193 00000 n\r\n0000027777 00000 n\r\n0000028437 00000 n\r\n0000031698 00000 n\r\n0000035231 00000 n\r\n0000039864 00000",
       "summary_checked": true,
       "date_checked": true,
@@ -2239,7 +2605,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/eqr-spotlight.pdf?sfvrsn=95a345e6_4",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "de9664e1a804",
@@ -2253,7 +2621,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/documents/pcaob-use-economic-analysis-stakeholder-spotlight.pdf?sfvrsn=9cb7e4d0_2",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "17dadf6a3986",
@@ -2267,7 +2637,9 @@
       "intro": "",
       "url": "https://assets.pcaobus.org/pcaob-dev/docs/default-source/inspections/documents/inspections-report-guide.pdf?sfvrsn=bc066f32_0",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "a4169aafc5ac",
@@ -2281,7 +2653,9 @@
       "intro": "本項同儕審查旨在評估FSB會員國於建立公部門後盾融資機制（作為達成有序清理最後手段之必要時使用）相關政策上之進展與遵循情形。",
       "url": "https://www.fsb.org/2026/02/thematic-peer-review-on-public-sector-backstop-funding-mechanisms-summary-terms-of-reference/",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "8e9e6f9d57d9",
@@ -2295,7 +2669,9 @@
       "intro": "本文為針對「FSB核心要素中適用復原與清理計畫規範之保險公司範圍：諮詢報告」所收到之公開回應意見。",
       "url": "https://www.fsb.org/2026/02/public-responses-to-consultation-on-scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes/",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "df2e42d2eef7",
@@ -2309,7 +2685,9 @@
       "intro": "附買回市場各區塊內的脆弱性有可能擴散至整體金融體系。",
       "url": "https://www.fsb.org/2026/02/vulnerabilities-in-government-bond-backed-repo-markets/",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "7a90a2c5dba4",
@@ -2323,7 +2701,9 @@
       "intro": "本文為2021年版「危機管理小組良好實務作法」新增之補充資訊，旨在強化母國與地主國主管機關於危機管理小組架構外之危機協調合作。",
       "url": "https://www.fsb.org/2026/01/good-practices-for-crisis-management-groups-revised-version/",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "a6dd1783231e",
@@ -2337,7 +2717,9 @@
       "intro": "本指引說明主管機關於評估保險業者是否應納入復原與清理計畫要求時，應考量之關鍵標準。",
       "url": "https://www.fsb.org/2025/11/scope-of-insurers-subject-to-the-recovery-and-resolution-planning-requirements-in-the-fsb-key-attributes-consultation-report/",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     },
     {
       "id": "df8b98243d31",
@@ -2351,7 +2733,9 @@
       "intro": "本指引為主管機關評估哪些保險業者應納入復原與清理計畫要求，提供結構化之評估方法。",
       "url": "https://www.fsb.org/2025/11/the-fsb-reaffirms-its-decision-to-use-iais-holistic-framework-assessments-instead-of-an-annual-identification-of-global-systemically-important-insurers/",
       "date": "",
-      "first_seen": "2026-07-19"
+      "first_seen": "2026-07-19",
+      "key_points_zh": [],
+      "key_points_checked": false
     }
   ]
 }
