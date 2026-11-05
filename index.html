@@ -264,6 +264,21 @@
   .card-intro {
     font-size: 0.84rem; color: #444; line-height: 1.7;
   }
+  .card-points {
+    margin: 6px 0 0 0; padding-left: 1.2em;
+    font-size: 0.84rem; color: #333; line-height: 1.7;
+  }
+  .card-points-label {
+    font-family: 'DM Mono', monospace; font-size: 0.66rem;
+    color: var(--muted); letter-spacing: 0.05em; margin-top: 8px;
+  }
+  .copy-btn {
+    margin-top: 10px; font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    padding: 5px 12px; border: 1px solid var(--line); background: var(--white);
+    color: var(--ink); cursor: pointer; border-radius: 2px;
+  }
+  .copy-btn:hover { background: var(--ink); color: var(--paper); }
+  .copy-btn.done { background: var(--green); color: #fff; border-color: var(--green); }
 
   /* ── Table view ── */
   .table-wrap { overflow-x: auto; background: var(--white); border: 1px solid var(--line); }
@@ -617,6 +632,10 @@ function renderCards(reports) {
       const isNew = lastBatch && r.first_seen === lastBatch;
       const zh    = r.title_zh ? `<div class="card-title-zh">${esc(r.title_zh)}</div>` : "";
       const intro = r.intro    ? `<div class="card-intro">${esc(r.intro)}</div>` : "";
+      const kp    = r.key_points_zh || [];
+      const points = kp.length
+        ? `<div class="card-points-label">重點（AI 依原文整理，呈報前請核對）</div><ol class="card-points">${kp.map(p => `<li>${esc(p)}</li>`).join("")}</ol>`
+        : "";
       const title = r.url
         ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title_en)}</a>`
         : esc(r.title_en);
@@ -627,7 +646,8 @@ function renderCards(reports) {
           <span>${esc(r.date || "—")}</span>
         </div>
         <div class="card-title-en">${title}</div>
-        ${zh}${intro}
+        ${zh}${intro}${points}
+        <button class="copy-btn" onclick="copyBrief('${esc(r.id)}', this)">複製呈報文字</button>
       </div>`;
     }).join("");
     return `<div class="group-heading">${esc(label)} <span class="g-cnt">${items.length} 則</span></div>${cards}`;
@@ -756,6 +776,40 @@ tr:last-child td{border-bottom:none} a{color:#c4392a;text-decoration:none}
   a.href = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
   a.download = `監理週報_${date}.html`;
   a.click();
+}
+
+// ── 一鍵複製呈報文字 ──
+function buildBrief(r) {
+  const lines = [];
+  lines.push(`【${r.source}】${r.title_zh || r.title_en}`);
+  lines.push(`英文標題：${r.title_en}`);
+  lines.push(`發布日期：${r.date || "未知"}`);
+  const kp = r.key_points_zh || [];
+  if (kp.length) {
+    lines.push("重點：");
+    kp.forEach((p, i) => lines.push(`${i + 1}. ${p}`));
+  } else if (r.intro) {
+    lines.push(`摘要：${r.intro}`);
+  }
+  lines.push(`原文連結：${r.url}`);
+  return lines.join("\n");
+}
+
+async function copyBrief(id, btn) {
+  const r = allReports.find(x => x.id === id);
+  if (!r) return;
+  const text = buildBrief(r);
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (e) {
+    const ta = document.createElement("textarea");
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); } catch (_) {}
+    ta.remove();
+  }
+  const old = btn.textContent;
+  btn.textContent = "已複製"; btn.classList.add("done");
+  setTimeout(() => { btn.textContent = old; btn.classList.remove("done"); }, 1500);
 }
 
 function esc(s) {

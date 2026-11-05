@@ -101,6 +101,7 @@ HEADERS = {
 
 DATA_PATH           = Path(__file__).parent.parent / "data" / "reports.json"
 CUSTOM_SOURCES_PATH = Path(__file__).parent.parent / "data" / "custom_sources.json"
+NOTIFY_PATH         = Path(__file__).parent / "new_iosco.json"   # 本次新 IOSCO 報告（Email 用）
 
 MAX_PER_SOURCE = 40
 KNOWN_SOURCES  = [s["id"] for s in DEFAULT_SOURCES]
@@ -665,6 +666,81 @@ def fetch_detail_date(url: str) -> str:
 
 
 # ─────────────────────────────────────────
+#  IOSCO 重點摘要：讀 PDF 前幾頁真實內文，請 Claude 整理重點
+# ─────────────────────────────────────────
+
+KEY_POINTS_SOURCES   = {"IOSCO"}
+KEY_POINTS_MAX_RUN   = 10          # 每次最多處理幾份，控制 API 費用
+KEY_POINTS_MIN_DATE  = "2025"      # 只處理這年以後的報告，舊報告不補
+PDF_MAX_PAGES        = 6
+PDF_MAX_CHARS        = 15000
+
+
+def extract_pdf_text(url: str) -> str:
+    """下載 PDF 並抽出前幾頁文字；失敗回空字串。"""
+    try:
+        from io import BytesIO
+        from pypdf import PdfReader
+        resp = requests.get(url, headers=HEADERS, timeout=60)
+        resp.raise_for_status()
+        reader = PdfReader(BytesIO(resp.content))
+        parts = []
+        for page in reader.pages[:PDF_MAX_PAGES]:
+            parts.append(page.extract_text() or "")
+        text = re.sub(r"[ \t]+", " ", "\n".join(parts))
+        text = re.sub(r"\n{3,}", "\n\n", text).strip()
+        return text[:PDF_MAX_CHARS]
+    except Exception as e:
+        print(f"  ⚠️  PDF 讀取失敗：{url}（{e}）")
+        return ""
+
+
+def summarize_key_points(reports: list[dict], client: anthropic.Anthropic) -> None:
+    """就地填入 key_points_zh（3 點中文重點）。只根據 PDF 真實內文；讀不到內文就留空。"""
+    for r in reports:
+        text = extract_pdf_text(r["url"])
+        r["key_points_checked"] = True
+        if len(text) < 300:
+            r["key_points_zh"] = []
+            continue
+        prompt = f"""你是金融監理機關的研究人員，要把以下 IOSCO 報告快速向長官呈報。
+請只根據下方「報告內文節錄」，用繁體中文（台灣金管會體例用語）整理 3 點重點。
+
+規則：
+1. 每點一句，不超過 60 字。
+2. 依序說明：這份報告是什麼（性質、目的）、主要內容或建議、對監理機關或市場的意義。
+3. 若為意見徵詢（consultation），且內文有截止日期，請在其中一點寫明截止日期。
+4. 只能寫內文中有的資訊，不可推測或補充內文沒有的內容。
+5. 機構縮寫（IOSCO、FSB 等）保留原文。
+
+只輸出 JSON 字串陣列，例如 ["重點一", "重點二", "重點三"]。
+
+報告標題：{r.get("title_en", "")}
+
+報告內文節錄：
+{text}"""
+        try:
+            resp = client.messages.create(
+                model="claude-sonnet-5",
+                max_tokens=1200,
+                thinking={"type": "disabled"},
+                messages=[{"role": "user", "content": prompt}],
+            )
+            raw = "".join(
+                b.text for b in resp.content if getattr(b, "type", None) == "text"
+            ).strip()
+            start, end = raw.find("["), raw.rfind("]")
+            points = json.loads(raw[start:end + 1])
+            r["key_points_zh"] = [str(p).strip() for p in points if str(p).strip()][:3]
+            print(f"  ✓ 重點摘要：{r.get('title_en', '')[:50]}")
+        except Exception as e:
+            print(f"  ⚠️  重點摘要失敗：{e}")
+            r["key_points_zh"] = []
+            r["key_points_checked"] = False   # 下次再試（例如 API key 失效時）
+        time.sleep(1)
+
+
+# ─────────────────────────────────────────
 #  Claude 翻譯（翻譯真實內容，不創作）
 # ─────────────────────────────────────────
 
@@ -775,6 +851,8 @@ def revalidate_existing(reports: list[dict]) -> list[dict]:
             "url":        url,
             "date":       date,
             "first_seen": r.get("first_seen", ""),
+            "key_points_zh":      r.get("key_points_zh", []),
+            "key_points_checked": bool(r.get("key_points_checked")),
         })
     return kept
 
@@ -845,6 +923,24 @@ def main():
         for r in pending:
             r.setdefault("title_zh", "")
             r.setdefault("intro", "")
+
+    # IOSCO 重點摘要：新報告優先，再補近期未處理的
+    kp_pending = [r for r in by_url.values()
+                  if r.get("source") in KEY_POINTS_SOURCES
+                  and not r.get("key_points_checked")
+                  and (r.get("date", "") >= KEY_POINTS_MIN_DATE or r["url"] in {n["url"] for n in new_reports})]
+    new_urls = {r["url"] for r in new_reports}
+    kp_pending.sort(key=lambda r: (r["url"] in new_urls, sort_key(r.get("date", ""))), reverse=True)
+    kp_pending = kp_pending[:KEY_POINTS_MAX_RUN]
+    if kp_pending:
+        print(f"IOSCO 重點摘要：{len(kp_pending)} 則…")
+        summarize_key_points(kp_pending, client)
+
+    # 新 IOSCO 報告清單 → 給 Email 通知步驟使用（不進 git）
+    notify = [r for r in new_reports if r.get("source") in KEY_POINTS_SOURCES]
+    NOTIFY_PATH.write_text(json.dumps(notify, ensure_ascii=False, indent=2), encoding="utf-8")
+    if notify:
+        print(f"📧 有 {len(notify)} 則新 IOSCO 報告待通知")
 
     all_reports = list(by_url.values())
     all_reports.sort(key=lambda r: (sort_key(r.get("date", "")), r.get("first_seen", "")), reverse=True)
