@@ -31,6 +31,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scraper/scraper.py
 
+      - name: Email new IOSCO reports
+        continue-on-error: true
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO:       ${{ secrets.MAIL_TO }}
+        run: python scraper/send_email.py
+
       - name: Commit and push results
         run: |
           git config user.name  "github-actions[bot]"

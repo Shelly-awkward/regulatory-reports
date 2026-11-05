@@ -3,3 +3,4 @@ beautifulsoup4==4.12.3
 anthropic==0.85.0
 lxml==5.2.2
 playwright==1.48.0
+pypdf==4.3.1
