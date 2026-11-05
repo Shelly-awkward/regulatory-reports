@@ -209,7 +209,9 @@ def is_valid_report(title: str, url: str, trusted: bool = False) -> bool:
         return False
     if IOSCO_CODE_PATTERN.fullmatch(t.strip()):
         return False
-    if any(k in t_lower for k in NAV_KEYWORDS):
+    has_code = bool(IOSCO_CODE_PATTERN.search(t))
+    # IOSCO 編號（FR/CR/OR…）本身就證明是出版品；標題含 Committee、Task Force 等字樣不應被當成導覽連結
+    if not has_code and any(k in t_lower for k in NAV_KEYWORDS):
         return False
 
     u_lower = (url or "").lower()
@@ -223,7 +225,7 @@ def is_valid_report(title: str, url: str, trusted: bool = False) -> bool:
         return True
     if any(k in t_lower for k in REPORT_KEYWORDS):
         return True
-    if IOSCO_CODE_PATTERN.search(t):
+    if has_code:
         return True
     if re.search(r"\b20\d{2}\b", t) and len(t) > 25:
         return True
@@ -383,6 +385,7 @@ def scrape_iosco(src: dict) -> list[dict]:
     rows = soup.select("tr")
     if len(rows) < 3:
         rows = soup.select("li, .views-row, article, .row")
+    print(f"  IOSCO 列數：{len(rows)}")
 
     for row in rows:
         a = None
@@ -401,7 +404,13 @@ def scrape_iosco(src: dict) -> list[dict]:
         date     = normalize_date(row_text)
 
         # 真標題＝整列文字去掉編號、日期、按鈕字樣後剩下的主體
-        title = row_text
+        # 先切掉同列附帶的雜訊：意見徵詢截止說明、相關報告清單、附錄連結
+        title = re.split(
+            r"\s*(?:\|\s*)?(?:Comments on the report should be submitted by|"
+            r"Responses to the survey should be submitted by|Related Public Reports|"
+            r"\|\s*Addendum|\|\s*Annex)",
+            row_text, maxsplit=1, flags=re.IGNORECASE,
+        )[0]
         if code_m:
             title = title.replace(code_m.group(0), " ")
         for btn in BUTTON_TEXTS:
@@ -605,9 +614,13 @@ def fetch_source(src: dict) -> list[dict]:
         print(f"  ⚠️  抓取失敗：{e}")
         return []
 
-    valid = [r for r in candidates
-             if is_valid_report(r["title_en"], r["url"], r.get("trusted", False))]
+    valid, dropped = [], []
+    for r in candidates:
+        (valid if is_valid_report(r["title_en"], r["url"], r.get("trusted", False)) else dropped).append(r)
     print(f"  → 原始 {len(candidates)} 則，通過驗證 {len(valid)} 則")
+    if src.get("id") == "IOSCO":
+        for r in dropped:
+            print(f"    ✗ 未通過：{r['title_en'][:90]} | {r['url']}")
     for r in valid:
         r["id"] = make_id(r["source"], r["url"])
     return valid[:MAX_PER_SOURCE]
@@ -885,6 +898,8 @@ def main():
             if r["url"] in by_url:
                 # 已存在：用新抓到的標題／日期更新（修復舊的壞標題），保留翻譯
                 old = by_url[r["url"]]
+                if old.get("title_en") != r["title_en"]:
+                    old["title_zh"] = ""          # 標題變了（例如清掉雜訊）→ 重新翻譯
                 old["title_en"] = r["title_en"]
                 # 只在新日期更精確時才更新（避免把已補到的完整日期降級為年份）
                 if r["date"] and len(r["date"]) > len(old.get("date", "")):

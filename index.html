@@ -212,6 +212,14 @@
   .src-PCAOB { background: #44245c; }
   .src-IFRS  { background: #5c1a1a; }
 
+  .type-badge {
+    font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.05em;
+    padding: 2px 7px; border-radius: 2px; border: 1px solid var(--line); color: var(--muted);
+  }
+  .type-badge.FR { background: var(--green); color: #fff; border-color: var(--green); }
+  .type-badge.CR { background: var(--gold); color: #fff; border-color: var(--gold); }
+  .toggle-row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; cursor: pointer; }
+  .toggle-row input { accent-color: var(--green); }
   .new-badge {
     display: inline-block;
     font-family: 'DM Mono', monospace; font-size: 0.6rem;
@@ -385,6 +393,11 @@
     </div>
 
     <div class="filter-section">
+      <div class="sidebar-title">報告類型</div>
+      <label class="toggle-row"><input type="checkbox" id="finalOnly" onchange="applyFilters()"> 只看最終報告（IOSCO FR）</label>
+    </div>
+
+    <div class="filter-section">
       <div class="sidebar-title">發布日期範圍</div>
       <div class="date-row">
         <input type="date" id="dateFrom" onchange="applyFilters()">
@@ -553,6 +566,7 @@ function currentFiltered() {
 
   let filtered = allReports;
   if (activeSource !== "ALL") filtered = filtered.filter(r => r.source === activeSource);
+  if (document.getElementById("finalOnly").checked) filtered = filtered.filter(r => reportType(r) === "FR");
   if (keyword) {
     filtered = filtered.filter(r =>
       (r.title_en || "").toLowerCase().includes(keyword) ||
@@ -585,6 +599,7 @@ function clearFilters() {
   document.getElementById("searchInput").value = "";
   document.getElementById("dateFrom").value    = "";
   document.getElementById("dateTo").value      = "";
+  document.getElementById("finalOnly").checked = false;
   setSource("ALL");
 }
 
@@ -607,6 +622,17 @@ function groupLabel(r, now) {
   if (diffDays <= 7 && diffDays >= -30) return "本週";
   if (d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth()) return "本月";
   return `${d.getFullYear()} 年 ${d.getMonth() + 1} 月`;
+}
+
+// ── IOSCO 報告類型（由編號判斷）──
+const TYPE_LABELS = { FR: "最終報告", CR: "意見徵詢", OR: "其他報告", MR: "會員報告", ER: "執法報告" };
+function reportType(r) {
+  const m = /\b(FR|CR|OR|MR|ER)\s*[\/\-]\s*\d+/i.exec(r.title_en || "");
+  return m ? m[1].toUpperCase() : "";
+}
+function typeBadge(r) {
+  const t = reportType(r);
+  return t ? `<span class="type-badge ${t}">${TYPE_LABELS[t] || t}</span>` : "";
 }
 
 // ── Render: cards ──
@@ -642,6 +668,7 @@ function renderCards(reports) {
       return `<div class="card" style="border-left-color:${SRC_COLORS[r.source] || '#555'}">
         <div class="card-meta">
           <span class="src-badge src-${esc(r.source)}">${esc(r.source)}</span>
+          ${typeBadge(r)}
           ${isNew ? '<span class="new-badge">NEW</span>' : ""}
           <span>${esc(r.date || "—")}</span>
         </div>
@@ -663,7 +690,7 @@ function renderTable(reports) {
       ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title_en)}</a>`
       : esc(r.title_en);
     return `<tr>
-      <td class="col-src"><span class="src-badge src-${esc(r.source)}">${esc(r.source)}</span>${isNew ? ' <span class="new-badge">NEW</span>' : ""}</td>
+      <td class="col-src"><span class="src-badge src-${esc(r.source)}">${esc(r.source)}</span> ${typeBadge(r)}${isNew ? ' <span class="new-badge">NEW</span>' : ""}</td>
       <td class="col-en">${en}</td>
       <td class="col-zh">${esc(r.title_zh || "")}</td>
       <td class="col-intro">${esc(r.intro || "")}</td>
@@ -781,7 +808,8 @@ tr:last-child td{border-bottom:none} a{color:#c4392a;text-decoration:none}
 // ── 一鍵複製呈報文字 ──
 function buildBrief(r) {
   const lines = [];
-  lines.push(`【${r.source}】${r.title_zh || r.title_en}`);
+  const t = reportType(r);
+  lines.push(`【${r.source}${t ? "・" + (TYPE_LABELS[t] || t) : ""}】${r.title_zh || r.title_en}`);
   lines.push(`英文標題：${r.title_en}`);
   lines.push(`發布日期：${r.date || "未知"}`);
   const kp = r.key_points_zh || [];
