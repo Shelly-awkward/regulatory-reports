@@ -733,10 +733,16 @@ def summarize_key_points(reports: list[dict], client: anthropic.Anthropic) -> No
             points = json.loads(raw[start:end + 1])
             r["key_points_zh"] = [str(p).strip() for p in points if str(p).strip()][:3]
             print(f"  ✓ 重點摘要：{r.get('title_en', '')[:50]}")
+        except anthropic.AuthenticationError as e:
+            # API key 失效：後面每一份都會失敗，直接停止，省下 PDF 下載與 API 呼叫
+            print(f"  ⚠️  重點摘要中止（API key 無效）：{e}")
+            r["key_points_zh"] = []
+            r["key_points_checked"] = False
+            break
         except Exception as e:
             print(f"  ⚠️  重點摘要失敗：{e}")
             r["key_points_zh"] = []
-            r["key_points_checked"] = False   # 下次再試（例如 API key 失效時）
+            r["key_points_checked"] = False   # 下次再試
         time.sleep(1)
 
 
@@ -925,11 +931,11 @@ def main():
             r.setdefault("intro", "")
 
     # IOSCO 重點摘要：新報告優先，再補近期未處理的
+    new_urls   = {r["url"] for r in new_reports}
     kp_pending = [r for r in by_url.values()
                   if r.get("source") in KEY_POINTS_SOURCES
                   and not r.get("key_points_checked")
-                  and (r.get("date", "") >= KEY_POINTS_MIN_DATE or r["url"] in {n["url"] for n in new_reports})]
-    new_urls = {r["url"] for r in new_reports}
+                  and (r.get("date", "") >= KEY_POINTS_MIN_DATE or r["url"] in new_urls)]
     kp_pending.sort(key=lambda r: (r["url"] in new_urls, sort_key(r.get("date", ""))), reverse=True)
     kp_pending = kp_pending[:KEY_POINTS_MAX_RUN]
     if kp_pending:
